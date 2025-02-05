@@ -1,6 +1,5 @@
 // components/MultipleChoiceQuestion.jsx
 import React, { useState, useEffect, useRef } from 'react';
-// Import the reward sound from the local file path.
 import rewardSoundFile from './sounds/successed-295058.mp3';
 import { questionCategories, shuffleArray } from './questions';
 
@@ -191,35 +190,61 @@ const MultipleChoiceQuestion = () => {
       }}
     >
       {/* Inline CSS for responsive styling */}
-<style>{`
-  @media (max-width: 480px) {
-    .card {
-      width: 90% !important;
-      margin: 20px auto !important;
-      padding: 15px !important;
-    }
-    .option-grid {
-      grid-template-columns: 1fr !important;
-    }
-    .progress-text, .question-header, .question-text {
-      font-size: 1rem !important;
-    }
-    select {
-      width: 100% !important; /* Added to ensure the select takes full width */
-      font-size: 1rem !important;
-      padding: 6px 10px !important;
-    }
-    button {
-      font-size: 1rem !important;
-      padding: 8px 16px !important;
-    }
-    .category-container {
-      width: 90% !important;
-      margin: 10px auto !important;
-    }
-  }
-`}</style>
-
+      <style>{`
+        @media (max-width: 480px) {
+          .card {
+            width: 90% !important;
+            margin: 20px auto !important;
+            padding: 15px !important;
+          }
+          .option-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .progress-text, .question-header, .question-text {
+            font-size: 1rem !important;
+          }
+          select {
+            width: 100% !important;
+            font-size: 1rem !important;
+            padding: 6px 10px !important;
+          }
+          button {
+            font-size: 1rem !important;
+            padding: 8px 16px !important;
+          }
+          .category-container {
+            width: 90% !important;
+            margin: 10px auto !important;
+          }
+        }
+        @media (min-width: 481px) and (max-width: 1024px) {
+          .card {
+            width: 80% !important;
+            margin: 30px auto !important;
+            padding: 20px !important;
+          }
+          .option-grid {
+            grid-template-columns: 1fr 1fr !important;
+            gap: 12px !important;
+          }
+          .progress-text, .question-header, .question-text {
+            font-size: 1.1rem !important;
+          }
+          select {
+            width: 100% !important;
+            font-size: 1.1rem !important;
+            padding: 8px 12px !important;
+          }
+          button {
+            font-size: 1.1rem !important;
+            padding: 10px 18px !important;
+          }
+          .category-container {
+            width: 80% !important;
+            margin: 15px auto !important;
+          }
+        }
+      `}</style>
 
       {/* Category Selector */}
       <div className="category-container" style={{ maxWidth: '600px', margin: '20px auto', textAlign: 'center' }}>
@@ -262,14 +287,7 @@ const MultipleChoiceQuestion = () => {
         <p className="progress-text" style={{ textAlign: 'center', marginBottom: '10px', color: '#E0E1DD' }}>
           Question {currentIndex + 1} of {questionOrder.length} {isRetest && "(Retest)"}
         </p>
-        <h2 className="question-header"
-          style={{
-            fontSize: '1.75rem',
-            textAlign: 'center',
-            marginBottom: '20px',
-            color: '#E0E1DD'
-          }}
-        >
+        <h2 className="question-header" style={{ fontSize: '1.75rem', textAlign: 'center', marginBottom: '20px', color: '#E0E1DD' }}>
           Exam Practice Question
         </h2>
         <p className="question-text" style={{ textAlign: 'center', marginBottom: '30px', color: '#E0E1DD' }}>

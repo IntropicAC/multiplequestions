@@ -752,11 +752,680 @@ export const questionCategories = {
     allowMultiple: false
   }
 ],
+//--------------------------------------------------------------------------------------------------------------------------------
 
+"Comptia A+ 1102 test 5": [
+  {
+    question: "A Windows Control Panel applet providing access to Microsoft Outlook configuration options is called:",
+    options: [
+      "Mail",
+      "Programs and Features",
+      "User Accounts",
+      "Administrative Tools"
+    ],
+    correctAnswers: ["Mail"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following answers refers to an audio configuration Control Panel applet (mmsys.cpl) in Windows 10?",
+    options: [
+      "Sound",
+      "Device Manager",
+      "Sounds and Audio Devices",
+      "Computer Management"
+    ],
+    correctAnswers: ["Sound"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the Control Panel applets in Windows 10 allows system administrators to modify local user account settings?",
+    options: [
+      "User Accounts",
+      "Local Users and Groups",
+      "Security and Maintenance",
+      "User Account Control"
+    ],
+    correctAnswers: ["Local Users and Groups"],
+    allowMultiple: false
+  },
+  {
+    question: "The Device Manager applet in Windows 10 Control Panel can be accessed via: (Select 3 answers)",
+    options: [
+      "Control Panel (icons view) > Administrative Tools > Device Manager",
+      "Control Panel (category view) > Hardware and Sound > Device Manager",
+      "Control Panel (icons view) > Administrative Tools > Computer Management > Device Manager",
+      "Control Panel (category view) > Hardware and Sound > Devices and Printers > Device Manager",
+      "Control Panel (icons view) > Device Manager"
+    ],
+    correctAnswers: [
+      "Control Panel (icons view) > Administrative Tools > Computer Management > Device Manager",
+      "Control Panel (icons view) > Device Manager",
+      "Control Panel (icons view) > Administrative Tools > Device Manager"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "A Control Panel applet in Windows 10 designed to speed up the process of finding files is known as:",
+    options: [
+      "Sync Center",
+      "File Explorer Options",
+      "Storage Spaces",
+      "Indexing Options"
+    ],
+    correctAnswers: ["Indexing Options"],
+    allowMultiple: false
+  },
+  {
+    question: "A Windows Control Panel folder containing shortcuts to various system utilities is called:",
+    options: [
+      "System",
+      "Computer Management",
+      "Administrative Tools",
+      "Security and Maintenance"
+    ],
+    correctAnswers: ["Administrative Tools"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the answers listed below refers to a file/folder management applet (control.exe folders) in Windows 10 Control Panel?",
+    options: [
+      "Folder Options",
+      "Windows Explorer",
+      "File Explorer Options",
+      "Ease of Access Center"
+    ],
+    correctAnswers: ["Folder Options"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following key combinations can be used to launch File Explorer (explorer.exe) in Windows?",
+    options: [
+      "Windows logo key + E",
+      "Ctrl + Shift + Esc",
+      "Windows logo key + F",
+      "Ctrl + Alt + Delete"
+    ],
+    correctAnswers: ["Windows logo key + E"],
+    allowMultiple: false
+  },
+  {
+    question: "Which sequence of steps in Windows 10 provides access to a configuration setting that enables displaying hidden files, folders, and drives?",
+    options: [
+      "Windows Control Panel > Folder Options applet > General tab > Show hidden files, folders, and drives",
+      "Windows Control Panel > File Explorer Options applet > View tab > Advanced settings: > Hidden files and folders > Show hidden files, folders, and drives",
+      "Windows Control Panel > Folder Options applet > General tab > Advanced settings: > Show hidden files, folders, and drives",
+      "Windows Control Panel > File Explorer Options applet > Advanced settings: > Show hidden files, folders, and drives"
+    ],
+    correctAnswers: ["Windows Control Panel > File Explorer Options applet > View tab > Advanced settings: > Hidden files and folders > Show hidden files, folders, and drives"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the actions listed below provides access to a Windows 10 File Explorer configuration setting that allows you to show or hide the files and folders that are marked as hidden?",
+    options: [
+      "Windows logo key + E > View > Hidden items",
+      "Windows logo key + F > File > Change folder and search options > Hidden items",
+      "Windows logo key + E > View > Advanced settings > Hidden items",
+      "Windows logo key + F > File > Show hidden files and folders"
+    ],
+    correctAnswers: ["Windows logo key + E > View > Hidden items"],
+    allowMultiple: false
+  },
+  {
+    question: "Which sequence of steps in Windows 10 provides access to a configuration setting that allows you to show or hide extensions for known file types?",
+    options: [
+      "Windows Control Panel > Folder Options applet > General tab > Hide extensions for known file types",
+      "Windows Control Panel > File Explorer Options applet > Advanced settings: > Hidden files and folders > Hide extensions for known file types",
+      "Windows Control Panel > Folder Options applet > General tab > Advanced settings: > Hide extensions for known file types",
+      "Windows Control Panel > File Explorer Options applet > View tab > Advanced settings: > Hide extensions for known file types"
+    ],
+    correctAnswers: ["Windows Control Panel > File Explorer Options applet > View tab > Advanced settings: > Hide extensions for known file types"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following provides access to a Windows 10 File Explorer configuration setting that allows you to show or hide extensions for known file types?",
+    options: [
+      "Windows logo key + E > View > File name extensions",
+      "Windows logo key + F > File > Change folder and search options > File name extensions",
+      "Windows logo key + E > View > Options > Advanced settings > File name extensions",
+      "Windows logo key + F > File > Settings > File name extensions"
+    ],
+    correctAnswers: ["Windows logo key + E > View > File name extensions"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the settings listed below is NOT part of the General tab of the File Explorer Options applet in Windows 10?",
+    options: [
+      "Default starting folder after launching File Explorer",
+      "Visibility of hidden files, folders, or drives",
+      "Folder browsing options (opening each folder in the same window or in its own window)",
+      "Opening items (single-click vs. double-click to open an item)",
+      "File Explorer browsing history options (Privacy section)"
+    ],
+    correctAnswers: ["Visibility of hidden files, folders, or drives"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following answers refer to hibernation mode? (Select 3 answers)",
+    options: [
+      "Saves system state (e.g., all open/unsaved files and running applications) on a storage drive",
+      "Turns the computer off",
+      "System operation can be resumed faster in comparison to sleep mode",
+      "Requires small amount of power",
+      "Keeps system state (e.g., all open/unsaved files and running applications) in RAM",
+      "Resuming system operation from hibernation mode takes longer in comparison to sleep mode"
+    ],
+    correctAnswers: [
+      "Saves system state (e.g., all open/unsaved files and running applications) on a storage drive",
+      "Turns the computer off",
+      "Resuming system operation from hibernation mode takes longer in comparison to sleep mode"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Windows power plan is a collection of hardware and system settings that manages how the computer uses power. In Windows, the power configuration settings can be found in: (Select 3 answers)",
+    options: [
+      "Windows Control Panel (icon view) > Security and Maintenance > Power Options",
+      "Windows Start > Settings > System > Power & sleep > Additional power settings",
+      "Windows Control Panel (category view) > Hardware and Sound > Power Options",
+      "Windows Start > Settings > Devices > Power & sleep > Additional power settings",
+      "Windows Control Panel (icon view) > Power Options",
+      "Windows Start > Settings > Hardware and Sound > Power Options"
+    ],
+    correctAnswers: [
+      "Windows Start > Settings > System > Power & sleep > Additional power settings",
+      "Windows Control Panel (category view) > Hardware and Sound > Power Options",
+      "Windows Control Panel (icon view) > Power Options"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the answers listed below refer to sleep mode? (Select 3 answers)",
+    options: [
+      "Requires small amount of power",
+      "Saves system state (e.g., all open/unsaved files and running applications) on a storage drive",
+      "Turns the computer off",
+      "System operation can be resumed faster in comparison to hibernation mode",
+      "Keeps system state (e.g., all open/unsaved files and running applications) in RAM",
+      "Resuming system operation from sleep mode takes longer in comparison to hibernation mode"
+    ],
+    correctAnswers: [
+      "Requires small amount of power",
+      "System operation can be resumed faster in comparison to hibernation mode",
+      "Keeps system state (e.g., all open/unsaved files and running applications) in RAM"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "On Windows-based laptops, the Microsoft OS offers an additional power configuration option that allows you to choose what closing the laptop lid does. This setting can be accessed via the following steps: (Select 3 answers)",
+    options: [
+      "Windows Start > Settings > Devices > Power & sleep > Additional power settings > Choose what closing the lid does",
+      "Windows Control Panel (icon view) > Power Options > Choose what closing the lid does",
+      "Windows Start > Settings > Hardware and Sound > Power Options > Change plan settings > Change advanced power settings > Choose what closing the lid does",
+      "Windows Control Panel (category view) > Hardware and Sound > Power Options > Choose what closing the lid does",
+      "Windows Start > Settings > System > Power & sleep > Additional power settings > Choose what closing the lid does",
+      "Windows Control Panel (icon view) > Security and Maintenance > Power Options > Change plan settings > Change advanced power settings > Choose what closing the lid does"
+    ],
+    correctAnswers: [
+      "Windows Control Panel (icon view) > Power Options > Choose what closing the lid does",
+      "Windows Control Panel (category view) > Hardware and Sound > Power Options > Choose what closing the lid does",
+      "Windows Start > Settings > System > Power & sleep > Additional power settings > Choose what closing the lid does"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "The fast startup feature in Windows 10 puts a computer into a hibernation state (hybrid shutdown) for a faster resume. Which of the actions listed below provide access to this setting? (Select 3 answers)",
+    options: [
+      "Windows Start > Settings > Devices > Power & sleep > Additional power settings > Choose what the power buttons do > Change settings that are currently unavailable > Turn on fast startup",
+      "Windows Control Panel (icon view) > Power Options > Choose what the power buttons do > Change settings that are currently unavailable > Turn on fast startup",
+      "Windows Start > Settings > Hardware and Sound > Power Options > Change plan settings > Change advanced power settings > Choose what the power buttons do > Change settings that are currently unavailable > Turn on fast startup",
+      "Windows Control Panel (category view) > Hardware and Sound > Power Options > Choose what the power buttons do > Change settings that are currently unavailable > Turn on fast startup",
+      "Windows Start > Settings > System > Power & sleep > Additional power settings > Choose what the power buttons do > Change settings that are currently unavailable > Turn on fast startup",
+      "Windows Control Panel (icon view) > Security and Maintenance > Power Options > Change plan settings > Change advanced power settings > Choose what the power buttons do > Change settings that are currently unavailable > Turn on fast startup"
+    ],
+    correctAnswers: [
+      "Windows Control Panel (icon view) > Power Options > Choose what the power buttons do > Change settings that are currently unavailable > Turn on fast startup",
+      "Windows Control Panel (category view) > Hardware and Sound > Power Options > Choose what the power buttons do > Change settings that are currently unavailable > Turn on fast startup",
+      "Windows Start > Settings > System > Power & sleep > Additional power settings > Choose what the power buttons do > Change settings that are currently unavailable > Turn on fast startup"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "The Universal Serial Bus (USB) selective suspend is a power saving feature that allows individual USB ports to be suspended when not in use. The USB selective suspend setting in Windows can be accessed via: (Select 3 answers)",
+    options: [
+      "Windows Control Panel (icon view) > Power Options > Change plan settings > Change advanced power settings > USB settings > USB selective suspend setting",
+      "Windows Start > Settings > System > Power & sleep > Additional power settings > Change plan settings > Change advanced power settings > USB settings > USB selective suspend setting",
+      "Windows Control Panel (category view) > Hardware and Sound > Power Options > Change plan settings > Change advanced power settings > USB settings > USB selective suspend setting",
+      "Windows Start > Settings > Devices > Power & sleep > Additional power settings > Change plan settings > Change advanced power settings > USB settings > USB selective suspend setting",
+      "Windows Control Panel (icon view) > Security and Maintenance > Power Options > Change plan settings > Change advanced power settings > USB settings > USB selective suspend setting",
+      "Windows Start > Settings > Hardware and Sound > Power Options > Change plan settings > Change advanced power settings > USB settings > USB selective suspend setting"
+    ],
+    correctAnswers: [
+      "Windows Control Panel (icon view) > Power Options > Change plan settings > Change advanced power settings > USB settings > USB selective suspend setting",
+      "Windows Start > Settings > System > Power & sleep > Additional power settings > Change plan settings > Change advanced power settings > USB settings > USB selective suspend setting",
+      "Windows Control Panel (category view) > Hardware and Sound > Power Options > Change plan settings > Change advanced power settings > USB settings > USB selective suspend setting"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the following steps provide access to Windows system settings aimed at users with disabilities? (Select 3 answers)",
+    options: [
+      "Windows Control Panel (category view) > Ease of Access > Ease of Access Center",
+      "Windows Control Panel (icon view) > Ease of Access Center",
+      "Windows Control Panel (category view) > Appearance and Personalization > Ease of Access Center",
+      "Windows Control Panel (icon view) > Appearance and Personalization > Ease of Access Center",
+      "Windows Control Panel (category view) > System and Security > Ease of Access Center"
+    ],
+    correctAnswers: [
+      "Windows Control Panel (category view) > Ease of Access > Ease of Access Center",
+      "Windows Control Panel (icon view) > Ease of Access Center",
+      "Windows Control Panel (category view) > Appearance and Personalization > Ease of Access Center"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the items in Windows 10 Settings app provides access to date, time, region, language, and speech recognition settings?",
+    options: [
+      "Windows Start > Settings > System",
+      "Windows Start > Settings > Date and Time",
+      "Windows Start > Settings > Clock and Region",
+      "Windows Start > Settings > Time & Language"
+    ],
+    correctAnswers: ["Windows Start > Settings > Time & Language"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the steps listed below provides access to backup, recovery, and OS upgrade options in the Windows 10 Settings app?",
+    options: [
+      "Windows Start > Settings > System",
+      "Windows Start > Settings > Update & Security",
+      "Windows Start > Settings > Security and Maintenance",
+      "Windows Start > Settings > Backup and Restore"
+    ],
+    correctAnswers: ["Windows Start > Settings > Update & Security"],
+    allowMultiple: false
+  },
+  {
+    question: "In Windows 10 Settings app, desktop customization settings can be accessed via:",
+    options: [
+      "Windows Start > Settings > Personalization",
+      "Windows Start > Settings > System > Display > Themes",
+      "Windows Start > Settings > Appearance and Personalization",
+      "Windows Start > Settings > Programs and Features > Turn Windows features on or off"
+    ],
+    correctAnswers: ["Windows Start > Settings > Personalization"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following items in Windows 10 Settings app allows you to enable/disable programs that are launched automatically when signing into a user account?",
+    options: [
+      "Windows Start > Settings > Accounts > Apps > Startup",
+      "Windows Start > Settings > System and Security > Apps > Startup",
+      "Windows Start > Settings > Programs and Features > Apps > Startup",
+      "Windows Start > Settings > Apps > Startup"
+    ],
+    correctAnswers: ["Windows Start > Settings > Apps > Startup"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the items in Windows 10 Settings app allows you to modify OS and application permissions?",
+    options: [
+      "Windows Start > Settings > Apps",
+      "Windows Start > Settings > Privacy",
+      "Windows Start > Settings > Update & Security",
+      "Windows Start > Settings > Programs and Features"
+    ],
+    correctAnswers: ["Windows Start > Settings > Privacy"],
+    allowMultiple: false
+  }
+],
 
 //---------------------------------------------------------------------------------------------------------------------------------
 
-"CompTIA A+ 1102 - Microsoft Windows Editions": [
+"Comptia A+ 1102 test 6": [
+  {
+    question: "Which of the items in Windows 10 Settings app provides access to display, sound, notifications, and power options?",
+    options: [
+      "Windows Start > Settings > Devices",
+      "Windows Start > Settings > System",
+      "Windows Start > Settings > Hardware and Sound",
+      "Windows Start > Settings > Device Manager"
+    ],
+    correctAnswers: ["Windows Start > Settings > System"],
+    allowMultiple: false
+  },
+  {
+    question: "In Windows 10 Settings app, configuration options for printers, scanners, pointing devices, and Bluetooth can be found in:",
+    options: [
+      "Windows Start > Settings > Hardware and Sound",
+      "Windows Start > Settings > Devices",
+      "Windows Start > Settings > System",
+      "Windows Start > Settings > Devices and Printers"
+    ],
+    correctAnswers: ["Windows Start > Settings > Devices"],
+    allowMultiple: false
+  },
+  {
+    question: "Which item in Windows 10 Settings app provides access to network configuration options?",
+    options: [
+      "Windows Start > Settings > Network & Internet",
+      "Windows Start > Settings > Internet Options",
+      "Windows Start > Settings > Network and Sharing Center",
+      "Windows Start > Settings > Network Connections"
+    ],
+    correctAnswers: ["Windows Start > Settings > Network & Internet"],
+    allowMultiple: false
+  },
+  {
+    question: "In Windows 10 Settings app, Xbox and PC gaming options can be accessed via:",
+    options: [
+      "Windows Start > Settings > Apps",
+      "Windows Start > Settings > System",
+      "Windows Start > Settings > Programs and Features",
+      "Windows Start > Settings > Gaming"
+    ],
+    correctAnswers: ["Windows Start > Settings > Gaming"],
+    allowMultiple: false
+  },
+  {
+    question: "A Windows 10 Settings app menu that allows to configure connected accounts and sign‐in options is known as:",
+    options: [
+      "Windows Start > Settings > User Accounts",
+      "Windows Start > Settings > Local Users and Groups",
+      "Windows Start > Settings > User Account Control",
+      "Windows Start > Settings > Accounts"
+    ],
+    correctAnswers: ["Windows Start > Settings > Accounts"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following statements are true? (Select 3 answers)",
+    options: [
+      "Windows-based computers on home networks must be part of a HomeGroup",
+      "Windows-based computers on a network must be part of a workgroup or a domain",
+      "Windows-based computers on workplace networks are usually part of a domain",
+      "Windows-based computers on workplace networks are usually part of a workgroup",
+      "Windows-based computers on home networks are usually part of a workgroup",
+      "Windows-based computers on home networks are usually part of a domain"
+    ],
+    correctAnswers: [
+      "Windows-based computers on a network must be part of a workgroup or a domain",
+      "Windows-based computers on workplace networks are usually part of a domain",
+      "Windows-based computers on home networks are usually part of a workgroup"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the statements listed below apply to Windows workgroups? (Select 3 answers)",
+    options: [
+      "Security policies and permissions in workgroups are administered centrally",
+      "Logging into any computer on a workgroup requires a single account (single sign-on feature)",
+      "Workgroups typically consist of no more than twenty computers",
+      "There is no limit on the number of hosts that can become a part of a single workgroup",
+      "Logging into any computer in a workgroup requires an account on that computer",
+      "Each computer in a workgroup has its own security policy"
+    ],
+    correctAnswers: [
+      "Workgroups typically consist of no more than twenty computers",
+      "Logging into any computer in a workgroup requires an account on that computer",
+      "Each computer in a workgroup has its own security policy"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "The configuration settings that allow to change the computer name and domain/workgroup membership in Windows 10 can be accessed via:",
+    options: [
+      "Windows Control Panel (category view) > System and Security > System > About > Rename this PC (advanced) > click on the Change... button",
+      "Windows Start > Settings > System > About > Rename this PC (advanced) > click on the Change... button",
+      "Windows Control Panel (category view) > System and Security > See the name of this computer > System > About > Rename this PC (advanced) > click on the Change... button",
+      "Windows Control Panel (icon view) > System > About > Rename this PC (advanced) > click on the Change... button",
+      "Any of the above steps"
+    ],
+    correctAnswers: ["Any of the above steps"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the steps listed below provide(s) access to Windows 10 configuration settings that allow to join a domain or workgroup? (Select all that apply)",
+    options: [
+      "Windows Control Panel (icon view) > System > About > Rename this PC (advanced) > click on the Network ID... button",
+      "Windows Control Panel (category view) > System and Security > See the name of this computer > System > About > Rename this PC (advanced) > click on the Network ID... button",
+      "Windows Start > Settings > System > About > Rename this PC (advanced) > click on the Network ID... button",
+      "Windows Control Panel (icon view) > Network and Sharing Center > View active networks > click on the Network ID... button",
+      "Windows Control Panel (category view) > System and Security > System > About > Rename this PC (advanced) > click on the Network ID... button"
+    ],
+    correctAnswers: [
+      "Windows Control Panel (icon view) > System > About > Rename this PC (advanced) > click on the Network ID... button",
+      "Windows Control Panel (category view) > System and Security > See the name of this computer > System > About > Rename this PC (advanced) > click on the Network ID... button",
+      "Windows Control Panel (category view) > System and Security > System > About > Rename this PC (advanced) > click on the Network ID... button"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the following statements apply to Windows domains? (Select 3 answers)",
+    options: [
+      "Logging into any computer on a Windows domain requires a single set of credentials",
+      "Security policies and permissions on a Windows domain are administered centrally",
+      "Windows domains are based on P2P networking architecture",
+      "Each computer on a Windows domain has its own security policy",
+      "Windows domains are based on client-server networking architecture",
+      "All members of a Windows domain must be on the same local network or subnet"
+    ],
+    correctAnswers: [
+      "Logging into any computer on a Windows domain requires a single set of credentials",
+      "Security policies and permissions on a Windows domain are administered centrally",
+      "Windows domains are based on client-server networking architecture"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the following locations/steps allows you to view network shares in Windows?",
+    options: [
+      "Windows Run dialog box > type in: \\computer name > press Enter (user shares only)",
+      "Windows Command Prompt > type in: net share > press Enter (all network shares)",
+      "Windows Command Prompt > type in: net view \\computer name > press Enter (user shares only)",
+      "Windows Command Prompt > type in: net view \\computer name /all > press Enter (all network shares)",
+      "Shared Folders > Shares in the Computer Management utility in Windows Control Panel (all network shares)",
+      "All of the above"
+    ],
+    correctAnswers: ["All of the above"],
+    allowMultiple: false
+  },
+  {
+    question: "In Microsoft Windows, the \"$\" sign appended to the end of the name of a network share indicates that the shared folder or drive is:",
+    options: [
+      "Hidden",
+      "Inaccessible",
+      "Visible to any user",
+      "Encrypted"
+    ],
+    correctAnswers: ["Hidden"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the characters listed below indicates that a Windows network share is intended for administrative access?",
+    options: [
+      "#",
+      "$",
+      "?",
+      "&"
+    ],
+    correctAnswers: ["$"],
+    allowMultiple: false
+  },
+  {
+    question: "Which sequence(s) of steps in Windows 10 provide(s) access to configuration options that allow you to share a local printer with other PCs on a network? (Select all that apply)",
+    options: [
+      "Windows Control Panel (icon view) > Devices and Printers > right-click on a selected printer > Printer properties > Sharing tab",
+      "Windows Control Panel (category view) > Hardware and Sound > Devices and Printers > right-click on a selected printer > Printer properties > Sharing tab",
+      "Windows Start > Settings > Devices > Printers & scanners > select a printer > Manage > Printer properties > Sharing tab",
+      "Windows Control Panel (category view) > View devices and printers > right-click on a selected printer > Printer properties > Sharing tab",
+      "Windows Control Panel (icon view) > Devices and Printers > right-click on a selected printer > Properties > Sharing tab"
+    ],
+    correctAnswers: [
+      "Windows Control Panel (icon view) > Devices and Printers > right-click on a selected printer > Printer properties > Sharing tab",
+      "Windows Control Panel (category view) > Hardware and Sound > Devices and Printers > right-click on a selected printer > Printer properties > Sharing tab",
+      "Windows Start > Settings > Devices > Printers & scanners > select a printer > Manage > Printer properties > Sharing tab"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the following actions in Windows 10 provide(s) access to configuration options for connecting a network printer to a PC (network printer mapping)? (Select all that apply)",
+    options: [
+      "Windows Control Panel (icon view) > Devices and Printers > Add a printer or scanner > select a printer > Add Device",
+      "Windows Control Panel (category view) > Hardware and Sound > Devices and Printers > Add a printer",
+      "Windows Start > Settings > Devices > Printers & scanners > Add printers & scanners > Add a printer or scanner > select a printer > Add Device",
+      "Windows Control Panel (category view) > View devices and printers > Add a printer",
+      "Windows Control Panel (icon view) > Devices and Printers > Add a printer"
+    ],
+    correctAnswers: [
+      "Windows Control Panel (icon view) > Devices and Printers > Add a printer or scanner > select a printer > Add Device",
+      "Windows Control Panel (category view) > Hardware and Sound > Devices and Printers > Add a printer",
+      "Windows Start > Settings > Devices > Printers & scanners > Add printers & scanners > Add a printer or scanner > select a printer > Add Device"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the actions listed below provide access to a configuration setting that allows you to add a file server component to Windows 10? (Select 3 answers)",
+    options: [
+      "Windows Control Panel (category view) > Programs > Turn Windows features on or off > Internet Information Services",
+      "Windows Control Panel (icon view) > Programs and Features > Turn Windows features on or off > Internet Information Services",
+      "Windows Start > Settings > Programs and Features > Turn Windows features on or off > Internet Information Services",
+      "Windows Control Panel (icon view) > System > Turn Windows features on or off > Internet Information Services",
+      "Windows Start > Settings > Apps > Apps & features > Optional features > More Windows features > Turn Windows features on or off > Internet Information Services"
+    ],
+    correctAnswers: [
+      "Windows Control Panel (category view) > Programs > Turn Windows features on or off > Internet Information Services",
+      "Windows Control Panel (icon view) > Programs and Features > Turn Windows features on or off > Internet Information Services",
+      "Windows Start > Settings > Apps > Apps & features > Optional features > More Windows features > Turn Windows features on or off > Internet Information Services"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the following locations/steps in Windows 10 allows you to create a shortcut to a shared folder or computer on a network?",
+    options: [
+      "Network and Sharing Center applet in Windows Control Panel",
+      "File Explorer > This PC > Computer menu > Map Network drive",
+      "Windows Explorer > Computer menu > Map network drive",
+      "Shared Folders menu in the Computer Management utility in Windows Control Panel"
+    ],
+    correctAnswers: ["File Explorer > This PC > Computer menu > Map Network drive"],
+    allowMultiple: false
+  },
+  {
+    question: "In Windows 10, Windows Defender Firewall can be enabled/disabled via the following steps: (Select 3 answers)",
+    options: [
+      "Windows Control Panel (icon view) > Internet Options > Security tab > Windows Defender Firewall > Turn Windows Defender Firewall on or off > select network type (Private or Public) > select the Turn on or Turn off Windows Defender Firewall setting",
+      "Windows Start > Settings > Update & Security > Windows Security > Firewall & network protection > select a network profile (Domain network, Private network, or Public network) > under Microsoft Defender Firewall, switch the setting to On or Off",
+      "Windows Control Panel (category view) > System and Security > Check firewall status > Turn Windows Defender Firewall on or off > select network type (Private or Public) > select the Turn on or Turn off Windows Defender Firewall setting",
+      "Windows Start > Settings > Update & Security > Windows Security > Firewall & network protection > Windows Defender Firewall > Turn Windows Defender Firewall on or off > select network type (Private or Public) > select the Turn on or Turn off Windows Defender Firewall setting",
+      "Windows Control Panel (icon view) > Windows Defender Firewall > Turn Windows Defender Firewall on or off > select network type (Private or Public) > select the Turn on or Turn off Windows Defender Firewall setting"
+    ],
+    correctAnswers: [
+      "Windows Start > Settings > Update & Security > Windows Security > Firewall & network protection > select a network profile (Domain network, Private network, or Public network) > under Microsoft Defender Firewall, switch the setting to On or Off",
+      "Windows Control Panel (category view) > System and Security > Check firewall status > Turn Windows Defender Firewall on or off > select network type (Private or Public) > select the Turn on or Turn off Windows Defender Firewall setting",
+      "Windows Control Panel (icon view) > Windows Defender Firewall > Turn Windows Defender Firewall on or off > select network type (Private or Public) > select the Turn on or Turn off Windows Defender Firewall setting"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the steps listed below provide(s) access to an interface that allows you to modify how apps communicate through Windows Defender Firewall? (Select all that apply)",
+    options: [
+      "Windows Control Panel (category view) > System and Security > Allow an app through Windows Firewall",
+      "Windows Start > Settings > Update & Security > Windows Security > Firewall & network protection > Allow an app through firewall",
+      "Windows Control Panel (category view) > Network and Internet > Windows Defender Firewall > Allow an app or feature through Windows Defender Firewall",
+      "Windows Start > Settings > Network & Internet > Windows Firewall > Allow an app through firewall",
+      "Windows Control Panel (icon view) > Windows Defender Firewall > Allow an app or feature through Windows Defender Firewall"
+    ],
+    correctAnswers: [
+      "Windows Control Panel (category view) > System and Security > Allow an app through Windows Firewall",
+      "Windows Start > Settings > Update & Security > Windows Security > Firewall & network protection > Allow an app through firewall",
+      "Windows Control Panel (icon view) > Windows Defender Firewall > Allow an app or feature through Windows Defender Firewall"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the following Control Panel applets in Windows 10 provides access to the Windows Firewall with Advanced Security tool (wf.msc)?",
+    options: [
+      "Internet Options > Security tab",
+      "Windows Defender Firewall > Advanced settings",
+      "Network and Sharing Center",
+      "Internet Options > Advanced tab"
+    ],
+    correctAnswers: ["Windows Defender Firewall > Advanced settings"],
+    allowMultiple: false
+  },
+  {
+    question: "In Windows 10, a firewall interface that allows you to create an exception for a program or port can be accessed via:",
+    options: [
+      "Windows Start > Settings > Network & Internet > Windows Firewall > Advanced settings > right-click on Inbound/Outbound Rules > New Rule...",
+      "Windows Control Panel (category view) > System and Security > Windows Defender Firewall > Advanced settings > right-click on Inbound/Outbound Rules > New Rule...",
+      "Windows Start > Settings > Update & Security > Windows Security > Firewall & network protection > Advanced settings > right-click on Inbound/Outbound Rules > New Rule...",
+      "Windows Control Panel (icon view) > Windows Defender Firewall > Advanced settings > right-click on Inbound/Outbound Rules > New Rule...",
+      "Any of the above steps"
+    ],
+    correctAnswers: ["Any of the above steps"],
+    allowMultiple: false
+  },
+  {
+    question: "A type of logical numeric identifier assigned to every single computer host or other device on a TCP/IP-based network is known as:",
+    options: [
+      "MAC address",
+      "SSID",
+      "IP address",
+      "Host ID"
+    ],
+    correctAnswers: ["IP address"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the answers listed below refers to a system containing mappings of domain names to various types of data, such as numerical IP addresses?",
+    options: [
+      "TCP/IP",
+      "DNS",
+      "SQL",
+      "DHCP"
+    ],
+    correctAnswers: ["DNS"],
+    allowMultiple: false
+  },
+  {
+    question: "In order to connect to a website and display its contents, a URL entered in the web browser address bar needs to be translated into an IP address. Which of the servers listed below is used to handle this type of request?",
+    options: [
+      "DNS server",
+      "Proxy server",
+      "DHCP server",
+      "Web server"
+    ],
+    correctAnswers: ["DNS server"],
+    allowMultiple: false
+  },
+  {
+    question: "In order to connect to a website and display its contents, a URL entered in the web browser address bar needs to be translated into an IP address. Which of the servers listed below is used to handle this type of request?",
+    options: [
+      "DNS server",
+      "Proxy server",
+      "DHCP server",
+      "Web server"
+    ],
+    correctAnswers: ["DNS server"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the items in Windows 10 Settings app provides access to display, sound, notifications, and power options?",
+    options: [
+      "Windows Start > Settings > System",
+      "Windows Start > Settings > Devices",
+      "Windows Start > Settings > Hardware and Sound",
+      "Windows Start > Settings > Device Manager"
+    ],
+    correctAnswers: ["Windows Start > Settings > System"],
+    allowMultiple: false
+  }
+],
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------
+"Comptia A+ Microsoft Windows Editions": [
   {
     question: "Which Microsoft Windows 10 edition(s) provide(s) the option to join a domain? (Select all that apply)",
     options: ["Home", "Pro", "Pro for Workstations", "Enterprise"],
