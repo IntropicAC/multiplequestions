@@ -4,25 +4,21 @@ import React, { useState, useEffect, useRef } from 'react';
 import rewardSoundFile from './sounds/successed-295058.mp3';
 import { questionCategories, shuffleArray } from './questions';
 
-
 const MultipleChoiceQuestion = () => {
   // Get category keys from the questionCategories object.
   const categoryKeys = Object.keys(questionCategories);
   const [selectedCategory, setSelectedCategory] = useState(categoryKeys[0] || "");
- 
+  
   // State for whether the current round is a retest of wrong questions.
   const [isRetest, setIsRetest] = useState(false);
-
 
   // State for the current round's questions, responses, and current question index.
   const [questionOrder, setQuestionOrder] = useState([]);
   const [responses, setResponses] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-
   // Create a ref for the reward sound.
   const rewardSoundRef = useRef(new Audio(rewardSoundFile));
-
 
   // Helper function to load questions for a given category (new round).
   const loadQuestionsForCategory = (category) => {
@@ -34,7 +30,6 @@ const MultipleChoiceQuestion = () => {
     setIsRetest(false);
   };
 
-
   // Helper function to load a new round from a given array of questions.
   const loadNewRound = (questions, retest = false) => {
     const shuffled = shuffleArray(questions);
@@ -43,7 +38,6 @@ const MultipleChoiceQuestion = () => {
     setCurrentIndex(0);
     setIsRetest(retest);
   };
-
 
   // Helper function to check if a given response is correct.
   const isResponseCorrect = (response, question) => {
@@ -54,7 +48,6 @@ const MultipleChoiceQuestion = () => {
     return sortedSelected.every((val, index) => val === sortedCorrect[index]);
   };
 
-
   // Load questions when the component mounts and whenever the selected category changes.
   useEffect(() => {
     if (selectedCategory) {
@@ -62,17 +55,14 @@ const MultipleChoiceQuestion = () => {
     }
   }, [selectedCategory]);
 
-
   // Current question and its response state.
   const currentQuestion = questionOrder[currentIndex];
   const currentResponse = responses[currentIndex] || { selectedAnswers: [], submitted: false };
-
 
   // Function to check if the current response is correct.
   const isCurrentResponseCorrect = () => {
     return isResponseCorrect(currentResponse, currentQuestion);
   };
-
 
   // Play reward sound when the answer is submitted and is correct.
   useEffect(() => {
@@ -82,11 +72,9 @@ const MultipleChoiceQuestion = () => {
     }
   }, [currentResponse.submitted]);
 
-
   // Handle option selection.
   const handleOptionClick = (option) => {
     if (currentResponse.submitted) return; // Prevent changes if already submitted
-
 
     let updatedAnswers;
     if (currentQuestion.allowMultiple) {
@@ -103,7 +91,6 @@ const MultipleChoiceQuestion = () => {
     updateResponse(currentIndex, { selectedAnswers: updatedAnswers });
   };
 
-
   // Update the responses state for a given question index.
   const updateResponse = (index, newValues) => {
     const newResponses = [...responses];
@@ -111,13 +98,11 @@ const MultipleChoiceQuestion = () => {
     setResponses(newResponses);
   };
 
-
   // Handle answer submission.
   const handleSubmit = () => {
     if (currentResponse.selectedAnswers.length === 0) return;
     updateResponse(currentIndex, { submitted: true });
   };
-
 
   // Determine the content for each option.
   const getOptionContent = (option) => {
@@ -132,12 +117,10 @@ const MultipleChoiceQuestion = () => {
     return option + label;
   };
 
-
   // getButtonStyle that highlights selected options with a white border.
   const getButtonStyle = (option) => {
     let backgroundColor = '#415A77'; // Default muted blue for options
     let borderColor = '#2E3B4E'; // Default border color
-
 
     if (currentResponse.submitted) {
       if (currentQuestion.correctAnswers.includes(option)) {
@@ -149,7 +132,6 @@ const MultipleChoiceQuestion = () => {
       backgroundColor = '#556677'; // Slightly lighter blue for selected options
       borderColor = '#ffffff'; // White border when selected
     }
-
 
     return {
       display: 'flex',
@@ -168,12 +150,10 @@ const MultipleChoiceQuestion = () => {
     };
   };
 
-
   // Navigation handlers.
   const handlePrevious = () => {
     if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
   };
-
 
   const handleNext = () => {
     // If we're not on the last question, simply go to the next one.
@@ -186,7 +166,6 @@ const MultipleChoiceQuestion = () => {
         return !isResponseCorrect(responses[i], question);
       });
 
-
       if (wrongQuestions.length > 0) {
         alert("Some questions were answered incorrectly. Repeating them now.");
         loadNewRound(wrongQuestions, true);
@@ -197,10 +176,8 @@ const MultipleChoiceQuestion = () => {
     }
   };
 
-
   if (!currentQuestion)
     return <p style={{ color: '#fff' }}>Loading question...</p>;
-
 
   return (
     <div
@@ -213,6 +190,31 @@ const MultipleChoiceQuestion = () => {
         color: '#fff'
       }}
     >
+      {/* Inline CSS for responsive styling */}
+      <style>{`
+        @media (max-width: 480px) {
+          .card {
+            width: 90% !important;
+            margin: 20px auto !important;
+            padding: 15px !important;
+          }
+          .option-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .progress-text, .question-header, .question-text {
+            font-size: 1rem !important;
+          }
+          select {
+            font-size: 1rem !important;
+            padding: 6px 10px !important;
+          }
+          button {
+            font-size: 1rem !important;
+            padding: 8px 16px !important;
+          }
+        }
+      `}</style>
+
       {/* Category Selector */}
       <div style={{ maxWidth: '600px', margin: '20px auto', textAlign: 'center' }}>
         <label htmlFor="category-select" style={{ marginRight: '10px' }}>
@@ -239,8 +241,8 @@ const MultipleChoiceQuestion = () => {
         </select>
       </div>
 
-
       <div
+        className="card"
         style={{
           maxWidth: '600px',
           margin: '40px auto',
@@ -251,10 +253,10 @@ const MultipleChoiceQuestion = () => {
         }}
       >
         {/* Question Progress */}
-        <p style={{ textAlign: 'center', marginBottom: '10px', color: '#E0E1DD' }}>
+        <p className="progress-text" style={{ textAlign: 'center', marginBottom: '10px', color: '#E0E1DD' }}>
           Question {currentIndex + 1} of {questionOrder.length} {isRetest && "(Retest)"}
         </p>
-        <h2
+        <h2 className="question-header"
           style={{
             fontSize: '1.75rem',
             textAlign: 'center',
@@ -264,13 +266,13 @@ const MultipleChoiceQuestion = () => {
         >
           Exam Practice Question
         </h2>
-        <p style={{ textAlign: 'center', marginBottom: '30px', color: '#E0E1DD' }}>
+        <p className="question-text" style={{ textAlign: 'center', marginBottom: '30px', color: '#E0E1DD' }}>
           {currentQuestion.question}
         </p>
 
-
         {/* Display options in a 2x2 grid */}
         <div
+          className="option-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
@@ -288,7 +290,6 @@ const MultipleChoiceQuestion = () => {
             </button>
           ))}
         </div>
-
 
         {/* Navigation and action buttons */}
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -309,7 +310,6 @@ const MultipleChoiceQuestion = () => {
             Previous
           </button>
 
-
           {!currentResponse.submitted && (
             <button
               onClick={handleSubmit}
@@ -327,7 +327,6 @@ const MultipleChoiceQuestion = () => {
               Submit Answer
             </button>
           )}
-
 
           <button
             onClick={handleNext}
@@ -350,7 +349,4 @@ const MultipleChoiceQuestion = () => {
   );
 };
 
-
 export default MultipleChoiceQuestion;
-
-
