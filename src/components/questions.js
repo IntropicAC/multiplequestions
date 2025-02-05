@@ -1,5 +1,5 @@
 export const questionCategories = {
-    "Comptia A+ 1102 practice test 1": [
+    "Comptia A+ 1102 test 1": [
         {
           question: "Which Microsoft Windows 10 edition(s) provide(s) the option to join a domain?",
           options: ["Home", "Pro", "Pro for Workstations", "Enterprise"],
@@ -146,7 +146,7 @@ export const questionCategories = {
         }
       ],
      
-    "Comptia A+ 1102 practice test 2": [
+    "Comptia A+ 1102 test 2": [
        
             {
               question: "For a newly added storage drive, this command-line tool allows you to configure it with a file system enabling Windows to store information on the drive.",
@@ -329,7 +329,7 @@ export const questionCategories = {
     ],
 //--------------------------------------------------------------------------------------------------------------------------
 
-"Comptia A+ 1102 practice test 3": [
+"Comptia A+ 1102 test 3": [
   {
     question: "Which shutdown command switch forces full system shutdown and restart of a Windows host?",
     options: ["-s -r", "/r", "/s r", "-i"],
@@ -524,7 +524,7 @@ export const questionCategories = {
 
 //--------------------------------------------------------------------------------------------------------------------------------
 
-"Comptia A+ 1102 practice test 4": [
+"Comptia A+ 1102 test 4": [
   {
     question: "Which of the following answers refers to a Microsoft Windows tool designed for troubleshooting system startup problems?",
     options: ["eventvwr.msc", "sysdm.cpl", "compmgmt.msc", "msconfig.exe"],

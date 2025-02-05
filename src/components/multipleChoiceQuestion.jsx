@@ -191,32 +191,38 @@ const MultipleChoiceQuestion = () => {
       }}
     >
       {/* Inline CSS for responsive styling */}
-      <style>{`
-        @media (max-width: 480px) {
-          .card {
-            width: 90% !important;
-            margin: 20px auto !important;
-            padding: 15px !important;
-          }
-          .option-grid {
-            grid-template-columns: 1fr !important;
-          }
-          .progress-text, .question-header, .question-text {
-            font-size: 1rem !important;
-          }
-          select {
-            font-size: 1rem !important;
-            padding: 6px 10px !important;
-          }
-          button {
-            font-size: 1rem !important;
-            padding: 8px 16px !important;
-          }
-        }
-      `}</style>
+<style>{`
+  @media (max-width: 480px) {
+    .card {
+      width: 90% !important;
+      margin: 20px auto !important;
+      padding: 15px !important;
+    }
+    .option-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .progress-text, .question-header, .question-text {
+      font-size: 1rem !important;
+    }
+    select {
+      width: 100% !important; /* Added to ensure the select takes full width */
+      font-size: 1rem !important;
+      padding: 6px 10px !important;
+    }
+    button {
+      font-size: 1rem !important;
+      padding: 8px 16px !important;
+    }
+    .category-container {
+      width: 90% !important;
+      margin: 10px auto !important;
+    }
+  }
+`}</style>
+
 
       {/* Category Selector */}
-      <div style={{ maxWidth: '600px', margin: '20px auto', textAlign: 'center' }}>
+      <div className="category-container" style={{ maxWidth: '600px', margin: '20px auto', textAlign: 'center' }}>
         <label htmlFor="category-select" style={{ marginRight: '10px' }}>
           Select Test:
         </label>
