@@ -307,7 +307,7 @@ const MultipleChoiceQuestion = () => {
               transition: 'background-color 0.3s'
             }}
           >
-            Previous
+            Prev
           </button>
 
           {!currentResponse.submitted && (
