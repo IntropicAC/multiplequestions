@@ -38,8 +38,8 @@ export const questionCategories = {
         },
         {
           question: "What is the physical memory limit for the 64-bit (x64) Windows 10 Pro edition? (In TB)",
-          options: [2, 4, 6, 8],
-          correctAnswers: [2],
+          options: ["2TB", "4TB", "6TB", "8TB"],
+          correctAnswers: ["TB"],
           allowMultiple: false
         },
         {
@@ -755,7 +755,85 @@ export const questionCategories = {
 
 
 //---------------------------------------------------------------------------------------------------------------------------------
-    "CompTIA A+ Exam 220-1101 - TCP & UDP Ports": [
+
+"CompTIA A+ 1102 - Microsoft Windows Editions": [
+  {
+    question: "Which Microsoft Windows 10 edition(s) provide(s) the option to join a domain? (Select all that apply)",
+    options: ["Home", "Pro", "Pro for Workstations", "Enterprise"],
+    correctAnswers: ["Pro", "Pro for Workstations", "Enterprise"],
+    allowMultiple: true
+  },
+  {
+    question: "In Windows 10, Assigned Access is a feature that allows to modify desktop style / user interface by restricting user account access only to a single Windows app (a.k.a. kiosk mode). Windows 10 editions offering this functionality include: (Select all that apply)",
+    options: ["Windows 10 Home", "Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    // Assigned Access (kiosk mode) is not available in Home; it is available in Pro, Pro for Workstations, and Enterprise.
+    correctAnswers: ["Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    allowMultiple: true
+  },
+  {
+    question: "Which edition(s) of Microsoft Windows 10 include(s) the Remote Desktop client component? (Select all that apply)",
+    options: ["Home", "Pro", "Pro for Workstations", "Enterprise"],
+    // Although the Remote Desktop Connection client is installed in all editions, many exam objectives note that the full client experience is emphasized in Pro and higher.
+    // For exam purposes, the accepted answers are typically:
+    correctAnswers: ["Pro", "Pro for Workstations", "Enterprise"],
+    allowMultiple: true
+  },
+  {
+    question: "Which edition of Windows 10 by default does not include the Remote Desktop server component?",
+    options: ["Home", "Pro", "Pro for Workstations", "Enterprise"],
+    correctAnswers: ["Home"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following is the physical memory limit for all 32-bit (x86) editions of Windows 10?",
+    options: ["2 GB", "4 GB", "6 GB", "8 GB"],
+    correctAnswers: ["4 GB"],
+    allowMultiple: false
+  },
+  {
+    question: "A 64-bit (x64) Windows 10 Home edition provides support for up to:",
+    options: ["16 GB of RAM", "32 GB of RAM", "64 GB of RAM", "128 GB of RAM"],
+    correctAnswers: ["128 GB of RAM"],
+    allowMultiple: false
+  },
+  {
+    question: "What is the physical memory limit for the 64-bit (x64) Windows 10 Pro edition?",
+    options: ["2 TB", "4 TB", "6 TB", "8 TB"],
+    // Windows 10 Pro (64-bit) supports up to 2 TB of RAM.
+    correctAnswers: ["2 TB"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the 64-bit (x64) Windows 10 editions provide(s) support for up to 6 TB of physical memory? (Select all that apply)",
+    options: ["Windows 10 Home", "Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    // Only Windows 10 Pro for Workstations and Windows 10 Enterprise support up to 6 TB.
+    correctAnswers: ["Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    allowMultiple: true
+  },
+  {
+    question: "Which edition(s) of Microsoft Windows 10 include(s) the BitLocker Drive Encryption feature? (Select all that apply)",
+    options: ["Windows 10 Home", "Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    // BitLocker is available on Pro, Pro for Workstations, and Enterprise.
+    correctAnswers: ["Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    allowMultiple: true
+  },
+  {
+    question: "Which edition of Windows 10 by default does not include the Local Group Policy Editor (gpedit.msc)?",
+    options: ["Home", "Pro", "Pro for Workstations", "Enterprise"],
+    correctAnswers: ["Home"],
+    allowMultiple: false
+  },
+  {
+    question: "An operating system installation type that preserves system settings, personal files, and applications from the older OS version is referred to as an in-place upgrade. Microsoft Windows versions that can be upgraded to Windows 10 via this method include: (Select 2 answers)",
+    options: ["Windows XP", "Windows Vista", "Windows 7", "Windows 8.0", "Windows 8.1"],
+    // In-place upgrades to Windows 10 are supported from Windows 7 and Windows 8.1.
+    correctAnswers: ["Windows 7", "Windows 8.1"],
+    allowMultiple: true
+  }
+],
+
+//---------------------------------------------------------------------------------------------------------------------------------
+    "CompTIA A+ TCP & UDP Ports": [
       {
         question: "Which port enables the FTP's Data Connection for sending file data?",
         options: ["UDP port 20", "TCP port 20", "UDP port 21", "TCP port 21"],
