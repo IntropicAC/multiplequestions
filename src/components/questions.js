@@ -233,7 +233,7 @@ export const questionCategories = {
             },
             {
               question: "Which Command Prompt commands in MS Windows move the command-line prompt one folder up in the directory tree (set the prompt at the parent folder of the current folder)?",
-              options: ["cd \\", "cd /^", "cd ...", "chdir \\", "chdir /~", "chdir .."],
+              options: ["cd \\", "cd /^", "cd ..", "chdir \\", "chdir /~", "chdir .."],
               // As above, the actual correct commands are "cd .." and "chdir ..". We add "cd .." as the correct answer.
               correctAnswers: ["cd ..", "chdir .."],
               allowMultiple: true
