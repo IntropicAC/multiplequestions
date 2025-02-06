@@ -22,12 +22,23 @@ const MultipleChoiceQuestion = () => {
   // Helper function to load questions for a given category (new round).
   const loadQuestionsForCategory = (category) => {
     const questions = questionCategories[category] || [];
-    const shuffled = shuffleArray(questions);
+    
+    // For each question, create a new object with its options shuffled.
+    const questionsWithShuffledOptions = questions.map(question => ({
+      ...question,
+      options: shuffleArray(question.options)
+    }));
+    
+    // Now shuffle the order of the questions themselves if desired.
+    const shuffled = shuffleArray(questionsWithShuffledOptions);
+    
     setQuestionOrder(shuffled);
     setResponses(shuffled.map(() => ({ selectedAnswers: [], submitted: false })));
     setCurrentIndex(0);
     setIsRetest(false);
   };
+  
+  
 
   // Helper function to load a new round from a given array of questions.
   const loadNewRound = (questions, retest = false) => {
