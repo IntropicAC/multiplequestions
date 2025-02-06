@@ -1,5 +1,5 @@
 // components/MultipleChoiceQuestion.jsx
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import rewardSoundFile from './sounds/successed-295058.mp3';
 import { questionCategories, shuffleArray } from './questions';
 
@@ -29,7 +29,7 @@ const MultipleChoiceQuestion = () => {
       options: shuffleArray(question.options)
     }));
     
-    // Now shuffle the order of the questions themselves if desired.
+    // Now shuffle the order of the questions themselves.
     const shuffled = shuffleArray(questionsWithShuffledOptions);
     
     setQuestionOrder(shuffled);
@@ -37,8 +37,6 @@ const MultipleChoiceQuestion = () => {
     setCurrentIndex(0);
     setIsRetest(false);
   };
-  
-  
 
   // Helper function to load a new round from a given array of questions.
   const loadNewRound = (questions, retest = false) => {
@@ -65,22 +63,24 @@ const MultipleChoiceQuestion = () => {
     }
   }, [selectedCategory]);
 
-  // Current question and its response state.
-  const currentQuestion = questionOrder[currentIndex];
-  const currentResponse = responses[currentIndex] || { selectedAnswers: [], submitted: false };
+  // Memoize the current question and response to ensure stable references.
+  const currentQuestion = useMemo(() => questionOrder[currentIndex], [questionOrder, currentIndex]);
+  const currentResponse = useMemo(() => responses[currentIndex] || { selectedAnswers: [], submitted: false }, [responses, currentIndex]);
 
-  // Function to check if the current response is correct.
-  const isCurrentResponseCorrect = () => {
+  // Wrap the correctness check in useCallback to avoid recreating it on every render.
+  const isCurrentResponseCorrect = useCallback(() => {
     return isResponseCorrect(currentResponse, currentQuestion);
-  };
+  }, [currentResponse, currentQuestion]);
 
   // Play reward sound when the answer is submitted and is correct.
   useEffect(() => {
     if (currentResponse.submitted && isCurrentResponseCorrect()) {
       rewardSoundRef.current.currentTime = 0;
-      rewardSoundRef.current.play();
+      rewardSoundRef.current.play().catch((err) => {
+        console.error("Sound play error:", err);
+      });
     }
-  }, [currentResponse.submitted]);
+  }, [currentResponse.submitted, isCurrentResponseCorrect]);
 
   // Handle option selection.
   const handleOptionClick = (option) => {
