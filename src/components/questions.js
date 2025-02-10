@@ -39,13 +39,13 @@ export const questionCategories = {
         {
           question: "What is the physical memory limit for the 64-bit (x64) Windows 10 Pro edition? (In TB)",
           options: ["2TB", "4TB", "6TB", "8TB"],
-          correctAnswers: ["TB"],
+          correctAnswers: ["2TB"],
           allowMultiple: false
         },
         {
           question: "Which of the 64-bit (x64) Windows 10 editions provide(s) support for up to 6 TB of physical memory?",
           options: ["Windows 10 Home", "Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
-          correctAnswers: ["Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+          correctAnswers: [ "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
           allowMultiple: true
         },
         {
@@ -144,6 +144,15 @@ export const questionCategories = {
           correctAnswers: ["tracert"],
           allowMultiple: false
         }
+      ],
+
+      "Test": [
+          {
+            question: "Test question",
+            options: ["One", "Two", "Three", "Four"],
+            correctAnswers: ["One"],
+            allowMultiple: false
+          }
       ],
      
     "Comptia A+ 1102 test 2": [
@@ -1422,6 +1431,254 @@ export const questionCategories = {
   }
 ],
 
+//-----------------------------------------------------------------------------------------------------------------------------
+
+"Comptia A+ 1102 test 7": [
+  {
+    "question": "In a network using subnets, the term \"Default gateway\" refers to a network device (router) that enables exchange of data between hosts residing in different subnets.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a permanent assignment of an IP address?",
+    "options": ["Static IP address", "Private IP address", "Dynamic IP address", "Public IP address"],
+    "correctAnswers": ["Static IP address"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What type of server handles the assignment of dynamic IP addresses?",
+    "options": ["DHCP server", "Authentication server", "DNS server", "Proxy server"],
+    "correctAnswers": ["DHCP server"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refer(s) to data required for manual configuration of network adapter settings in MS Windows? (Select all that apply)",
+    "options": ["IP address", "Subnet mask", "Default gateway", "MAC address", "DNS server address", "SSID (a.k.a. network name)"],
+    "correctAnswers": ["IP address", "Subnet mask", "Default gateway", "DNS server address"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the answers listed below describes the correct sequence of steps for accessing the manual configuration interface for IPv4 connections in MS Windows?",
+    "options": [
+      "Control Panel (category view) > Network and Internet > Network and Sharing Center > Change adapter settings > right-click on the device > select Properties from the pop-up menu > select Internet Protocol version 4 (TCP/IPv4) from the connection components list > click the Properties button > fill in the required fields",
+      "Windows Start > Settings > Network & Internet > select any of the following submenus: Status, Wi-Fi, Ethernet, Dial‐up, VPN, or Mobile hotspot > Change adapter options > right-click on the device > select Properties from the pop‐up menu > select Internet Protocol version 4 (TCP/IPv4) from the connection components list > click the Properties button > fill in the required fields",
+      "Control Panel (icon view) > Network and Sharing Center > Change adapter settings > right-click on the device > select Properties from the pop‐up menu > select Internet Protocol version 4 (TCP/IPv4) from the connection components list > click the Properties button > fill in the required fields",
+      "Windows Run dialog box > type in: ncpa.cpl + press Enter > right-click on the device > select Properties from the pop‐up menu > select Internet Protocol version 4 (TCP/IPv4) from the connection components list > click the Properties button > fill in the required fields",
+      "Right‐click on Windows Start button > select Network Connections > select any of the following submenus: Status, Wi‑Fi, Ethernet, Dial‐up, VPN, or Mobile hotspot > Change adapter options > right‐click on the device > select Properties from the pop‐up menu > select Internet Protocol version 4 (TCP/IPv4) from the connection components list > click the Properties button > fill in the required fields",
+      "Right‐click on the Network icon on Windows Taskbar > select Open Network & Internet settings > select any of the following submenus: Status, Wi‑Fi, Ethernet, Dial‐up, VPN, or Mobile hotspot > Change adapter options > right‐click on the device > select Properties from the pop‐up menu > select Internet Protocol version 4 (TCP/IPv4) from the connection components list > click the Properties button > fill in the required fields",
+      "Any of the above"
+    ],
+    "correctAnswers": ["Any of the above"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A system that uses public network (such as the Internet) as a means for creating private encrypted connections between remote locations is referred to as:",
+    "options": ["WWAN", "VPN", "PAN", "VLAN"],
+    "correctAnswers": ["VPN"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A type of network consisting of computers and peripheral devices that use high‐frequency radio waves to communicate with each other is known as:",
+    "options": ["MAN", "WLAN", "LAN", "VLAN"],
+    "correctAnswers": ["WLAN"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to the most common network communication technology used in wired LANs, MANs, and WANs?",
+    "options": ["Dial‐up", "DSL", "Ethernet", "ISDN"],
+    "correctAnswers": ["Ethernet"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which WAN technology takes advantage of cell towers that provide wireless signal coverage for mobile devices?",
+    "options": ["PAN", "WWAN", "Satellite", "WLAN"],
+    "correctAnswers": ["WWAN"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which sequence of steps in Windows 10 provides access to an interface for creating network connections?",
+    "options": [
+      "Windows Control Panel (category view) > View network status and tasks > Set up a new connection or network",
+      "Windows Start > Settings > Network & Internet > select any of the following submenus: Status, Wi‑Fi, Ethernet, Dial‐up, VPN, or Mobile hotspot > Network and Sharing Center > Set up a new connection or network",
+      "Windows Control Panel (icon view) > Internet Options > Connections tab",
+      "Right‐click on the Network icon on Windows Taskbar > select Open Network & Internet settings > Network and Sharing Center > Set up a new connection or network",
+      "Windows Control Panel (icon view) > Network and Sharing Center > Set up a new connection or network",
+      "Windows Control Panel (category view) > Network and Internet > Internet Options > Connections tab",
+      "Any of the above"
+    ],
+    "correctAnswers": ["Any of the above"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In computer networking, a computer system or application that acts as an intermediary between another computer and the Internet is commonly referred to as a proxy. In Windows 10, proxy settings can be accessed via: (Select 3 answers)",
+    "options": [
+      "Windows Control Panel (category view) > Network and Internet > Internet Options > Connections tab > LAN settings > Proxy server",
+      "Windows Start > Settings > Update & Security > Proxy",
+      "Windows Control Panel (icon view) > Internet Options > Connections tab > LAN settings > Proxy server",
+      "Windows Start > Settings > Network & Internet > Proxy",
+      "Windows Control Panel > Internet Options > Privacy tab > Advanced > Proxy server"
+    ],
+    "correctAnswers": [
+      "Windows Control Panel (category view) > Network and Internet > Internet Options > Connections tab > LAN settings > Proxy server",
+      "Windows Control Panel (icon view) > Internet Options > Connections tab > LAN settings > Proxy server",
+      "Windows Start > Settings > Network & Internet > Proxy"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the statements listed below can be used to describe private network setting in Windows? (Select 3 answers)",
+    "options": [
+      "The PC remains hidden from other devices on the network",
+      "Used for trusted networks, such as home or work networks",
+      "The PC can't be used for file and printer sharing",
+      "Enables the PC to become discoverable to other devices on the network",
+      "Used for untrusted network, such as a WiFi network at a coffee shop",
+      "Enables the PC to be used for file and printer sharing"
+    ],
+    "correctAnswers": [
+      "Used for trusted networks, such as home or work networks",
+      "Enables the PC to become discoverable to other devices on the network",
+      "Enables the PC to be used for file and printer sharing"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following answers describe the characteristics of a public network in Windows? (Select 3 answers)",
+    "options": [
+      "Used for trusted networks, such as home or work networks",
+      "Enables the PC to become discoverable to other devices on the network",
+      "The PC can't be used for file and printer sharing",
+      "Enables the PC to be used for file and printer sharing",
+      "Used for untrusted network, such as a WiFi network at a coffee shop",
+      "The PC remains hidden from other devices on the network"
+    ],
+    "correctAnswers": [
+      "The PC can't be used for file and printer sharing",
+      "Used for untrusted network, such as a WiFi network at a coffee shop",
+      "The PC remains hidden from other devices on the network"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the steps in Windows 10 provide access to a configuration interface that allows to modify public/private network settings? (Select 3 answers)",
+    "options": [
+      "Windows Control Panel (category view) > View network status and stats > Change advanced sharing settings",
+      "Windows Start > Settings > Update & Security > Windows Security > select a network profile (Domain network, Private network, or Public network) > Change advanced sharing settings",
+      "Windows Control Panel (icon view) > Network and Sharing Center > Change advanced sharing settings",
+      "Windows Start > Settings > Network & Internet > select any of the following submenus: Status, Wi‑Fi, Ethernet, Dial‐up, VPN, or Mobile hotspot > Network and Sharing Center > Change advanced sharing settings",
+      "Windows Control Panel (category view) > System and Security > Check firewall status > unfold Private/Public networks menu > modify network settings",
+      "Windows Control Panel (icon view) > Windows Defender Firewall > unfold Private/Public networks menu > modify network settings"
+    ],
+    "correctAnswers": [
+      "Windows Control Panel (icon view) > Network and Sharing Center > Change advanced sharing settings",
+      "Windows Start > Settings > Network & Internet > select any of the following submenus: Status, Wi‑Fi, Ethernet, Dial‐up, VPN, or Mobile hotspot > Network and Sharing Center > Change advanced sharing settings",
+      "Windows Control Panel (icon view) > Windows Defender Firewall > unfold Private/Public networks menu > modify network settings"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "In Windows 10, the path to a network drive can be located in File Explorer (explorer.exe). After selecting \"This PC\" item from the left hand menu, the path should be visible in the address bar after double clicking on the drive's icon.",
+    "options": ["True", "False"],
+    "correctAnswers": ["False"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A Windows 10 feature that allows to impose data limit on an Internet connection to save bandwidth is called:",
+    "options": ["Measured service", "Bandwidth cap", "Resource pooling", "Metered connection"],
+    "correctAnswers": ["Metered connection"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the statements listed below is true?",
+    "options": [
+      "A 32-bit hardware provides support for both 32-bit and 64-bit OSs and applications",
+      "A computer with a 32-bit CPU can run 64-bit OSs and applications without compatibility issues",
+      "A 64-bit hardware provides support only for 64-bit OSs and applications",
+      "A computer with a 64-bit CPU can run most 32-bit OSs and applications without compatibility issues"
+    ],
+    "correctAnswers": ["A computer with a 64-bit CPU can run most 32-bit OSs and applications without compatibility issues"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which built-in functionality allows certain CPU models to take over tasks normally executed by a more powerful, dedicated graphics controller?",
+    "options": ["VGA mode", "Integrated GPU", "Multicore architecture", "Hyper-threading"],
+    "correctAnswers": ["Integrated GPU"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A special-purpose memory used by graphics controllers is referred to as:",
+    "options": ["SRAM", "PROM", "VRAM", "DRAM"],
+    "correctAnswers": ["VRAM"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A 32-bit system typically provides support for up to:",
+    "options": ["4 GB of RAM", "8 GB of RAM", "16 GB of RAM", "32 GB of RAM"],
+    "correctAnswers": ["4 GB of RAM"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the theoretical limit of addressable RAM for a 64-bit CPU?",
+    "options": ["64 GB", "128 GB", "2 TB", "6 TB", "None of the above"],
+    "correctAnswers": ["None of the above"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following terms denotes a 32-bit CPU architecture?",
+    "options": ["x32", "x48", "x64", "x86"],
+    "correctAnswers": ["x86"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to 64-bit CPU architecture?",
+    "options": ["x32", "x48", "x64", "x86"],
+    "correctAnswers": ["x64"],
+    "allowMultiple": false
+  },
+  {
+    "question": "The presence of the Program Files (x86) folder on the C drive in MS Windows indicates that the PC takes advantage of 32-bit architecture and OS version.",
+    "options": ["True", "False"],
+    "correctAnswers": ["False"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In computer security, a type of small-factor physical device used for authentication is commonly referred to as a hardware token.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A 64-bit (x64) Windows 10 Home edition provides support for up to:",
+    "options": ["6GB", "32GB", "64GB", "128GB"],
+    "correctAnswers": ["128GB"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the physical memory limit for the 64-bit (x64) Windows 10 Pro edition? (In TB)",
+    "options": ["2TB", "4TB", "6TB", "8TB"],
+    "correctAnswers": ["2TB"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the 64-bit (x64) Windows 10 editions provide(s) support for up to 6 TB of physical memory?",
+    "options": ["Windows 10 Home", "Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    "correctAnswers": ["Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which edition(s) of Microsoft Windows 10 include(s) the BitLocker Drive Encryption feature?",
+    "options": ["Windows 10 Home", "Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    "correctAnswers": ["Windows 10 Pro", "Windows 10 Pro for Workstations", "Windows 10 Enterprise"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which edition of Windows 10 by default does not include the Local Group Policy Editor (gpedit.msc)?",
+    "options": ["Home", "Pro", "Pro for Workstations", "Enterprise"],
+    "correctAnswers": ["Home"],
+    "allowMultiple": false
+  }
+],
 
 
 //------------------------------------------------------------------------------------------------------------------------------

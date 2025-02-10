@@ -4,75 +4,105 @@ import rewardSoundFile from './sounds/successed-295058.mp3';
 import { questionCategories, shuffleArray } from './questions';
 
 const MultipleChoiceQuestion = () => {
-  // Get category keys from the questionCategories object.
+  // Category state
   const categoryKeys = Object.keys(questionCategories);
   const [selectedCategory, setSelectedCategory] = useState(categoryKeys[0] || "");
   
-  // State for whether the current round is a retest of wrong questions.
+  // State for retest and typing round modes
   const [isRetest, setIsRetest] = useState(false);
-
-  // State for the current round's questions, responses, and current question index.
+  const [isTypingRound, setIsTypingRound] = useState(false);
+  
+  // State for current round’s questions, responses, and index
   const [questionOrder, setQuestionOrder] = useState([]);
   const [responses, setResponses] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Create a ref for the reward sound.
+  // Reward sound ref
   const rewardSoundRef = useRef(new Audio(rewardSoundFile));
 
-  // Helper function to load questions for a given category (new round).
+  // ---------------------------
+  // Loader Functions
+  // ---------------------------
+  
+  // Load a standard (multiple-choice) round.
   const loadQuestionsForCategory = (category) => {
     const questions = questionCategories[category] || [];
     
-    // For each question, create a new object with its options shuffled.
+    // For each question, shuffle its options.
     const questionsWithShuffledOptions = questions.map(question => ({
       ...question,
       options: shuffleArray(question.options)
     }));
     
-    // Now shuffle the order of the questions themselves.
     const shuffled = shuffleArray(questionsWithShuffledOptions);
-    
     setQuestionOrder(shuffled);
     setResponses(shuffled.map(() => ({ selectedAnswers: [], submitted: false })));
     setCurrentIndex(0);
     setIsRetest(false);
+    setIsTypingRound(false);
   };
 
-  // Helper function to load a new round from a given array of questions.
+  // Load a new multiple-choice round (for retests or wrong answers).
   const loadNewRound = (questions, retest = false) => {
     const shuffled = shuffleArray(questions);
     setQuestionOrder(shuffled);
     setResponses(shuffled.map(() => ({ selectedAnswers: [], submitted: false })));
     setCurrentIndex(0);
     setIsRetest(retest);
+    setIsTypingRound(false);
   };
 
-  // Helper function to check if a given response is correct.
+  // Load a typing round – only include questions that are single-answer (allowMultiple false)
+  // and whose correct answer is very short.
+  const loadTypingRound = (questions, retest = false) => {
+    const shuffled = shuffleArray(questions);
+    setQuestionOrder(shuffled);
+    // For typing round responses, we use fields “typedAnswer”, “submitted”, and “feedback”
+    setResponses(shuffled.map(() => ({ typedAnswer: '', submitted: false, feedback: '' })));
+    setCurrentIndex(0);
+    setIsRetest(retest);
+    setIsTypingRound(true);
+  };
+
+  // ---------------------------
+  // Answer Checking Function
+  // ---------------------------
   const isResponseCorrect = (response, question) => {
     if (!response.submitted) return false;
-    const sortedSelected = [...response.selectedAnswers].sort();
-    const sortedCorrect = [...question.correctAnswers].sort();
-    if (sortedSelected.length !== sortedCorrect.length) return false;
-    return sortedSelected.every((val, index) => val === sortedCorrect[index]);
+    if (isTypingRound) {
+      const typed = response.typedAnswer.trim().toLowerCase();
+      return question.correctAnswers.some(correct => typed === correct.trim().toLowerCase());
+    } else {
+      const sortedSelected = [...response.selectedAnswers].sort();
+      const sortedCorrect = [...question.correctAnswers].sort();
+      if (sortedSelected.length !== sortedCorrect.length) return false;
+      return sortedSelected.every((val, index) => val === sortedCorrect[index]);
+    }
   };
 
-  // Load questions when the component mounts and whenever the selected category changes.
+  // ---------------------------
+  // Load Questions on Mount/Category Change
+  // ---------------------------
   useEffect(() => {
     if (selectedCategory) {
       loadQuestionsForCategory(selectedCategory);
     }
   }, [selectedCategory]);
 
-  // Memoize the current question and response to ensure stable references.
+  // Memoize current question and response
   const currentQuestion = useMemo(() => questionOrder[currentIndex], [questionOrder, currentIndex]);
-  const currentResponse = useMemo(() => responses[currentIndex] || { selectedAnswers: [], submitted: false }, [responses, currentIndex]);
+  const currentResponse = useMemo(
+    () =>
+      responses[currentIndex] ||
+      (isTypingRound ? { typedAnswer: '', submitted: false, feedback: '' } : { selectedAnswers: [], submitted: false }),
+    [responses, currentIndex, isTypingRound]
+  );
 
-  // Wrap the correctness check in useCallback to avoid recreating it on every render.
   const isCurrentResponseCorrect = useCallback(() => {
     return isResponseCorrect(currentResponse, currentQuestion);
-  }, [currentResponse, currentQuestion]);
+  }, [currentResponse, currentQuestion, isTypingRound]);
 
-  // Play reward sound when the answer is submitted and is correct.
+  // Play reward sound when a correct answer is submitted.
   useEffect(() => {
     if (currentResponse.submitted && isCurrentResponseCorrect()) {
       rewardSoundRef.current.currentTime = 0;
@@ -82,26 +112,27 @@ const MultipleChoiceQuestion = () => {
     }
   }, [currentResponse.submitted, isCurrentResponseCorrect]);
 
-  // Handle option selection.
+  // ---------------------------
+  // Response Handlers
+  // ---------------------------
+  
+  // For multiple-choice, toggle option selection.
   const handleOptionClick = (option) => {
-    if (currentResponse.submitted) return; // Prevent changes if already submitted
-
+    if (currentResponse.submitted) return;
     let updatedAnswers;
     if (currentQuestion.allowMultiple) {
-      // Toggle selection for multiple-answer questions.
       if (currentResponse.selectedAnswers.includes(option)) {
-        updatedAnswers = currentResponse.selectedAnswers.filter((a) => a !== option);
+        updatedAnswers = currentResponse.selectedAnswers.filter(a => a !== option);
       } else {
         updatedAnswers = [...currentResponse.selectedAnswers, option];
       }
     } else {
-      // For single-answer questions, only one option is allowed.
       updatedAnswers = [option];
     }
     updateResponse(currentIndex, { selectedAnswers: updatedAnswers });
   };
 
-  // Update the responses state for a given question index.
+  // General helper to update a response.
   const updateResponse = (index, newValues) => {
     const newResponses = [...responses];
     newResponses[index] = { ...newResponses[index], ...newValues };
@@ -110,11 +141,33 @@ const MultipleChoiceQuestion = () => {
 
   // Handle answer submission.
   const handleSubmit = () => {
-    if (currentResponse.selectedAnswers.length === 0) return;
-    updateResponse(currentIndex, { submitted: true });
+    if (isTypingRound) {
+      const trimmedAnswer = currentResponse.typedAnswer.trim();
+      if (!trimmedAnswer) return;
+      // Check if the answer is correct.
+      const correct = currentQuestion.correctAnswers.some(
+        (correctAnswer) => trimmedAnswer.toLowerCase() === correctAnswer.trim().toLowerCase()
+      );
+      if (correct) {
+        // Mark as submitted and show positive feedback.
+        updateResponse(currentIndex, { submitted: true, feedback: "Correct!" });
+      } else {
+        // Allow another attempt and show error feedback.
+        updateResponse(currentIndex, { feedback: "Incorrect. Try again." });
+      }
+    } else {
+      if (currentResponse.selectedAnswers.length === 0) return;
+      updateResponse(currentIndex, { submitted: true });
+    }
   };
 
-  // Determine the content for each option.
+  // Handler for override in typing round.
+  const handleOverride = () => {
+    // Override the wrong answer so that the answer is considered correct.
+    updateResponse(currentIndex, { submitted: true, feedback: "Correct! (Overridden)" });
+  };
+
+  // For multiple-choice, add labels to options after submission.
   const getOptionContent = (option) => {
     let label = "";
     if (currentResponse.submitted) {
@@ -127,20 +180,20 @@ const MultipleChoiceQuestion = () => {
     return option + label;
   };
 
-  // getButtonStyle that highlights selected options with a white border.
+  // Styling for multiple-choice option buttons.
   const getButtonStyle = (option) => {
-    let backgroundColor = '#415A77'; // Default muted blue for options
-    let borderColor = '#2E3B4E'; // Default border color
+    let backgroundColor = '#415A77';
+    let borderColor = '#2E3B4E';
 
     if (currentResponse.submitted) {
       if (currentQuestion.correctAnswers.includes(option)) {
-        backgroundColor = '#388e3c'; // Green for correct answers
+        backgroundColor = '#388e3c';
       } else if (currentResponse.selectedAnswers.includes(option)) {
-        backgroundColor = '#d32f2f'; // Red for incorrect answers
+        backgroundColor = '#d32f2f';
       }
-    } else if (currentResponse.selectedAnswers.includes(option)) {
-      backgroundColor = '#556677'; // Slightly lighter blue for selected options
-      borderColor = '#ffffff'; // White border when selected
+    } else if (currentResponse.selectedAnswers?.includes(option)) {
+      backgroundColor = '#556677';
+      borderColor = '#ffffff';
     }
 
     return {
@@ -155,37 +208,62 @@ const MultipleChoiceQuestion = () => {
       borderRadius: '8px',
       textAlign: 'center',
       fontSize: '1.25rem',
-      color: '#fff', // White text
+      color: '#fff',
       transition: 'background-color 0.3s, border 0.3s'
     };
   };
 
-  // Navigation handlers.
+  // ---------------------------
+  // Navigation Handlers
+  // ---------------------------
   const handlePrevious = () => {
     if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
   };
 
   const handleNext = () => {
-    // If we're not on the last question, simply go to the next one.
     if (currentIndex < questionOrder.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      // We have reached the end of the current round.
-      // Filter out the questions that were answered incorrectly.
+      // End-of-round logic.
       const wrongQuestions = questionOrder.filter((question, i) => {
         return !isResponseCorrect(responses[i], question);
       });
 
       if (wrongQuestions.length > 0) {
         alert("Some questions were answered incorrectly. Repeating them now.");
-        loadNewRound(wrongQuestions, true);
+        if (isTypingRound) {
+          loadTypingRound(wrongQuestions, true);
+        } else {
+          loadNewRound(wrongQuestions, true);
+        }
       } else {
-        alert("All questions answered correctly! Starting a new round.");
-        loadQuestionsForCategory(selectedCategory);
+        if (!isTypingRound) {
+          // After a successful multiple-choice round, re-ask only those questions
+          // whose correct answer is short AND that are NOT multiple-answer.
+          const typingQuestions = questionOrder.filter((question) => {
+            const firstCorrect = question.correctAnswers[0] || "";
+            return !question.allowMultiple &&
+                   firstCorrect.trim().split(/\s+/).length < 3;
+          });
+          if (typingQuestions.length > 0) {
+            alert("All questions answered correctly! Now starting a typing round for short answers.");
+            loadTypingRound(typingQuestions);
+          } else {
+            alert("All questions answered correctly! Starting a new round.");
+            loadQuestionsForCategory(selectedCategory);
+          }
+        } else {
+          alert("All typing questions answered correctly! Starting a new round.");
+          setIsTypingRound(false);
+          loadQuestionsForCategory(selectedCategory);
+        }
       }
     }
   };
 
+  // ---------------------------
+  // Render
+  // ---------------------------
   if (!currentQuestion)
     return <p style={{ color: '#fff' }}>Loading question...</p>;
 
@@ -193,14 +271,14 @@ const MultipleChoiceQuestion = () => {
     <div
       style={{
         minHeight: '100vh',
-        backgroundColor: '#0D1B2A', // Dark blue background for the page
+        backgroundColor: '#0D1B2A',
         padding: '20px',
         fontFamily: 'Arial, sans-serif',
         fontSize: '1.25rem',
         color: '#fff'
       }}
     >
-      {/* Inline CSS for responsive styling */}
+      {/* Responsive styling */}
       <style>{`
         @media (max-width: 480px) {
           .card {
@@ -289,14 +367,14 @@ const MultipleChoiceQuestion = () => {
           maxWidth: '600px',
           margin: '40px auto',
           padding: '20px',
-          backgroundColor: '#1B263B', // Dark blue-gray card background
+          backgroundColor: '#1B263B',
           borderRadius: '12px',
           boxShadow: '0 4px 12px rgba(0, 0, 0, 0.5)'
         }}
       >
         {/* Question Progress */}
         <p className="progress-text" style={{ textAlign: 'center', marginBottom: '10px', color: '#E0E1DD' }}>
-          Question {currentIndex + 1} of {questionOrder.length} {isRetest && "(Retest)"}
+          Question {currentIndex + 1} of {questionOrder.length} {isRetest && "(Retest)"} {isTypingRound && "(Typing Round)"}
         </p>
         <h2 className="question-header" style={{ fontSize: '1.75rem', textAlign: 'center', marginBottom: '20px', color: '#E0E1DD' }}>
           Exam Practice Question
@@ -305,28 +383,70 @@ const MultipleChoiceQuestion = () => {
           {currentQuestion.question}
         </p>
 
-        {/* Display options in a 2x2 grid */}
-        <div
-          className="option-grid"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '16px',
-            marginBottom: '30px'
-          }}
-        >
-          {currentQuestion.options.map((option) => (
-            <button
-              key={option}
-              onClick={() => handleOptionClick(option)}
-              style={getButtonStyle(option)}
-            >
-              {getOptionContent(option)}
-            </button>
-          ))}
-        </div>
+        {/* Typing round or multiple-choice options */}
+        {isTypingRound ? (
+          <div style={{ marginBottom: '30px' }}>
+            {/* Override button appears if a wrong answer was submitted */}
+            {currentResponse.feedback === "Incorrect. Try again." && (
+              <button
+                onClick={handleOverride}
+                style={{
+                  marginBottom: '10px',
+                  padding: '8px 12px',
+                  fontSize: '1rem',
+                  borderRadius: '8px',
+                  backgroundColor: '#388e3c',
+                  color: '#fff',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+              >
+                I'm correct
+              </button>
+            )}
+            <input
+              type="text"
+              value={currentResponse.typedAnswer}
+              onChange={(e) => updateResponse(currentIndex, { typedAnswer: e.target.value, feedback: '' })}
+              style={{
+                width: '100%',
+                padding: '15px',
+                fontSize: '1.25rem',
+                borderRadius: '8px',
+                boxSizing: 'border-box'
+              }}
+              placeholder="Type your answer here"
+              disabled={currentResponse.submitted}
+            />
+            {currentResponse.feedback && (
+              <p style={{ textAlign: 'center', marginTop: '10px', color: currentResponse.submitted ? '#388e3c' : '#d32f2f' }}>
+                {currentResponse.feedback}
+              </p>
+            )}
+          </div>
+        ) : (
+          <div
+            className="option-grid"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: '16px',
+              marginBottom: '30px'
+            }}
+          >
+            {currentQuestion.options.map((option) => (
+              <button
+                key={option}
+                onClick={() => handleOptionClick(option)}
+                style={getButtonStyle(option)}
+              >
+                {getOptionContent(option)}
+              </button>
+            ))}
+          </div>
+        )}
 
-        {/* Navigation and action buttons */}
+        {/* Navigation Buttons */}
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <button
             onClick={handlePrevious}
@@ -345,6 +465,7 @@ const MultipleChoiceQuestion = () => {
             Prev
           </button>
 
+          {/* Submit button is shown when the current response isn’t submitted */}
           {!currentResponse.submitted && (
             <button
               onClick={handleSubmit}
@@ -363,8 +484,10 @@ const MultipleChoiceQuestion = () => {
             </button>
           )}
 
+          {/* In typing round, Next is disabled until a correct answer is submitted */}
           <button
             onClick={handleNext}
+            disabled={isTypingRound && !currentResponse.submitted}
             style={{
               padding: '10px 20px',
               fontSize: '1.25rem',
