@@ -145,15 +145,6 @@ export const questionCategories = {
           allowMultiple: false
         }
       ],
-
-      "Test": [
-          {
-            question: "Test question",
-            options: ["One", "Two", "Three", "Four"],
-            correctAnswers: ["One"],
-            allowMultiple: false
-          }
-      ],
      
     "Comptia A+ 1102 test 2": [
        
@@ -1679,7 +1670,184 @@ export const questionCategories = {
     "allowMultiple": false
   }
 ],
+//-----------------------------------------------------------------------------------------------------------------------------
 
+"My questions":[
+  {
+    question: "How do you change an application's priority in Windows Task Manager?",
+    options: [
+      "Go to the Details tab, right-click the process, and select 'Set Priority'",
+      "Double-click the process in the Processes tab",
+      "Right-click the process in the Performance tab",
+      "Use Device Manager to modify process priority"
+    ],
+    correctAnswers: ["Go to the Details tab, right-click the process, and select 'Set Priority'"],
+    allowMultiple: false
+  },
+  {
+    question: "What does the command 'tasklist /sv' do?",
+    options: [
+      "Lists running tasks with CPU usage details",
+      "Shows a list of services running within each process",
+      "Terminates specified services",
+      "Displays system version information"
+    ],
+    correctAnswers: ["Shows a list of services running within each process"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following taskkill options are valid? (Select all that apply)",
+    options: [
+      "/pid",
+      "/im",
+      "/t",
+      "/£"
+    ],
+    // Note: The option "/£" is intentionally incorrect.
+    correctAnswers: ["/pid", "/im", "/t"],
+    allowMultiple: true
+  },
+  {
+    question: "Which startup type in Windows delays a service's startup until after the system boots?",
+    options: [
+      "Automatic (Delayed)",
+      "Manual",
+      "Disabled",
+      "Automatic"
+    ],
+    correctAnswers: ["Automatic (Delayed)"],
+    allowMultiple: false
+  },
+  {
+    question: "Which backup method backs up all selected data regardless of previous backups?",
+    options: [
+      "Full backup",
+      "Incremental backup",
+      "Differential backup",
+      "Mirror backup"
+    ],
+    correctAnswers: ["Full backup"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following backup methods require referencing a previous backup job for data selection? (Select all that apply)",
+    options: [
+      "Incremental backup",
+      "Differential backup",
+      "Full backup",
+      "Mirror backup"
+    ],
+    correctAnswers: ["Incremental backup", "Differential backup"],
+    allowMultiple: true
+  },
+  {
+    question: "Which OS installation types preserve user settings, applications, and data files? (Select all that apply)",
+    options: [
+      "Clean install",
+      "In-place upgrade",
+      "Repair upgrade",
+      "Unattended installation"
+    ],
+    correctAnswers: ["In-place upgrade", "Repair upgrade"],
+    allowMultiple: true
+  },
+  {
+    question: "What does running sysprep before imaging a Windows computer accomplish? (Select all that apply)",
+    options: [
+      "Strips away personalization settings",
+      "Removes unique system identifiers and product key",
+      "Deletes all user files",
+      "Resets system security identifiers (SIDs)"
+    ],
+    correctAnswers: [
+      "Strips away personalization settings",
+      "Removes unique system identifiers and product key",
+      "Resets system security identifiers (SIDs)"
+    ],
+    allowMultiple: true
+  },
+  {
+    question: "Which Windows utility is used for updating drivers and troubleshooting hardware issues?",
+    options: [
+      "Task Manager",
+      "Device Manager",
+      "Diskpart",
+      "msinfo"
+    ],
+    correctAnswers: ["Device Manager"],
+    allowMultiple: false
+  },
+  {
+    question: "Which command-line utility is used to partition drives in Windows?",
+    options: [
+      "Diskpart",
+      "Task Manager",
+      "msinfo",
+      "Device Manager"
+    ],
+    correctAnswers: ["Diskpart"],
+    allowMultiple: false
+  },
+  {
+    question: "In Unix/Linux, which command prints the current working directory?",
+    options: [
+      "ls",
+      "cd",
+      "pwd",
+      "grep"
+    ],
+    correctAnswers: ["pwd"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following commands are valid for directory traversal in Unix-like systems? (Select all that apply)",
+    options: [
+      "cd",
+      "chdir",
+      "pwd",
+      "ls"
+    ],
+    correctAnswers: ["cd", "chdir"],
+    allowMultiple: true
+  },
+  {
+    question: "Which of the following commands are used for file manipulation in Unix-like systems? (Select all that apply)",
+    options: [
+      "cp",
+      "mv",
+      "rm",
+      "grep"
+    ],
+    correctAnswers: ["cp", "mv", "rm"],
+    allowMultiple: true
+  },
+  {
+    question: "How can you display hidden files on a Windows computer?",
+    options: [
+      "Open Control Panel → File Explorer Options → View tab → Show hidden files and folders",
+      "Use Diskpart to list hidden files",
+      "Run msinfo and filter for hidden attributes",
+      "Right-click on the desktop and select 'Show hidden files'"
+    ],
+    correctAnswers: ["Open Control Panel → File Explorer Options → View tab → Show hidden files and folders"],
+    allowMultiple: false
+  },
+  {
+    question: "Which of the following are true about the taskkill command? (Select all that apply)",
+    options: [
+      "It can terminate a process using its process ID with the /pid option.",
+      "It can terminate a process using its image name with the /im option.",
+      "It can terminate all child processes using the /t option.",
+      "It lists all services running within each process."
+    ],
+    correctAnswers: [
+      "It can terminate a process using its process ID with the /pid option.",
+      "It can terminate a process using its image name with the /im option.",
+      "It can terminate all child processes using the /t option."
+    ],
+    allowMultiple: true
+  }
+],
 
 //------------------------------------------------------------------------------------------------------------------------------
 "Comptia A+ Microsoft Windows Editions": [
@@ -1862,9 +2030,18 @@ export const questionCategories = {
         correctAnswers: ["TCP port 3389"],
         allowMultiple: false
       }
-    ]
+    ],
+
+    "Test": [
+          {
+            question: "Test question",
+            options: ["One", "Two", "Three", "Four"],
+            correctAnswers: ["One"],
+            allowMultiple: false
+          }
+      ]
     
-    // ... you can add additional categories here
+    
   };
 
 
