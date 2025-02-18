@@ -385,46 +385,63 @@ const MultipleChoiceQuestion = () => {
 
         {/* Typing round or multiple-choice options */}
         {isTypingRound ? (
-          <div style={{ marginBottom: '30px' }}>
-            {/* Override button appears if a wrong answer was submitted */}
-            {currentResponse.feedback === "Incorrect. Try again." && (
-              <button
-                onClick={handleOverride}
-                style={{
-                  marginBottom: '10px',
-                  padding: '8px 12px',
-                  fontSize: '1rem',
-                  borderRadius: '8px',
-                  backgroundColor: '#388e3c',
-                  color: '#fff',
-                  border: 'none',
-                  cursor: 'pointer'
-                }}
-              >
-                I'm correct
-              </button>
-            )}
-            <input
-              type="text"
-              value={currentResponse.typedAnswer}
-              onChange={(e) => updateResponse(currentIndex, { typedAnswer: e.target.value, feedback: '' })}
-              style={{
-                width: '100%',
-                padding: '15px',
-                fontSize: '1.25rem',
-                borderRadius: '8px',
-                boxSizing: 'border-box'
-              }}
-              placeholder="Type your answer here"
-              disabled={currentResponse.submitted}
-            />
-            {currentResponse.feedback && (
-              <p style={{ textAlign: 'center', marginTop: '10px', color: currentResponse.submitted ? '#388e3c' : '#d32f2f' }}>
-                {currentResponse.feedback}
-              </p>
-            )}
-          </div>
-        ) : (
+  <div style={{ marginBottom: '30px' }}>
+    {/* Override button appears if a wrong answer was submitted */}
+    {currentResponse.feedback === "Incorrect. Try again." && (
+      <button
+        onClick={handleOverride}
+        style={{
+          marginBottom: '10px',
+          padding: '8px 12px',
+          fontSize: '1rem',
+          borderRadius: '8px',
+          backgroundColor: '#388e3c',
+          color: '#fff',
+          border: 'none',
+          cursor: 'pointer'
+        }}
+      >
+        I'm correct
+      </button>
+    )}
+    <input
+      type="text"
+      value={currentResponse.typedAnswer}
+      onChange={(e) =>
+        updateResponse(currentIndex, {
+          typedAnswer: e.target.value,
+          feedback: ''
+        })
+      }
+      style={{
+        width: '100%',
+        padding: '15px',
+        fontSize: '1.25rem',
+        borderRadius: '8px',
+        boxSizing: 'border-box'
+      }}
+      placeholder="Type your answer here"
+      disabled={currentResponse.submitted}
+    />
+    {currentResponse.feedback && (
+      <p
+        style={{
+          textAlign: 'center',
+          marginTop: '10px',
+          color: currentResponse.submitted ? '#388e3c' : '#d32f2f'
+        }}
+      >
+        {currentResponse.feedback}
+      </p>
+    )}
+    {/* Display the correct answer once the response is submitted */}
+    {currentResponse.submitted && (
+      <p style={{ textAlign: 'center', marginTop: '10px', color: '#E0E1DD' }}>
+        Answer: {currentQuestion.correctAnswers.join(', ')}
+      </p>
+    )}
+  </div>
+) : (
           <div
             className="option-grid"
             style={{
