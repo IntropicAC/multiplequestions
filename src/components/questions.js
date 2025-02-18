@@ -1672,6 +1672,233 @@ export const questionCategories = {
 ],
 //-----------------------------------------------------------------------------------------------------------------------------
 
+"Comptia A+ 1102 test 8":[
+  {
+    "question": "Which of the following commands are valid for directory traversal in Unix-like systems? (Select all that apply)",
+    "options": ["cd", "chdir", "pwd", "ls"],
+    "correctAnswers": ["cd", "chdir"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following commands are used for file manipulation in Unix-like systems? (Select all that apply)",
+    "options": ["cp", "mv", "rm", "grep"],
+    "correctAnswers": ["cp", "mv", "rm"],
+    "allowMultiple": true
+  },
+  {
+    "question": "How can you display hidden files on a Windows computer?",
+    "options": [
+      "Open Control Panel → File Explorer Options → View tab → Show hidden files and folders",
+      "Use Diskpart to list hidden files",
+      "Run msinfo and filter for hidden attributes",
+      "Right-click on the desktop and select 'Show hidden files'"
+    ],
+    "correctAnswers": ["Open Control Panel → File Explorer Options → View tab → Show hidden files and folders"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following are true about the taskkill command? (Select all that apply)",
+    "options": [
+      "It can terminate a process using its process ID with the /pid option.",
+      "It can terminate a process using its image name with the /im option.",
+      "It can terminate all child processes using the /t option.",
+      "It lists all services running within each process."
+    ],
+    "correctAnswers": [
+      "It can terminate a process using its process ID with the /pid option.",
+      "It can terminate a process using its image name with the /im option.",
+      "It can terminate all child processes using the /t option."
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following are examples of hardware tokens? (Select 2 answers)",
+    "options": ["Cable lock", "Key fob", "Biometric reader", "Passphrase", "Smart card"],
+    "correctAnswers": ["Key fob", "Smart card"],
+    "allowMultiple": true
+  },
+  {
+    "question": "If an application written for an earlier version of MS Windows doesn't run correctly, the compatibility mode settings in Windows 10 can be changed manually by right-clicking on the program icon and:",
+    "options": [
+      "Selecting \"Compatibility mode\" option from the pop-up menu > applying the required settings",
+      "Choosing \"Restore previous versions\" option from the pop-up menu > applying the required settings on the Compatibility tab",
+      "Selecting \"Run program using recommended compatibility settings\" option from the pop-up menu",
+      "Clicking on the Properties menu item > applying the required settings on the Compatibility tab"
+    ],
+    "correctAnswers": ["Clicking on the Properties menu item > applying the required settings on the Compatibility tab"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a type of file containing an exact copy of the contents of an optical disc?",
+    "options": ["Swap file", "Master image", "Snapshot file", "ISO image", "Shadow copy"],
+    "correctAnswers": ["ISO image"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to application distribution methods?",
+    "options": [
+      "Optical storage media (CD/DVD/Blu-Ray)",
+      "USB flash drives",
+      "Network downloads",
+      "ISO images",
+      "All of the above"
+    ],
+    "correctAnswers": ["All of the above"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the statements listed below describe the characteristic features of open-source applications and OSs? (Select 2 answers)",
+    "options": [
+      "Proprietary software",
+      "Permission to modify and redistribute the application",
+      "Free access to the application code",
+      "Permission to use the application only under certain conditions",
+      "Lack of free access to the application code"
+    ],
+    "correctAnswers": [
+      "Permission to modify and redistribute the application",
+      "Free access to the application code"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following are not examples of proprietary software? (Select all that apply)",
+    "options": ["MS Windows", "macOS", "Linux", "iOS", "Android"],
+    "correctAnswers": ["Linux", "Android"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the answers listed below refer(s) to the characteristics of macOS? (Select all that apply)",
+    "options": [
+      "Developed by Microsoft",
+      "Designed for tablets",
+      "Developed by Apple",
+      "Designed for laptops",
+      "Developed by Google",
+      "Designed for desktops"
+    ],
+    "correctAnswers": ["Developed by Apple", "Designed for laptops", "Designed for desktops"],
+    "allowMultiple": true
+  },
+  {
+    "question": "What is the name of a lightweight operating system designed by Google for small-factor PCs, laptops, tablets, and mobile devices?",
+    "options": ["iOS", "macOS", "Android", "Chrome OS"],
+    "correctAnswers": ["Chrome OS"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to an OS that uses web browser as its main user interface?",
+    "options": ["Linux", "Chrome OS", "MS Windows", "macOS"],
+    "correctAnswers": ["Chrome OS"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refer to the characteristics of iPadOS? (Select 2 answers)",
+    "options": [
+      "Developed by Apple",
+      "Designed for workstations",
+      "Developed by Google",
+      "Designed for smartphones",
+      "Developed by Microsoft",
+      "Designed for tablets"
+    ],
+    "correctAnswers": ["Developed by Apple", "Designed for tablets"],
+    "allowMultiple": true
+  },
+  {
+    "question": "An Apple-proprietary OS designed for tablets, smartphones and mobile devices is called:",
+    "options": ["macOS", "Android", "iOS", "Chrome OS"],
+    "correctAnswers": ["iOS"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to an open-source mobile OS designed by Google for smartphones and tablets?",
+    "options": ["Windows", "Android", "iOS", "Chrome OS"],
+    "correctAnswers": ["Android"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Examples of workstation OSs include: (Select all that apply)",
+    "options": ["macOS", "Windows", "Linux", "Android", "iOS", "iPadOS", "Chrome OS"],
+    "correctAnswers": ["macOS", "Windows", "Linux"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the answers listed below refer to OSs used in smartphones and tablets? (Select 3 answers)",
+    "options": ["macOS", "Chrome OS", "iOS", "Android", "iPadOS"],
+    "correctAnswers": ["iOS", "Android", "iPadOS"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following answers refer(s) to (a) file system type(s) specific to Microsoft Windows OSs? (Select all that apply)",
+    "options": ["NTFS", "ext3", "FAT32", "ext4", "APFS", "exFAT"],
+    "correctAnswers": ["NTFS", "FAT32", "exFAT"],
+    "allowMultiple": true
+  },
+  {
+    "question": "The 4 GB maximum file size limit and 2 TB maximum volume size limit are the characteristic features of:",
+    "options": ["NTFS", "FAT32", "NFS", "exFAT"],
+    "correctAnswers": ["FAT32"],
+    "allowMultiple": false
+  },
+  {
+    "question": "The advantages of the NTFS over FAT32 file system include:",
+    "options": [
+      "Disk quotas",
+      "Compression",
+      "Increased file size limit",
+      "Object permissions",
+      "Encryption",
+      "All of the above features are improvements implemented in NTFS not available in FAT32"
+    ],
+    "correctAnswers": ["All of the above features are improvements implemented in NTFS not available in FAT32"],
+    "allowMultiple": false
+  },
+  {
+    "question": "ext3 and ext4 are examples of default file systems used by:",
+    "options": ["iOS", "macOS", "Windows Server", "Linux distributions"],
+    "correctAnswers": ["Linux distributions"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a file system developed by Apple for its operating systems?",
+    "options": ["APFS", "FAT", "NTFS", "exFAT"],
+    "correctAnswers": ["APFS"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A Microsoft-proprietary file system optimized for flash drives is known as:",
+    "options": ["ext3", "FAT32", "NFS", "exFAT", "APFS"],
+    "correctAnswers": ["exFAT"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following terms refers to a product/service that no longer receives continuing support?",
+    "options": ["EOF", "ERP", "EOL", "ETL"],
+    "correctAnswers": ["EOL"],
+    "allowMultiple": false
+  },
+  {
+    "question": "An operating system cross-platform compatibility feature allows certain types of data files created on one type of OS to be seamlessly read and modified on a different OS type.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "All modern applications are designed as cross-platform software which allows them to be run on different operating systems (e.g., Windows, Linux, or macOS) without any modifications in the application source code.",
+    "options": ["True", "False"],
+    "correctAnswers": ["False"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the OS boot methods listed below takes advantage of a network interface?",
+    "options": ["CD-ROM/DVD/Blu-ray", "USB", "eSata", "PXE", "HDD/SSD", "Disk partition"],
+    "correctAnswers": ["PXE"],
+    "allowMultiple": false
+  }
+],
+
+//----------------------------------------------------------------------------------------------------------------------------
 "My questions":[
   {
     question: "How do you change an application's priority in Windows Task Manager?",
