@@ -1898,7 +1898,7 @@ export const questionCategories = {
   }
 ],
 //---------------------------------------------------------------------------------------------------------------------------
-"comptia A+ 1102 test 9":[
+"Comptia A+ 1102 test 9":[
   {
     "question": "What is the name of an operating system installation type that preserves system settings, personal files, and applications from the older OS version?",
     "options": [
@@ -2212,7 +2212,7 @@ export const questionCategories = {
   }
 ],
 //--------------------------------------------------------------------------------------------------------------------------------------
-"comptia A+ 1102 test 10":[
+"Comptia A+ 1102 test 10":[
   {
     "question": "Which of the following answers refers to a macOS password management system?",
     "options": [
@@ -2491,6 +2491,596 @@ export const questionCategories = {
       "diskutil"
     ],
     "correctAnswers": ["df"],
+    "allowMultiple": false
+  }
+],
+//-----------------------------------------------------------------------------------------------------------------------------------
+"Comptia A+ 1102 test 11":[
+  {
+    "question": "A Linux command-line command that enables searching files for lines containing a match to a given text pattern is known as:",
+    "options": [
+      "rm",
+      "chmod",
+      "find",
+      "grep"
+    ],
+    "correctAnswers": ["grep"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the name of a Linux command-line utility used for displaying a snapshot of running processes?",
+    "options": [
+      "ps",
+      "tasklist",
+      "nbtstat",
+      "id"
+    ],
+    "correctAnswers": ["ps"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following commands in Linux can be used to display help information related to a specific command-line command/utility?",
+    "options": [
+      "[command name] help",
+      "man [command name]",
+      "[command name] info",
+      "help [command name]",
+      "[command name] /?"
+    ],
+    "correctAnswers": ["man [command name]"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which Linux command-line utility provides a functionality similar to Windows Task Manager?",
+    "options": [
+      "tasklist",
+      "iostat",
+      "top",
+      "Get-Process"
+    ],
+    "correctAnswers": ["top"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the Linux utilities listed below can be used to display real-time system resources utilization statistics?",
+    "options": [
+      "taskmgr",
+      "top",
+      "nbtstat",
+      "tasklist"
+    ],
+    "correctAnswers": ["top"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A Linux command-line utility used to search for files and directories is called:",
+    "options": [
+      "find",
+      "path",
+      "search",
+      "grep"
+    ],
+    "correctAnswers": ["find"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to a Linux network administration command-line utility used for DNS queries?",
+    "options": [
+      "ping",
+      "tracert",
+      "dig",
+      "pathping"
+    ],
+    "correctAnswers": ["dig"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A Linux command that allows to create, view, and concatenate files is known as:",
+    "options": [
+      "echo",
+      "concat",
+      "printf",
+      "cat"
+    ],
+    "correctAnswers": ["cat"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a Linux command-line text editor?",
+    "options": [
+      "nano",
+      "gVim",
+      "Notepad",
+      "gedit"
+    ],
+    "correctAnswers": ["nano"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following Linux utilities can be used for creating backups?",
+    "options": [
+      "dd",
+      "cpio",
+      "rsync",
+      "tar",
+      "dump",
+      "All of the above"
+    ],
+    "correctAnswers": ["All of the above"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What are the characteristic features of SMB/CIFS? (Select all that apply)",
+    "options": [
+      "Used mainly by computers running Linux distributions",
+      "Provides shared access to files, directories, and devices",
+      "Used mainly by computers running Microsoft Windows operating systems",
+      "Enables voice and multimedia communications over IP networks"
+    ],
+    "correctAnswers": [
+      "Provides shared access to files, directories, and devices",
+      "Used mainly by computers running Microsoft Windows operating systems"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "What is Samba? (Select all that apply)",
+    "options": [
+      "Cross-platform printer sharing solution",
+      "Open-source implementation of CIFS",
+      "Linux web server software",
+      "Cross-platform network file sharing solution",
+      "Open-source implementation of SMB"
+    ],
+    "correctAnswers": [
+      "Cross-platform printer sharing solution",
+      "Open-source implementation of CIFS",
+      "Cross-platform network file sharing solution",
+      "Open-source implementation of SMB"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "An access control vestibule (a.k.a. mantrap) is a physical security access control system used to prevent unauthorized users from gaining access to restricted areas. An example mantrap could be a two-door entrance point connected to a guard station wherein a person entering the mantrap from the outside remains locked inside until he/she provides an authentication token required to unlock the inner door.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refer(s) to (an) example(s) of physical security token(s)? (Select all that apply)",
+    "options": [
+      "ACL",
+      "RFID badge",
+      "Key fob",
+      "PIN",
+      "Smart card"
+    ],
+    "correctAnswers": [
+      "RFID badge",
+      "Key fob",
+      "Smart card"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "In computer security, the term \"Biometrics\" refers to physical characteristics of the human body that can be used for identification and access control purposes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Examples of biometric devices include: (Select all that apply)",
+    "options": [
+      "OCR scanner",
+      "Retina scanner",
+      "ICR scanner",
+      "Fingerprint scanner",
+      "Palmprint scanner"
+    ],
+    "correctAnswers": [
+      "Retina scanner",
+      "Fingerprint scanner",
+      "Palmprint scanner"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "In the context of physical security, a magnetometer is a device used for detecting metal objects.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A security rule that prevents users from accessing information and resources that lie beyond the scope of their responsibilities is known as the principle of least privilege.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following acronyms refers to a set of rules that specify which users or system processes are granted access to objects as well as what operations are allowed on a given object?",
+    "options": [
+      "CRL",
+      "NAT",
+      "BCP",
+      "ACL"
+    ],
+    "correctAnswers": ["ACL"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A rule-based access control mechanism implemented on routers, switches, and firewalls is referred to as:",
+    "options": [
+      "ACL",
+      "CSR",
+      "DLP",
+      "AUP"
+    ],
+    "correctAnswers": ["ACL"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Authentication process can be based on various categories of authentication factors and attributes. Multifactor authentication systems require implementation of authentication factors from two or more distinct categories.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the examples listed below meets the requirement of multifactor authentication?",
+    "options": [
+      "Password and biometric scan",
+      "Username and PIN",
+      "Smart card and ID badge",
+      "Voice recognition and fingerprint scan"
+    ],
+    "correctAnswers": ["Password and biometric scan"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following is an example of a soft authentication token?",
+    "options": [
+      "Key fob",
+      "USB token",
+      "Authenticator app",
+      "Smart card"
+    ],
+    "correctAnswers": ["Authenticator app"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which type of software enables a centralized administration of mobile devices?",
+    "options": [
+      "MFA",
+      "MMC",
+      "MDM",
+      "MFD"
+    ],
+    "correctAnswers": ["MDM"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a solution that facilitates the enforcement of mobile device policies and procedures?",
+    "options": [
+      "MFA",
+      "MMC",
+      "MDM",
+      "MFD"
+    ],
+    "correctAnswers": ["MDM"],
+    "allowMultiple": false
+  }
+],
+//------------------------------------------------------------------------------------------------------------------------------------
+"Comptia A+ 1102 test 12":[
+  {
+    "question": "A type of hierarchical database structure used in Windows Server environments that enables centralized management of devices and resources on a network is known as:",
+    "options": [
+      "HomeGroup",
+      "Active Directory",
+      "Workgroup",
+      "Windows domain"
+    ],
+    "correctAnswers": ["Active Directory"],
+    "allowMultiple": false
+  },
+  {
+    "question": "On a Windows domain, this tool can be used by system administrators to configure initial desktop environment (which may include mapping a network drive or setting up access to a shared printer) for a specific user.",
+    "options": [
+      "MDM policy",
+      "Login script",
+      "Group Policy",
+      "Directory permissions"
+    ],
+    "correctAnswers": ["Login script"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following terms describes a large network of Windows-based PCs under single administration?",
+    "options": [
+      "HomeGroup",
+      "Windows domain",
+      "Active Directory",
+      "Workgroup"
+    ],
+    "correctAnswers": ["Windows domain"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In Windows Active Directory environment, this feature enables centralized management and configuration of operating systems, applications, and user account settings.",
+    "options": [
+      "Local Users and Groups",
+      "Resource Monitor",
+      "Group Policy",
+      "User Account Control (UAC)"
+    ],
+    "correctAnswers": ["Group Policy"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Windows Active Directory service allows for grouping users and computers into containers known as Organizational Units (OUs). An OU is the smallest unit to which system administrators can assign Group Policy settings to manage the configuration and use of accounts and resources within a given OU.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In Windows domain environment, the term \"Home Folder\" refers to a directory on a local PC where users can back up their data and files.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["False"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the Windows Active Directory Group Policy settings allows network administrators to map a folder on a user's PC to a server-based location?",
+    "options": [
+      "Folder redirection",
+      "Local Users and Groups",
+      "User Account Control (UAC)",
+      "Directory permissions"
+    ],
+    "correctAnswers": ["Folder redirection"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In Windows Active Directory environment, this feature can be used by system administrators to assign user rights and grant permissions to shared resources.",
+    "options": [
+      "Global groups",
+      "Security Groups",
+      "Distribution Groups",
+      "Universal groups"
+    ],
+    "correctAnswers": ["Security Groups"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which wireless encryption scheme offers the highest level of protection?",
+    "options": [
+      "WEP",
+      "WPA3",
+      "WPS",
+      "WPA",
+      "WPA2"
+    ],
+    "correctAnswers": ["WPA3"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a security protocol designed to strengthen WEP implementations?",
+    "options": [
+      "PEAP",
+      "TKIP",
+      "CCMP",
+      "WPA2"
+    ],
+    "correctAnswers": ["TKIP"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following wireless technologies has been deprecated and should not be used due to its known vulnerabilities?",
+    "options": [
+      "EAP",
+      "WPA2",
+      "AES",
+      "WEP"
+    ],
+    "correctAnswers": ["WEP"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the cryptographic algorithms listed below is the least vulnerable to attacks?",
+    "options": [
+      "AES",
+      "DES",
+      "RC4",
+      "3DES"
+    ],
+    "correctAnswers": ["AES"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following encryption schemes is used in WiFi Protected Access 2 (WPA2)?",
+    "options": [
+      "RC4",
+      "AES-CCMP",
+      "TKIP with RC4",
+      "AES-GCMP"
+    ],
+    "correctAnswers": ["AES-CCMP"],
+    "allowMultiple": false
+  },
+  {
+    "question": "For the purpose of encryption, WiFi Protected Access 3 (WPA3) takes advantage of: (Select 2 answers)",
+    "options": [
+      "AES-GCMP",
+      "PSK",
+      "TKIP with RC4",
+      "RC4",
+      "AES-CCMP",
+      "SAE"
+    ],
+    "correctAnswers": ["AES-GCMP", "SAE"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following acronyms refers to a client authentication method used in WPA2 Personal mode?",
+    "options": [
+      "AES",
+      "RC4",
+      "IKE",
+      "PSK",
+      "SAE"
+    ],
+    "correctAnswers": ["PSK"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the acronyms listed below refers to a client authentication method used in WPA3 Personal mode?",
+    "options": [
+      "SAE",
+      "IKE",
+      "RC4",
+      "PSK",
+      "AES"
+    ],
+    "correctAnswers": ["SAE"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following would be the best solution for securing a small network that lacks an authentication server?",
+    "options": [
+      "WPA3-SAE",
+      "WPA2-Enterprise",
+      "WPA2-PSK",
+      "WPA3-Enterprise"
+    ],
+    "correctAnswers": ["WPA3-SAE"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What are the characteristic features of WPA2/WPA3 Enterprise mode? (Select 3 answers)",
+    "options": [
+      "Suitable for large corporate networks",
+      "IEEE 802.1D",
+      "Does not require an authentication server",
+      "IEEE 802.1X",
+      "Suitable for all types of wireless LANs",
+      "Requires RADIUS authentication server"
+    ],
+    "correctAnswers": [
+      "Suitable for large corporate networks",
+      "IEEE 802.1X",
+      "Requires RADIUS authentication server"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which part of the AAA security architecture deals with the verification of the identity of a person or process?",
+    "options": [
+      "Authentication",
+      "Authorization",
+      "Accounting"
+    ],
+    "correctAnswers": ["Authentication"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to the process of granting or denying access to resources?",
+    "options": [
+      "Authentication",
+      "Authorization",
+      "Accounting"
+    ],
+    "correctAnswers": ["Authorization"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In the AAA security architecture, the process of tracking accessed services as well as the amount of consumed resources is called:",
+    "options": [
+      "Authentication",
+      "Authorization",
+      "Accounting"
+    ],
+    "correctAnswers": ["Accounting"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Examples of more complex authentication protocols providing the AAA functionality include: (Select all that apply)",
+    "options": [
+      "CHAP",
+      "TACACS+",
+      "PAP",
+      "RADIUS",
+      "MS-CHAP"
+    ],
+    "correctAnswers": [
+      "CHAP",
+      "TACACS+",
+      "RADIUS",
+      "MS-CHAP"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "What are the characteristics of TACACS+? (Select 3 answers)",
+    "options": [
+      "Encrypts only the password in the access-request packet",
+      "Combines authentication and authorization",
+      "Encrypts the entire payload of the access-request packet",
+      "Primarily used for device administration",
+      "Separates authentication and authorization",
+      "Primarily used for network access"
+    ],
+    "correctAnswers": [
+      "Encrypts the entire payload of the access-request packet",
+      "Separates authentication and authorization",
+      "Primarily used for device administration"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "What are the characteristic features of RADIUS? (Select 3 answers)",
+    "options": [
+      "Primarily used for network access",
+      "Encrypts the entire payload of the access-request packet",
+      "Combines authentication and authorization",
+      "Encrypts only the password in the access-request packet",
+      "Primarily used for device administration",
+      "Separates authentication and authorization"
+    ],
+    "correctAnswers": [
+      "Primarily used for network access",
+      "Combines authentication and authorization",
+      "Encrypts only the password in the access-request packet"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following authentication protocols can be used to enable SSO in Windows-based network environments?",
+    "options": [
+      "PAP",
+      "LDAP",
+      "MS-CHAP",
+      "Kerberos"
+    ],
+    "correctAnswers": ["Kerberos"],
     "allowMultiple": false
   }
 ],
