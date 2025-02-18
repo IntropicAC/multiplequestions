@@ -1897,8 +1897,605 @@ export const questionCategories = {
     "allowMultiple": false
   }
 ],
+//---------------------------------------------------------------------------------------------------------------------------
+"comptia A+ 1102 test 9":[
+  {
+    "question": "What is the name of an operating system installation type that preserves system settings, personal files, and applications from the older OS version?",
+    "options": [
+      "Clean install",
+      "In-place upgrade",
+      "Unattended installation",
+      "Image deployment"
+    ],
+    "correctAnswers": ["In-place upgrade"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following replaced removable media used for reformatting storage drives and restoring an operating system to the original factory condition?",
+    "options": [
+      "Primary partition",
+      "Extended partition",
+      "System partition",
+      "Recovery partition"
+    ],
+    "correctAnswers": ["Recovery partition"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A type of Windows installation that erases the entire contents of a target partition is called:",
+    "options": [
+      "Refresh",
+      "Clean install",
+      "In-place upgrade",
+      "Repair installation"
+    ],
+    "correctAnswers": ["Clean install"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the installation types listed below provides a simpler and less costly alternative to manual OS installation in an environment consisting of multiple hosts requiring the same configuration settings?",
+    "options": [
+      "In-place upgrade",
+      "Remote network installation",
+      "Image deployment",
+      "Unattended installation"
+    ],
+    "correctAnswers": ["Image deployment"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Windows repair installation: (Select 3 answers)",
+    "options": [
+      "Modifies application configuration settings",
+      "Does not affect user applications",
+      "Removes user files",
+      "Preserves application configuration settings",
+      "Removes user applications",
+      "Does not affect user files"
+    ],
+    "correctAnswers": [
+      "Does not affect user applications",
+      "Preserves application configuration settings",
+      "Does not affect user files"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following enable installation of an OS via network interface? (Select 2 answers)",
+    "options": [
+      "GPT",
+      "diskpart",
+      "Netboot",
+      "PXE",
+      "gpupdate"
+    ],
+    "correctAnswers": [
+      "Netboot",
+      "PXE"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Devices that are not detected during the operating system installation process might require loading alternate third-party drivers.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the sources listed below allow for obtaining, installing, and updating device drivers used by Microsoft Windows OSs? (Select 3 answers)",
+    "options": [
+      "Windows Update",
+      "Computer Management utility",
+      "Device manufacturer",
+      "Microsoft Store",
+      "Windows Device Manager utility"
+    ],
+    "correctAnswers": [
+      "Windows Update",
+      "Device manufacturer",
+      "Microsoft Store"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "What are the advantages of organizing storage drive space into multiple partitions? (Select 3 answers)",
+    "options": [
+      "Multiboot environment",
+      "Separated disk space used for virtual memory",
+      "Preventative measure against drive failures",
+      "Separation of user files from the operating system and application files",
+      "Increased overall disk storage space available for user data"
+    ],
+    "correctAnswers": [
+      "Multiboot environment",
+      "Separated disk space used for virtual memory",
+      "Separation of user files from the operating system and application files"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following answers refers to a unique string of characters used to identify hardware, software, and data?",
+    "options": [
+      "OID",
+      "GUID",
+      "URI",
+      "OUI"
+    ],
+    "correctAnswers": ["GUID"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below describe the characteristics of the MBR partition style? (Select 3 answers)",
+    "options": [
+      "Legacy BIOS",
+      "Up 128 primary partitions",
+      "Maximum disk size limit of 2 TB",
+      "Overall number of partitions limited to 4",
+      "Support for disks larger than 2 TB",
+      "UEFI BIOS"
+    ],
+    "correctAnswers": [
+      "Legacy BIOS",
+      "Maximum disk size limit of 2 TB",
+      "Overall number of partitions limited to 4"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following answers refer to GPT? (Select 3 answers)",
+    "options": [
+      "Support for disks larger than 2 TB",
+      "Overall number of partitions limited to 4",
+      "Legacy BIOS",
+      "Up 128 primary partitions",
+      "UEFI BIOS",
+      "Maximum disk size limit of 2 TB"
+    ],
+    "correctAnswers": [
+      "Support for disks larger than 2 TB",
+      "Up 128 primary partitions",
+      "UEFI BIOS"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "In GPT disk architecture, each partition is labeled with a unique identifier known as GUID.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Quick format: (Select 3 answers)",
+    "options": [
+      "Does not erase data",
+      "Requires more time than full format",
+      "Checks the drive for bad sectors",
+      "Erases all data to prevent its recovery",
+      "Does not check the drive for bad sectors",
+      "Requires less time than full format"
+    ],
+    "correctAnswers": [
+      "Does not erase data",
+      "Does not check the drive for bad sectors",
+      "Requires less time than full format"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Full format: (Select 3 answers)",
+    "options": [
+      "Does not check the drive for bad sectors",
+      "Requires less time than quick format",
+      "Erases all data to prevent its recovery",
+      "Requires more time than quick format",
+      "Does not erase data",
+      "Checks the drive for bad sectors"
+    ],
+    "correctAnswers": [
+      "Erases all data to prevent its recovery",
+      "Requires more time than quick format",
+      "Checks the drive for bad sectors"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "A list of computer hardware proven to be compatible with a particular OS is referred to as:",
+    "options": [
+      "CRL",
+      "HCL",
+      "PRL",
+      "HAL"
+    ],
+    "correctAnswers": ["HCL"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a file extension used in macOS for a file that contains an exact copy of the contents of a storage device?",
+    "options": [
+      ".dmg",
+      ".pkg",
+      ".app",
+      ".pfx"
+    ],
+    "correctAnswers": [".dmg"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to a macOS application installer file?",
+    "options": [
+      ".exe",
+      ".app",
+      ".pkg",
+      ".dmg"
+    ],
+    "correctAnswers": [".pkg"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which location in macOS provides access to application updates menu?",
+    "options": [
+      "Explorer",
+      "App Store",
+      "iCloud",
+      "Spotlight"
+    ],
+    "correctAnswers": ["App Store"],
+    "allowMultiple": false
+  },
+  {
+    "question": "An application in macOS can be executed by double-clicking on an icon with .app file extension. The icon with the .app extension also points to a directory (a.k.a. application bundle) that contains all the files necessary to run the application. Contents of the directory can be examined by right-clicking on the application's icon and selecting Show Package Contents from the context menu. The process of uninstalling macOS applications that store all files in one place is simplified and relies on moving the program icon to the system recycle bin (called Trash).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to an SSO solution for all Apple's products and services?",
+    "options": [
+      "Secure Enclave",
+      "Apple ID",
+      "Sign in with Apple",
+      "Gatekeeper"
+    ],
+    "correctAnswers": ["Apple ID"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Managed Apple ID is an account management solution that allows system administrators to disable certain features of Apple devices used by employees in a business environment.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following macOS features allows to create switchable desktop environments?",
+    "options": [
+      "Spaces",
+      "Personalization",
+      "Display",
+      "Aero"
+    ],
+    "correctAnswers": ["Spaces"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Time Machine is a built-in backup utility for:",
+    "options": [
+      "Linux",
+      "macOS",
+      "Windows",
+      "Other"
+    ],
+    "correctAnswers": ["macOS"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A macOS system feature providing single-screen thumbnail preview of all open windows and applications is known as:",
+    "options": [
+      "Spotlight",
+      "Mission Control",
+      "Screen Sharing",
+      "Desktop Window Manager"
+    ],
+    "correctAnswers": ["Mission Control"],
+    "allowMultiple": false
+  }
+],
+//--------------------------------------------------------------------------------------------------------------------------------------
+"comptia A+ 1102 test 10":[
+  {
+    "question": "Which of the following answers refers to a macOS password management system?",
+    "options": [
+      "Kerberos",
+      "Credential Manager",
+      "BitLocker",
+      "Keychain"
+    ],
+    "correctAnswers": ["Keychain"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a macOS system search utility?",
+    "options": [
+      "Explorer",
+      "File explorer",
+      "Spotlight",
+      "Finder"
+    ],
+    "correctAnswers": ["Spotlight"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A service that enables storage of data on Apple cloud servers is called:",
+    "options": [
+      "iCloud",
+      "Remote Disk",
+      "OneDrive",
+      "Dropbox"
+    ],
+    "correctAnswers": ["iCloud"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following locations in macOS provide access to multi-touch interface settings (a.k.a. Gestures)? (Select 2 answers)",
+    "options": [
+      "Apple menu > System Preferences... > Mouse",
+      "Apple menu > App Store... > Categories > Devices > Trackpad",
+      "Apple menu > System Preferences... > Devices > Mouse",
+      "Apple menu > System Preferences... > Trackpad",
+      "Apple menu > App Store... > Categories > Devices > Mouse",
+      "Apple menu > System Preferences... > Devices > Trackpad"
+    ],
+    "correctAnswers": [
+      "Apple menu > System Preferences... > Mouse",
+      "Apple menu > System Preferences... > Trackpad"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the answers listed below refers to a macOS file manager application?",
+    "options": [
+      "Konqueror",
+      "Explorer",
+      "Finder",
+      "Nautilus"
+    ],
+    "correctAnswers": ["Finder"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the macOS features enables access to optical drive of another computer over a network?",
+    "options": [
+      "Disk Utility",
+      "Remote Desktop",
+      "Explorer",
+      "Remote Disc"
+    ],
+    "correctAnswers": ["Remote Disc"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the name of a macOS equivalent of Windows Taskbar?",
+    "options": [
+      "Explorer",
+      "Dock",
+      "Spotlight",
+      "Finder"
+    ],
+    "correctAnswers": ["Dock"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following is a macOS disk maintenance tool?",
+    "options": [
+      "Disk Cleanup",
+      "Disk Management",
+      "chkdsk",
+      "Disk Utility"
+    ],
+    "correctAnswers": ["Disk Utility"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a disk encryption utility in macOS?",
+    "options": [
+      "FileVault",
+      "TrueCrypt",
+      "Disk Utility",
+      "BitLocker"
+    ],
+    "correctAnswers": ["FileVault"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following system utilities in macOS provides access to different command-line shells?",
+    "options": [
+      "command.com",
+      "Terminal",
+      "cmd.exe",
+      "PowerShell"
+    ],
+    "correctAnswers": ["Terminal"],
+    "allowMultiple": false
+  },
+  {
+    "question": "An unresponsive application/process in macOS can be terminated with the use of:",
+    "options": [
+      "shutdown command",
+      "Alt + F4 key combination",
+      "taskkill command",
+      "Force Quit"
+    ],
+    "correctAnswers": ["Force Quit"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which Linux command allows to display information about files and directories contained within the current working directory?",
+    "options": [
+      "pwd",
+      "ls",
+      "grep",
+      "ps"
+    ],
+    "correctAnswers": ["ls"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A Linux command displaying an absolute path to (i.e., full filename of) the current working directory is called:",
+    "options": [
+      "mv",
+      "pwd",
+      "rm",
+      "dir"
+    ],
+    "correctAnswers": ["pwd"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which Linux command-line command is used for transferring files/directories to a different directory?",
+    "options": [
+      "replace",
+      "export",
+      "move",
+      "mv"
+    ],
+    "correctAnswers": ["mv"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the name of the Linux command used for renaming files and directories?",
+    "options": [
+      "rm",
+      "ps",
+      "mv",
+      "ls"
+    ],
+    "correctAnswers": ["mv"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the Linux commands listed below allows for copying files and directories?",
+    "options": [
+      "cp",
+      "copy",
+      "xcopy",
+      "robocopy"
+    ],
+    "correctAnswers": ["cp"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A command-line command in Linux used for deleting files and directories is known as:",
+    "options": [
+      "erase",
+      "rm",
+      "del",
+      "edit"
+    ],
+    "correctAnswers": ["rm"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the function of the Linux chmod command?",
+    "options": [
+      "Changes file access permissions",
+      "Changes file owner and group permissions",
+      "Compares the contents of two files or sets of files",
+      "Changes the Linux command prompt"
+    ],
+    "correctAnswers": ["Changes file access permissions"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the function of the Linux chown command?",
+    "options": [
+      "Changes the Linux command prompt",
+      "Compares the contents of two files or sets of files",
+      "Changes file owner and group permissions",
+      "Changes file access permissions"
+    ],
+    "correctAnswers": ["Changes file owner and group permissions"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following is a Linux command that allows to assume the identity of a different system user and execute commands with security privileges of that user account?",
+    "options": [
+      "sync",
+      "id",
+      "usermod",
+      "su"
+    ],
+    "correctAnswers": ["su"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A Linux command that temporarily modifies security privileges to allow an execution of a single command that requires root access permissions is called:",
+    "options": [
+      "id",
+      "sudo",
+      "usermod",
+      "su"
+    ],
+    "correctAnswers": ["sudo"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the name of a command-line utility used for managing (i.e., finding, installing, or updating) software packages on Debian and Debian-based Linux distributions?",
+    "options": [
+      "rpm",
+      "dpkg",
+      "yum",
+      "apt-get"
+    ],
+    "correctAnswers": ["apt-get"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a package management utility used on Red Hat and Red Hat-based Linux distributions?",
+    "options": [
+      "dpkg",
+      "Synaptic",
+      "yum",
+      "apt-get"
+    ],
+    "correctAnswers": ["yum"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to a Linux command-line utility used for configuring network interfaces?",
+    "options": [
+      "ip",
+      "net config",
+      "ipconfig",
+      "networksetup"
+    ],
+    "correctAnswers": ["ip"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the Linux commands listed below can be used to display the amount of available disk space?",
+    "options": [
+      "diskpart",
+      "df",
+      "chkdsk",
+      "diskutil"
+    ],
+    "correctAnswers": ["df"],
+    "allowMultiple": false
+  }
+],
 
-//----------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------
 "My questions":[
   {
     question: "How do you change an application's priority in Windows Task Manager?",
