@@ -57,21 +57,37 @@ const MultipleChoiceQuestion = () => {
   const loadTypingRound = (questions, retest = false) => {
     const shuffled = shuffleArray(questions);
     setQuestionOrder(shuffled);
-    // For typing round responses, we use fields “typedAnswer”, “submitted”, and “feedback”
-    setResponses(shuffled.map(() => ({ typedAnswer: '', submitted: false, feedback: '' })));
+    // Add "showAnswer" property for each question
+    setResponses(
+      shuffled.map(() => ({
+        typedAnswer: '',
+        submitted: false,
+        feedback: '',
+        showAnswer: false
+      }))
+    );
     setCurrentIndex(0);
     setIsRetest(retest);
     setIsTypingRound(true);
+  };
+
+  // Handler to reveal the answer in a wrong typing round.
+  const handleShowAnswer = () => {
+    updateResponse(currentIndex, { showAnswer: true });
   };
 
   // ---------------------------
   // Answer Checking Function
   // ---------------------------
   const isResponseCorrect = (response, question) => {
-    if (!response.submitted) return false;
+    // If the response doesn't exist, treat it as incorrect.
+    if (!response || !response.submitted) return false;
+    
     if (isTypingRound) {
       const typed = response.typedAnswer.trim().toLowerCase();
-      return question.correctAnswers.some(correct => typed === correct.trim().toLowerCase());
+      return question.correctAnswers.some(
+        correct => typed === correct.trim().toLowerCase()
+      );
     } else {
       const sortedSelected = [...response.selectedAnswers].sort();
       const sortedCorrect = [...question.correctAnswers].sort();
@@ -79,7 +95,7 @@ const MultipleChoiceQuestion = () => {
       return sortedSelected.every((val, index) => val === sortedCorrect[index]);
     }
   };
-
+  
   // ---------------------------
   // Load Questions on Mount/Category Change
   // ---------------------------
@@ -149,11 +165,11 @@ const MultipleChoiceQuestion = () => {
         (correctAnswer) => trimmedAnswer.toLowerCase() === correctAnswer.trim().toLowerCase()
       );
       if (correct) {
-        // Mark as submitted and show positive feedback.
+        // For correct answers: mark as submitted and show positive feedback.
         updateResponse(currentIndex, { submitted: true, feedback: "Correct!" });
       } else {
-        // Allow another attempt and show error feedback.
-        updateResponse(currentIndex, { feedback: "Incorrect. Try again." });
+        // For wrong answers: mark as submitted and show error feedback.
+        updateResponse(currentIndex, { submitted: true, feedback: "Incorrect. Try again." });
       }
     } else {
       if (currentResponse.selectedAnswers.length === 0) return;
@@ -386,24 +402,6 @@ const MultipleChoiceQuestion = () => {
         {/* Typing round or multiple-choice options */}
         {isTypingRound ? (
   <div style={{ marginBottom: '30px' }}>
-    {/* Override button appears if a wrong answer was submitted */}
-    {currentResponse.feedback === "Incorrect. Try again." && (
-      <button
-        onClick={handleOverride}
-        style={{
-          marginBottom: '10px',
-          padding: '8px 12px',
-          fontSize: '1rem',
-          borderRadius: '8px',
-          backgroundColor: '#388e3c',
-          color: '#fff',
-          border: 'none',
-          cursor: 'pointer'
-        }}
-      >
-        I'm correct
-      </button>
-    )}
     <input
       type="text"
       value={currentResponse.typedAnswer}
@@ -434,34 +432,63 @@ const MultipleChoiceQuestion = () => {
         {currentResponse.feedback}
       </p>
     )}
-    {/* Display the correct answer once the response is submitted */}
+    {/* Once submitted, show the answer */}
     {currentResponse.submitted && (
-      <p style={{ textAlign: 'center', marginTop: '10px', color: '#E0E1DD' }}>
-        Answer: {currentQuestion.correctAnswers.join(', ')}
-      </p>
+      isCurrentResponseCorrect() ? (
+        // If correct, display the answer immediately.
+        <p style={{ textAlign: 'center', marginTop: '10px', color: '#E0E1DD' }}>
+          Answer: {currentQuestion.correctAnswers.join(', ')}
+        </p>
+      ) : (
+        // If incorrect, allow the user to click a button to reveal the answer.
+        <>
+          {!currentResponse.showAnswer ? (
+            <button
+              onClick={handleShowAnswer}
+              style={{
+                marginTop: '10px',
+                padding: '8px 12px',
+                fontSize: '1rem',
+                borderRadius: '8px',
+                backgroundColor: '#388e3c',
+                color: '#fff',
+                border: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              Show Answer
+            </button>
+          ) : (
+            <p style={{ textAlign: 'center', marginTop: '10px', color: '#E0E1DD' }}>
+              Answer: {currentQuestion.correctAnswers.join(', ')}
+            </p>
+          )}
+        </>
+      )
     )}
   </div>
 ) : (
-          <div
-            className="option-grid"
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: '16px',
-              marginBottom: '30px'
-            }}
-          >
-            {currentQuestion.options.map((option) => (
-              <button
-                key={option}
-                onClick={() => handleOptionClick(option)}
-                style={getButtonStyle(option)}
-              >
-                {getOptionContent(option)}
-              </button>
-            ))}
-          </div>
-        )}
+  <div
+    className="option-grid"
+    style={{
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: '16px',
+      marginBottom: '30px'
+    }}
+  >
+    {currentQuestion.options.map((option) => (
+      <button
+        key={option}
+        onClick={() => handleOptionClick(option)}
+        style={getButtonStyle(option)}
+      >
+        {getOptionContent(option)}
+      </button>
+    ))}
+  </div>
+)}
+
 
         {/* Navigation Buttons */}
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
