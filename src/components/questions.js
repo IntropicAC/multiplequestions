@@ -3084,8 +3084,1650 @@ export const questionCategories = {
     "allowMultiple": false
   }
 ],
+//-------------------------------------------------------------------------------------------------------------------------------------
+"Comptia A+ 1102 test 13": [
+  {
+    "question": "Assigning a unique encrypted key, called a ticket, to each user that logs on to the network is a characteristic feature of:",
+    "options": ["SAML", "TOTP", "RADIUS", "Kerberos"],
+    "correctAnswers": ["Kerberos"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In the Kerberos-based authentication process, the purpose of the client's timestamp is to provide a countermeasure against:",
+    "options": ["Replay attacks", "Dictionary attacks", "Birthday attacks", "Downgrade attacks"],
+    "correctAnswers": ["Replay attacks"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Harmful programs used to disrupt computer operation, gather sensitive information, or gain unauthorized access to computer systems are commonly referred to as:",
+    "options": ["Adware", "Malware", "Ransomware", "Spyware"],
+    "correctAnswers": ["Malware"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A type of software that performs unwanted and harmful actions in disguise of a legitimate and useful program is known as a Trojan horse. This type of malware may act like a legitimate program and have all the expected functionalities, but apart from that it will also contain a portion of malicious code that the user is unaware of.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A collection of software tools used by a hacker to mask intrusion and obtain administrator-level access to a computer or computer network is known as:",
+    "options": ["Rootkit", "Spyware", "Backdoor", "Trojan"],
+    "correctAnswers": ["Rootkit"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the statements listed below apply to the definition of a computer virus? (Select 3 answers)",
+    "options": [
+      "A self-replicating computer program containing malicious segment",
+      "Malware that requires its host application to be run to make the virus active",
+      "A standalone malicious computer program that replicates itself over a computer network",
+      "Malware that can run by itself without any interaction",
+      "Malicious code that attaches itself to an application program or other executable component",
+      "A self-contained malicious program or code that does need a host to propagate itself"
+    ],
+    "correctAnswers": [
+      "A self-replicating computer program containing malicious segment",
+      "Malware that requires its host application to be run to make the virus active",
+      "Malicious code that attaches itself to an application program or other executable component"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Malicious software collecting information about users without their knowledge/consent is called:",
+    "options": ["Cryptomalware", "Adware", "Ransomware", "Spyware"],
+    "correctAnswers": ["Spyware"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Malware that restricts access to a computer system by encrypting files or locking the entire system down until the user performs requested action is referred to as:",
+    "options": ["Grayware", "Adware", "Ransomware", "Spyware"],
+    "correctAnswers": ["Ransomware"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following is an example of spyware?",
+    "options": ["Keylogger", "Vulnerability scanner", "Computer worm", "Packet sniffer"],
+    "correctAnswers": ["Keylogger"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A type of virus that infects the storage drive area containing the necessary data and code used to start the OS is known as:",
+    "options": ["Phage virus", "Boot sector virus", "Retrovirus", "Polymorphic virus"],
+    "correctAnswers": ["Boot sector virus"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a malware type that exploits computing resources without the owner's consent?",
+    "options": ["Rootkit", "Cryptominer", "Grayware", "Trojan horse"],
+    "correctAnswers": ["Cryptominer"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following methods can be used to launch Windows Recovery Environment (WinRE) in Windows 10?",
+    "options": [
+      "Boot from installation media",
+      "In Power menu, hold down the Shift key and select Restart",
+      "Boot from Recovery Drive",
+      "Perform system restart from the Settings menu",
+      "All of the above"
+    ],
+    "correctAnswers": ["All of the above"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a common firewall type used for protecting a single computer? (Select 2 answers)",
+    "options": ["Host-based firewall", "Software firewall", "Network-based firewall", "Hardware firewall"],
+    "correctAnswers": ["Host-based firewall", "Software firewall"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which firewall would provide the best protection for an ingress/egress point of a corporate network? (Select 2 answers)",
+    "options": ["Hardware firewall", "Network-based firewall", "Software firewall", "Host-based firewall"],
+    "correctAnswers": ["Hardware firewall", "Network-based firewall"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following provides the best countermeasure against social engineering attacks?",
+    "options": ["Strong passwords", "Principle of least privilege", "Implicit deny policy", "User education"],
+    "correctAnswers": ["User education"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the choices listed below provides the most effective means for malware removal?",
+    "options": ["Antivirus", "Anti-malware", "Software firewall", "Recovery mode", "OS reinstallation"],
+    "correctAnswers": ["OS reinstallation"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A social engineering technique whereby attackers under disguise of a legitimate request attempt to gain access to confidential information is called:",
+    "options": ["Phishing", "Privilege escalation", "Backdoor access", "Shoulder surfing"],
+    "correctAnswers": ["Phishing"],
+    "allowMultiple": false
+  },
+  {
+    "question": "The practice of using a telephone system to manipulate user into disclosing confidential information is known as:",
+    "options": ["Whaling", "Spear phishing", "Vishing", "Pharming"],
+    "correctAnswers": ["Vishing"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A situation in which an unauthorized person can view another user's display or keyboard to learn their password or other confidential information is referred to as:",
+    "options": ["Spear phishing", "Tailgating", "Shoulder surfing", "Spoofing"],
+    "correctAnswers": ["Shoulder surfing"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Phishing scams targeting people holding high positions in an organization or business are known as:",
+    "options": ["Vishing", "Smishing", "Whaling", "Pharming"],
+    "correctAnswers": ["Whaling"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is tailgating?",
+    "options": [
+      "Acquiring unauthorized access to confidential data",
+      "Looking over someone's shoulder to get information",
+      "Gaining unauthorized access to restricted areas by following another person",
+      "Manipulating a user into disclosing confidential information"
+    ],
+    "correctAnswers": ["Gaining unauthorized access to restricted areas by following another person"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which social engineering attack relies on identity theft?",
+    "options": ["Vishing", "Impersonation", "Elicitation", "Confidential bait"],
+    "correctAnswers": ["Impersonation"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In computer security, the term \"Dumpster diving\" is used to describe a practice of sifting through trash for discarded documents containing sensitive data. Found documents containing names and surnames of the employees along with the information about positions held in the company and other data can be used to facilitate social engineering attacks. Having the documents shredded or incinerated before disposal makes dumpster diving less effective and mitigates the risk of social engineering attacks.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "The term \"Evil twin\" refers to a rogue Wireless Access Point (WAP) set up for eavesdropping or stealing sensitive user data. Evil twin replaces the legitimate access point and by advertising its own presence with the same SSID appears as a legitimate access point to connecting hosts.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the purpose of a DoS attack?",
+    "options": ["Code injection", "Resource exhaustion", "Malware infection", "Privilege escalation"],
+    "correctAnswers": ["Resource exhaustion"],
+    "allowMultiple": false
+  }
+],
+//-----------------------------------------------------------------------------------------------------------------------------------
+"Comptia A+ 1102 test 14":[
+  {
+    "question": "As opposed to the simple Denial of Service (DoS) attacks that usually are performed from a single system, a Distributed Denial of Service (DDoS) attack uses multiple compromised computer systems to perform the attack against its target. The intermediary systems that are used as a platform for the attack are the secondary victims of the DDoS attack; they are often referred to as zombies, and collectively as a botnet.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A type of attack aimed at exploiting vulnerability that is present in already released software but unknown to the software developer is called:",
+    "options": ["Xmas attack", "Zero-day attack", "IV attack", "Replay attack"],
+    "correctAnswers": ["Zero-day attack"],
+    "allowMultiple": false
+  },
+  {
+    "question": "An email sent from unknown source disguised as a trusted source known to the message receiver is an example of: (Select 2 answers)",
+    "options": ["Spoofing", "Malware", "Trojan horse", "Social engineering", "On-path attack"],
+    "correctAnswers": ["Spoofing", "Social engineering"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following statements can be used to describe the characteristics of an on-path attack? (Select 3 answers)",
+    "options": [
+      "An on-path attack is also known as MitM attack",
+      "Attackers place themselves on the communication route between two devices",
+      "Attackers intercept or modify packets sent between two communicating devices",
+      "An on-path attack is also known as XSS attack",
+      "Attackers do not have access to packets exchanged during the communication between two devices",
+      "Attackers generate forged packets and inject them in the network"
+    ],
+    "correctAnswers": [
+      "An on-path attack is also known as MitM attack",
+      "Attackers place themselves on the communication route between two devices",
+      "Attackers intercept or modify packets sent between two communicating devices"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "An attack against encrypted data that relies heavily on computing power to check all possible keys and passwords until the correct one is found is referred to as:",
+    "options": ["Replay attack", "Brute-force attack", "Dictionary attack", "Birthday attack"],
+    "correctAnswers": ["Brute-force attack"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which password attack takes advantage of a predefined list of words?",
+    "options": ["Birthday attack", "Replay attack", "Dictionary attack", "Brute-force attack"],
+    "correctAnswers": ["Dictionary attack"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which term best describes a disgruntled employee abusing legitimate access to company's internal resources?",
+    "options": ["APT", "Insider threat", "Gray hat", "Threat actor"],
+    "correctAnswers": ["Insider threat"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Entry fields of web forms lacking input validation are vulnerable to what kind of attacks?",
+    "options": ["Replay attacks", "SQL injection attacks", "Brute-force attacks", "Dictionary attacks"],
+    "correctAnswers": ["SQL injection attacks"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a countermeasure against SQL injection attacks?",
+    "options": ["Code obfuscation", "Database normalization", "Code signing", "Input validation"],
+    "correctAnswers": ["Input validation"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers can be used to describe characteristics of an XSS attack? (Select 3 answers)",
+    "options": [
+      "Exploits the trust a user's web browser has in a website",
+      "A malicious script is injected into a trusted website",
+      "User's browser executes attacker's script",
+      "Exploits the trust a website has in the user's web browser",
+      "A user is tricked by an attacker into submitting unauthorized web requests",
+      "Website executes attacker's requests"
+    ],
+    "correctAnswers": [
+      "Exploits the trust a user's web browser has in a website",
+      "A malicious script is injected into a trusted website",
+      "User's browser executes attacker's script"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Network Access Control (NAC) defines a set of rules enforced in a network that the clients attempting to access the network must comply with. With NAC, policies can be enforced before or after end-stations gain access to the network. NAC can be implemented as pre-admission NAC where a host must, for example, be virus free or have patches applied before it can be allowed to connect to the network, and/or post-admission NAC, where a host is being granted/denied permissions based on its actions after it has been provided with the access to the network.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A Microsoft online service used for patching up system vulnerabilities, improving system performance, and fixing coding errors found in Windows software is known as:",
+    "options": ["Action Center", "Windows Update", "Security Center", "Windows Store"],
+    "correctAnswers": ["Windows Update"],
+    "allowMultiple": false
+  },
+  {
+    "question": "The basic countermeasures against application-related vulnerabilities include avoiding applications from unknown sources and keeping the already installed apps up to date with current patches and bug fixes.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "A mobile device deployment model that allows employees to use private mobile devices for accessing company's restricted data and applications is called:",
+    "options": ["COPE", "BYOD", "JBOD", "CYOD"],
+    "correctAnswers": ["BYOD"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a potential IT security vulnerability?",
+    "options": [
+      "Non-compliant systems",
+      "Unpatched systems",
+      "Lack of security software (e.g., antivirus, firewall)",
+      "OSs that got past their EOL",
+      "Use of personal devices for work-related tasks",
+      "All of the above"
+    ],
+    "correctAnswers": ["All of the above"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In Windows 10, Microsoft Defender Antivirus can be enabled/disabled via:",
+    "options": [
+      "Windows Start > Settings > Update & Security > Windows Security > Virus & threat protection > under Virus & threat protection settings click Manage settings > under Real-time protection switch the setting to On or Off",
+      "Windows Control Panel (category view) > System and Security > Security and Maintenance (or choose Review your computer status and resolve issues) > Security > under Virus protection select View in Windows Security > under Virus & threat protection settings click Manage settings > under Real-time protection switch the setting to On or Off",
+      "Windows Control Panel (icon view) > Security and Maintenance > Security > under Virus protection select View in Windows Security > under Virus & threat protection settings click Manage settings > under Real-time protection switch the setting to On or Off",
+      "Locate Windows Security icon in Windows Taskbar notification area > right-click on the icon and select View security dashboard from the pop-up menu > click Virus & threat protection > under Virus & threat protection settings click Manage settings > under Real-time protection switch the setting to On or Off",
+      "All of the above"
+    ],
+    "correctAnswers": ["All of the above"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Virus definition database files contain detection patterns for known viruses. To be effective, an AV program needs up-to-date versions of these files which can be obtained through an AV software update feature.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following actions in Windows 10 provides access to virus & threat protection update setting?",
+    "options": [
+      "Locate Windows Security icon in Windows Taskbar notification area > right-click on the icon and select Check for protection updates from the pop-up menu",
+      "Windows Control Panel (icon view) > Security and Maintenance > Security > under Virus protection select View in Windows Security > under Virus & threat protection updates click Check for updates",
+      "Windows Control Panel (category view) > System and Security > Security and Maintenance (or choose Review your computer status and resolve issues) > Security > under Virus protection select View in Windows Security > under Virus & threat protection updates click Check for updates",
+      "Windows Start > Settings > Update & Security > Windows Security > Virus & threat protection > under Virus & threat protection updates click Check for updates",
+      "All of the above"
+    ],
+    "correctAnswers": ["All of the above"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to an SSO account type?",
+    "options": ["Guest account", "Microsoft account", "Administrator account", "Standard account"],
+    "correctAnswers": ["Microsoft account"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following user groups in Windows 10 can use most software and change system settings that don't affect other users or computer's security?",
+    "options": ["Guests", "Standard Users", "Power Users", "Administrators"],
+    "correctAnswers": ["Standard Users"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to a built-in MS Windows account with complete and unrestricted system access?",
+    "options": ["root", "Power User", "Administrator", "Supervisor"],
+    "correctAnswers": ["Administrator"],
+    "allowMultiple": false
+  },
+  {
+    "question": "In MS Windows environments, Guest account is an account for users who do not have a permanent account on a Windows computer or domain. People using this type of account cannot install software or hardware, change settings, create passwords, or access protected files and folders. However, because the Guest account allows the user to log on to a network, browse the Internet, and shut down the computer, it is recommended to keep it disabled when it isn't being used.",
+    "options": ["True", "False"],
+    "correctAnswers": ["True"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which user group in Windows (applies to Windows 7 and earlier versions) had rights and permissions that allowed its members to perform specific administrator-level tasks?",
+    "options": ["Users", "Guests", "Power Users", "Service accounts"],
+    "correctAnswers": ["Power Users"],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which sign-in options in Windows 10 rely on knowledge-based authentication factors? (Select 3 answers)",
+    "options": ["Username", "Security Key", "PIN", "Facial recognition", "Password", "Fingerprint"],
+    "correctAnswers": ["Username", "PIN", "Password"],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following answers refer to Windows 10 sign-in options that rely on inherence-based authentication factors? (Select 2 answers)",
+    "options": ["Fingerprint", "Facial recognition", "Password", "PIN", "Security Key", "Username"],
+    "correctAnswers": ["Fingerprint", "Facial recognition"],
+    "allowMultiple": true
+  }
+],
 
 //------------------------------------------------------------------------------------------------------------------------------------
+"Comptia A+ 1102 test 15":[
+  {
+    "question": "Which of the statements listed below are true? (Select 2 answers)\nNTFS permissions apply only to local users\nNTFS permissions can be applied only on a folder level\nNTFS permissions apply to both network and local users\nNTFS permissions can be applied to a folder or individual file",
+    "options": [
+      "NTFS permissions apply only to local users",
+      "NTFS permissions can be applied only on a folder level",
+      "NTFS permissions apply to both network and local users",
+      "NTFS permissions can be applied to a folder or individual file"
+    ],
+    "correctAnswers": [
+      "NTFS permissions apply to both network and local users",
+      "NTFS permissions can be applied to a folder or individual file"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which of the following statements describing share permissions in MS Windows are true? (Select 2 answers)\nApply only to network users\nCan be set on a file level\nApply to both network and local users\nCan be set on a folder level",
+    "options": [
+      "Apply only to network users",
+      "Can be set on a file level",
+      "Apply to both network and local users",
+      "Can be set on a folder level"
+    ],
+    "correctAnswers": [
+      "Apply only to network users",
+      "Can be set on a folder level"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "A Windows resource with conflicting NTFS and share permissions applied to it will assume:",
+    "options": [
+      "The least restrictive permission",
+      "NTFS permissions",
+      "The most restrictive permission",
+      "Share permissions"
+    ],
+    "correctAnswers": [
+      "The most restrictive permission"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The share permissions on a shared Windows folder grant the user Read access and the local NTFS permissions grant the user Modify access. Which of the following are the effective user permission levels? (Select 2 answers)",
+    "options": [
+      "Read when accessing the share remotely",
+      "Modify when accessing the folder locally",
+      "Read when accessing the folder locally",
+      "Modify when accessing the share remotely"
+    ],
+    "correctAnswers": [
+      "Read when accessing the share remotely",
+      "Modify when accessing the folder locally"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "The share permissions on a shared Windows folder grant the user Full Control access and the local NTFS permissions grant the user Read access. Which of the following are the effective user permission levels? (Select 2 answers)",
+    "options": [
+      "Read when accessing the share remotely",
+      "Full control when accessing the folder locally",
+      "Read when accessing the folder locally",
+      "Full Control when accessing the share remotely"
+    ],
+    "correctAnswers": [
+      "Read when accessing the share remotely",
+      "Read when accessing the folder locally"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "What is the correct hierarchy of precedence for permissions settings in NTFS?",
+    "options": [
+      "Explicit Allow > Inherited Allow > Explicit Deny > Inherited Deny",
+      "Explicit Deny > Explicit Allow > Inherited Deny > Inherited Allow",
+      "Explicit Allow > Explicit Deny > Inherited Allow > Inherited Deny",
+      "Explicit Deny > Inherited Deny > Explicit Allow > Inherited Allow"
+    ],
+    "correctAnswers": [
+      "Explicit Deny > Explicit Allow > Inherited Deny > Inherited Allow"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In MS Windows, the attrib command is used to display or change file attributes. Some of the available options for this command include read-only (R), archive (A), system (S), and hidden (H). With attrib, the '+' symbol sets an attribute for a file, the '-' sign removes the attribute.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the correct syntax for applying the read-only attribute to a file?",
+    "options": [
+      "attrib +R [drive:] [path] [filename]",
+      "attrib [drive:] [path] [filename] /read-only",
+      "attrib /R [drive:] [path] [filename]",
+      "attrib [drive:] [path] [filename] +R"
+    ],
+    "correctAnswers": [
+      "attrib +R [drive:] [path] [filename]"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In NTFS, permissions inherited from a parent object (e.g., a folder or user group) take precedence over permissions applied directly to an object (explicit permissions).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "False"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In NTFS, a folder or file moved from one location to another on the same volume inherits the permissions of its new parent folder.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "False"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In NTFS, a folder or file copied from one location to another on the same volume retains its original permissions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "False"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In NTFS, a folder or file copied from one location to another on the same volume retains its original permissions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "False"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In NTFS, permission propagation occurs when a folder or file created inside another folder takes on (inherits) permissions applied to that folder (permissions applied to the so-called parent folder propagate down to its child objects, i.e., folders and files created inside the parent folder).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The \"Run as administrator\" option in MS Windows allows users with lower-level permissions to perform tasks reserved for system administrators. This feature requires providing Administrator account credentials and temporarily elevates the current user's privileges to perform a given task. It also simplifies common system tasks, such as installation of new software, which would otherwise require logging out and switching to an admin account.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Windows Vista and newer releases of the Microsoft OS offer a security feature which limits privileges of software applications and access to administrative tasks. When a program makes a change that requires administrator-level permission or a user attempts to modify system settings that require administrative access, it triggers an on-screen prompt requiring an administrator password to proceed. This functionality is known as:",
+    "options": [
+      "UAC",
+      "EFS",
+      "TPM",
+      "ACL"
+    ],
+    "correctAnswers": [
+      "UAC"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following actions in Windows allow to invoke the user access control prompt and run an application with administrator account permissions? (Select 3 answers)",
+    "options": [
+      "Right-click on an application icon > select Run as administrator from the pop-up menu",
+      "Launch Windows Run dialog box (Windows logo key + R) > type in the application's name > press Enter",
+      "In Windows Start menu press and hold Control + Shift keys > left-click on an application icon",
+      "Launch Windows Run dialog box (Windows logo key + R) > type in the application's name > press Control + Shift + Enter",
+      "In Windows Start menu press and hold Alt + Shift keys > left-click on an application icon"
+    ],
+    "correctAnswers": [
+      "Right-click on an application icon > select Run as administrator from the pop-up menu",
+      "In Windows Start menu press and hold Control + Shift keys > left-click on an application icon",
+      "Launch Windows Run dialog box (Windows logo key + R) > type in the application's name > press Control + Shift + Enter"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "What is the name of a Microsoft Windows feature that enables encryption of entire drives?",
+    "options": [
+      "FileVault",
+      "DriveCrypt",
+      "BitLocker",
+      "TrueCrypt"
+    ],
+    "correctAnswers": [
+      "BitLocker"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "A Microsoft Windows feature specifically designed to enable encryption of removable drives is known as:",
+    "options": [
+      "BitLocker",
+      "TrueCrypt",
+      "BitLocker To Go",
+      "DriveCrypt"
+    ],
+    "correctAnswers": [
+      "BitLocker To Go"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Premium versions of the Microsoft OS contain a built-in component that enables encryption of individual files. This feature is called:",
+    "options": [
+      "EFS",
+      "HSM",
+      "AES",
+      "TPM"
+    ],
+    "correctAnswers": [
+      "EFS"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The term \"Data-at-rest encryption\" refers to the encryption process that is applied to data residing in persistent storage (e.g., internal storage drive inside computer case).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The two factors that are considered important for creating strong passwords are: (Select 2 answers)",
+    "options": [
+      "Password length",
+      "Minimum password age",
+      "Password history",
+      "Password complexity",
+      "Maximum password age"
+    ],
+    "correctAnswers": [
+      "Password length",
+      "Password complexity"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "A strong password that meets the password complexity requirement should contain: (Select the best answer)",
+    "options": [
+      "Uppercase letters (A-Z)",
+      "Digits (0-9)",
+      "Non-alphanumeric characters if permitted (e.g., !, @, #, $)",
+      "Lowercase letters (a-z)",
+      "A combination of characters from at least 3 character groups"
+    ],
+    "correctAnswers": [
+      "A combination of characters from at least 3 character groups"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following password examples is the most complex?",
+    "options": [
+      "YzGdL3tU8wx",
+      "T$7C52WL4S9@W0",
+      "G$L3tU8wY@z",
+      "@TxBL$nW@Xt*a#"
+    ],
+    "correctAnswers": [
+      "T$7C52WL4S9@W0"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The importance of changing default usernames and passwords can be illustrated on the example of certain network devices (such as routers) which are often shipped with default and well-known admin credentials that can be looked up on the web.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "An account policy setting that forces users to produce a new password every time they are required to change their old password is known as:",
+    "options": [
+      "Password expiration",
+      "Password reuse",
+      "Password history",
+      "Password complexity"
+    ],
+    "correctAnswers": [
+      "Password history"
+    ],
+    "allowMultiple": false
+  }
+],
+//------------------------------------------------------------------------------------------------------------------------------------------
+"Comptia A+ 1102 test 16":[
+  {
+    "question": "Which of the account policy settings listed below prevents users from reusing old passwords?",
+    "options": [
+      "Password expiration",
+      "Password history",
+      "Password length",
+      "Password complexity"
+    ],
+    "correctAnswers": [
+      "Password history"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which password policy setting prevents users from repeatedly changing their passwords to bypass the password history policy setting and get back to their original/preferred password?",
+    "options": [
+      "Minimum password age setting",
+      "Password complexity setting",
+      "Account lockout threshold setting",
+      "Login time restrictions"
+    ],
+    "correctAnswers": [
+      "Minimum password age setting"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following password policy settings prevents attackers using cracked passwords from gaining permanent access to a Windows workstation?",
+    "options": [
+      "Login time restrictions",
+      "Password complexity setting",
+      "Account lockout threshold setting",
+      "Maximum password age setting"
+    ],
+    "correctAnswers": [
+      "Account lockout threshold setting"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "BIOS/UEFI passwords improve the security of a computer host. These low-level passwords may, for example, prevent unauthorized users from proceeding when the computer is powered on (Supervisor/Administrator password), or restrict the scope of changes a user can make in the BIOS/UEFI interface (User password).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The practice of implementing a computer screen lock is one of the end-user security best practices. The screen lock can be implemented as a password-protected screensaver that activates when the computer has been idle for a specific amount of time. In MS Windows, users can manually block unauthorized access by invoking the sign-in screen with the Windows logo + L key combination whenever they're about to leave their computer desk. Screen locks can also be used as a countermeasure against brute-force attacks as they can be set to block computer access after a specified number of failed login attempts. The use of screensaver locks is an implementation of a more general security best practice which is logging off whenever the system is not in use.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In Microsoft Windows 10, screen lock settings can be accessed via:",
+    "options": [
+      "Settings > Personalization > Lock screen",
+      "Settings > Update & Security > Lock screen",
+      "Settings > System > Display > Lock screen",
+      "Settings > Devices > Display settings > Lock screen"
+    ],
+    "correctAnswers": [
+      "Settings > Personalization > Lock screen"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to a physical security measure against laptop theft?",
+    "options": [
+      "Cable lock",
+      "Geotracking",
+      "LoJack for Laptops",
+      "Remote wipe"
+    ],
+    "correctAnswers": [
+      "Cable lock"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "USB locks are mechanical devices used for blocking a computer's USB ports from unauthorized access. USB locks can also be used to prevent the removal of an external USB device attached to the computer.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Privacy filter (a.k.a. privacy screen) is a protective overlay placed on the computer screen that narrows the viewing angle, so the screen content is only visible directly in front of the monitor and cannot be seen by others nearby. Privacy filter is one of the countermeasures against shoulder surfing.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "A sticky note with a password kept on sight in user's cubicle would be a violation of which of the following policies?",
+    "options": [
+      "Data labeling policy",
+      "Clean desk policy",
+      "Acceptable Use Policy (AUP)",
+      "User account policy"
+    ],
+    "correctAnswers": [
+      "Clean desk policy"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The category of account management security best practices includes the practice of restricting user administrative privileges to operating systems and applications based on user duties. Operating systems simplify this process by introducing the concept of user groups equipped with different types of permissions which allow system administrators to simultaneously manage permissions of multiple user accounts based on group membership.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following account management security measures narrows down a user's computer access to specified hours?",
+    "options": [
+      "Acceptable Use Policy (AUP)",
+      "Job rotation policy",
+      "Login time restrictions",
+      "Principle of least privilege"
+    ],
+    "correctAnswers": [
+      "Login time restrictions"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Because the Guest account in MS Windows allows a user to log on to a network, browse the Internet, and shut down the computer, it is recommended to keep it disabled when it isn't being used.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which account management security solutions provide countermeasures against brute-force attacks? (Select 2 answers)",
+    "options": [
+      "Login time restrictions",
+      "Timeout period between login attempts",
+      "Principle of least privilege",
+      "Clean desk policy",
+      "Failed login attempts lockout"
+    ],
+    "correctAnswers": [
+      "Timeout period between login attempts",
+      "Failed login attempts lockout"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "An MS Windows component enabling automatic execution of code contained on a newly mounted storage media is called AutoPlay.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In MS Windows, AutoRun is a system component that displays a dialog box containing applicable options for a newly mounted storage media.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "False"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which sequence of steps in Windows 10 provides access to the AutoPlay settings menu? (Select 3 answers)",
+    "options": [
+      "Windows Control Panel (icon view) > AutoPlay",
+      "Settings > Devices > AutoPlay",
+      "Windows Control Panel (icon view) > System > AutoPlay",
+      "Windows Control Panel (category view) > Hardware and Sound > AutoPlay",
+      "Settings > System > AutoPlay",
+      "Windows Control Panel (category view) > System and Security > AutoPlay"
+    ],
+    "correctAnswers": [
+      "Windows Control Panel (icon view) > AutoPlay",
+      "Settings > Devices > AutoPlay",
+      "Windows Control Panel (category view) > Hardware and Sound > AutoPlay"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "What is the name of a user interface element controlling access to a mobile device after the device is powered on?",
+    "options": [
+      "Launcher",
+      "Screen lock",
+      "Privacy filter",
+      "Hardware lock"
+    ],
+    "correctAnswers": [
+      "Screen lock"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Implementing full device encryption is one of the methods for securing sensitive data on a smartphone. When enabled, this type of encryption works in conjunction with the phone's screen lock, i.e., to decrypt the phone (which stays encrypted whenever the phone is locked), a user must first unlock the screen. On Android devices, the unlocking methods include entering a PIN, password, or drawing a simple pattern with a finger. Apple devices use passcodes, facial recognition (Face ID), and fingerprint (Touch ID).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Data on a lost or stolen mobile device can be erased by:",
+    "options": [
+      "Rooting",
+      "Sideloading",
+      "Low-level formatting",
+      "Remote wipe"
+    ],
+    "correctAnswers": [
+      "Remote wipe"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "A mobile device's built-in functionality enabling the usage of locator applications is called:",
+    "options": [
+      "WPS",
+      "GSM",
+      "IMEI",
+      "GPS"
+    ],
+    "correctAnswers": [
+      "GPS"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "By default, Android and iOS devices allow a limited number of failed login attempts after which the device becomes inaccessible and requires additional steps to unlock.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "An emerging field of innovative technologies, such as wearable tech or home automation is known as:",
+    "options": [
+      "SoC",
+      "NFC",
+      "IoT",
+      "ESN"
+    ],
+    "correctAnswers": [
+      "IoT"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Examples of storage media drive physical destruction methods include:",
+    "options": [
+      "Shredding",
+      "Drilling",
+      "Degaussing",
+      "Incinerating",
+      "All of the above"
+    ],
+    "correctAnswers": [
+      "All of the above"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "One of the ways to prevent data recovery from a storage drive is to overwrite its contents. The data overwriting technique is used by drive wipe utilities which might employ different methods (including multiple overwriting rounds) to decrease the likelihood of data retrieval. As an example, a disk sanitization utility might overwrite the data on the drive with the value of one in the first pass, change that value to zero in the second pass, and finally perform five more passes, overwriting the contents with random characters (the Schneier method).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  }
+],
+
+//-----------------------------------------------------------------------------------------------------------------------------------------
+"Comptia A+ 1102 test 17":[
+  {
+    "question": "Which of the terms listed below is used to describe the initial storage drive formatting typically performed at the factory by the drive manufacturer?",
+    "options": [
+      "Low-level format",
+      "Quick format",
+      "Standard format",
+      "High-level format"
+    ],
+    "correctAnswers": [
+      "Low-level format"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which formatting type(s) would typically be performed by a user intending to reinstall an OS? (Select all that apply)",
+    "options": [
+      "Quick format",
+      "Low-level-format",
+      "Standard format",
+      "High-level format"
+    ],
+    "correctAnswers": [
+      "Quick format",
+      "High-level format"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "Which format type in MS Windows does not erase disk data?",
+    "options": [
+      "Standard format",
+      "Low-level-format",
+      "High-level format",
+      "Quick format"
+    ],
+    "correctAnswers": [
+      "Quick format"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which formatting type in MS Windows prevents data recovery by overwriting the contents of storage drive sectors?",
+    "options": [
+      "Low-level format",
+      "Standard format",
+      "High-level format",
+      "Quick format"
+    ],
+    "correctAnswers": [
+      "High-level format"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Certificate of destruction is a document issued by companies that conduct secure device/document disposal. The certificate verifies proper asset destruction and can be used for auditing purposes. In case of device disposal, the document includes a list of all the items that have been destroyed along with their serial numbers. It may also describe the destruction method, specify location (on-site/off-site), or list the names of witnesses who oversaw the entire process.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Because wireless routers are shipped with default credentials, the process of securing a SOHO network should include changing the default username and password on a Wireless Access Point (WAP).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "What type of network traffic filtering criteria can be set on a router?",
+    "options": [
+      "Filtering by IP address",
+      "Filtering by network protocol",
+      "Filtering by subnet",
+      "Filtering by logical port number",
+      "All of the above"
+    ],
+    "correctAnswers": [
+      "All of the above"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to a type of software embedded into a hardware chip?",
+    "options": [
+      "Machine code",
+      "Bootloader",
+      "Device driver",
+      "Firmware"
+    ],
+    "correctAnswers": [
+      "Firmware"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the answers listed below refers to an application software that selectively blocks access to websites?",
+    "options": [
+      "Captive portal",
+      "Firewall",
+      "Content filter",
+      "Proxy server"
+    ],
+    "correctAnswers": [
+      "Content filter"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to an example of content filtering configuration setting on a SOHO router?",
+    "options": [
+      "Modem mode",
+      "Parental controls",
+      "MAC filtering",
+      "IP and port filtering"
+    ],
+    "correctAnswers": [
+      "Parental controls"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The term \"Unified Threat Management\" (UTM) refers to a network security solution, commonly in the form of a dedicated device (called UTM appliance or web security gateway), which combines the functionality of a firewall with additional features such as URL filtering, content inspection, spam filtering, gateway antivirus protection, IDS/IPS function, or malware inspection.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "An optimal Wireless Access Point (WAP) antenna placement provides a countermeasure against:",
+    "options": [
+      "War chalking",
+      "Spoofing",
+      "War driving",
+      "Insider threat"
+    ],
+    "correctAnswers": [
+      "War driving"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the WAP settings listed below allows for adjusting the boundary range of a wireless signal?",
+    "options": [
+      "WPS setup",
+      "Radio channel",
+      "Power level controls",
+      "Beacon interval"
+    ],
+    "correctAnswers": [
+      "Power level controls"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following would be of help in troubleshooting wireless signal loss and low wireless network signal coverage?",
+    "options": [
+      "Protocol analyzer",
+      "WAP power level controls",
+      "Logical network diagram",
+      "Network mapper"
+    ],
+    "correctAnswers": [
+      "Protocol analyzer"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "A DHCP server's IP exclusion configuration option allows network administrators to remove a single IP address or a range of IP addresses from the pool of addresses being assigned automatically to the requesting DHCP client computers. IP exclusion prevents other DHCP clients from requesting an IP address statically assigned to other essential network hosts (e.g., servers, or wireless printers).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "One of the features of DHCP is the capability for static allocation of an IP address based on the IP-to-MAC address mapping.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the terms listed below refers to permanent IP address assignment from a DHCP server?",
+    "options": [
+      "Scope",
+      "Reservation",
+      "DHCP relay",
+      "Lease"
+    ],
+    "correctAnswers": [
+      "Reservation"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "A permanent WAN IP address assigned to a computer by an ISP is referred to as a:",
+    "options": [
+      "Static IP address",
+      "Private IP address",
+      "Dynamic IP address",
+      "Public IP address"
+    ],
+    "correctAnswers": [
+      "Static IP address"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "A type of architecture that simplifies networking by allowing devices to dynamically join a network, autoconfigure, and learn about the presence and capabilities of other devices is known as:",
+    "options": [
+      "PoE",
+      "DHCP",
+      "SDN",
+      "UPnP"
+    ],
+    "correctAnswers": [
+      "UPnP"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following answers refers to the concept of zero-configuration networking?",
+    "options": [
+      "DHCP",
+      "PnP",
+      "UPnP",
+      "AutoRun"
+    ],
+    "correctAnswers": [
+      "UPnP"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Examples of technologies that should not be used due to their known vulnerabilities or other security risks include: (Select 2 answers)",
+    "options": [
+      "RDP",
+      "UPnP",
+      "WEP",
+      "TLS",
+      "SNMP"
+    ],
+    "correctAnswers": [
+      "UPnP",
+      "WEP"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "A lightly protected subnet (a.k.a. DMZ) consisting of publicly available servers placed on the outside of the company's firewall is called:",
+    "options": [
+      "Captive portal",
+      "Honeynet",
+      "Quarantine network",
+      "Extranet",
+      "Screened subnet"
+    ],
+    "correctAnswers": [
+      "Screened subnet"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Service Set Identifier (SSID) is a unique identifier (a.k.a. wireless network name) for a WLAN. Wireless networks advertise their presence by regularly broadcasting SSID in a special packet called beacon frame. In wireless networks with disabled security features, knowing the network SSID is enough to get access to the network. SSID also pinpoints the wireless router that acts as a Wireless Access Point (WAP). Wireless routers from the same manufacturer are frequently configured with default (well-known) SSID names. Since multiple devices with the same SSID displayed on the list of available networks create confusion and encourage accidental access by unauthorized users (applies to networks that lack security), changing the default SSID is a recommended practice.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Disabling SSID broadcast:",
+    "options": [
+      "Is one of the measures used in the process of securing wireless networks",
+      "Makes a WLAN harder to discover",
+      "Blocks access to a WAP",
+      "Prevents wireless clients from accessing the network"
+    ],
+    "correctAnswers": [
+      "Makes a WLAN harder to discover"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "For a wireless client to be able to connect to a network, the security type (e.g., WEP, WPA, WPA2, or WPA3) and encryption type (e.g., TKIP or AES) settings on the connecting host must match the corresponding wireless security settings on a Wireless Access Point (WAP).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  }
+],
+
+////-----------------------------------------------------------------------------------------------------------------------------------------
+"Comptia A+ 1102 test 18": [
+  {
+    "question": "A type of wireless network that provides access to the Internet, but not to the internal network is referred to as guest WiFi network. Setting up a separate network for visitors (handled by a dedicated access point) protects the internal network against risks related to unauthorized activities and malware infections.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In wireless networks, channel overlapping is a situation where multiple channels share the frequency band causing interference and performance degradation for devices operating on channels that are too close to each other. A common example of channel overlapping would be the 2.4 GHz band used in 802.11 networks, where the 2.401 - 2.473 GHz frequency range is used for allocating 11 channels, each taking up a 22-MHz portion of the spectrum. Setting up a wireless network to operate on a non-overlapping channel (1, 6, and 11 in this case) allows multiple networks to coexist in the same area without causing interference.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In the context of implementing secure network designs, the term \"Port security\" may apply to:",
+    "options": [
+      "Disabling physical ports on a device (e.g., RJ-45 device ports on a router, switch, or patch panel)",
+      "Implementing MAC filtering",
+      "Disabling unused logical ports (TCP/UDP)",
+      "Implementing Port-based Network Access Control (defined in the IEEE 802.1X standard)",
+      "All of the above"
+    ],
+    "correctAnswers": [
+      "All of the above"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "A server with private IP address has been set up to handle requests from an outside (public) network. Which of the solutions listed below would enable this functionality?",
+    "options": [
+      "Port bonding",
+      "Port labeling",
+      "Port forwarding",
+      "Port mirroring"
+    ],
+    "correctAnswers": [
+      "Port forwarding"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Port mirroring allows an administrator to inspect traffic passing through a network switch. On a switch that supports port mirroring, a packet analyzer can be connected to an empty port and the switch can be configured to pass a copy of the data sent over one or multiple ports on that switch to the packet sniffer port allowing the administrator to monitor contents of the traffic passing through the switch.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "A hash function enables mapping large amount of data content to a small string of characters. The result of hash function provides the exact \"content in a nutshell\" (in the form of a string of alphanumeric characters) derived from the original data content. In case there is any change to the data after the original hash was taken, the next time when hash function is applied the resulting hash value calculated after content modification will be different from the original hash.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "One of the ways of confirming that a software application comes from a trusted source is the verification of its digital signature. A digitally signed software proves the identity of the developer and guarantees that the application code has not been tampered with since it was signed. The authenticity and integrity of the application's code can be verified by comparing results of a cryptographic hash function (original hash published by the application developer vs. hash obtained from a downloaded app).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Installing web browser extensions and plug-ins from trusted sources (e.g., Microsoft Store for Microsoft Edge, or Google Play for Google Chrome) instead of third-party sites decreases malware-related security risks.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The term \"Password vault\" refers to a credential manager program that stores usernames and passwords in an encrypted form. Password vault requires a single master password for accessing a number of different passwords used for different websites or services.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which Control Panel applet in Windows allows to manage usernames and passwords for websites, connected applications and networks?",
+    "options": [
+      "User Accounts",
+      "Credential Manager",
+      "Security and Maintenance",
+      "Ease of Access Center"
+    ],
+    "correctAnswers": [
+      "Credential Manager"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "What is the name of a network protocol that secures web traffic via SSL/TLS encryption?",
+    "options": [
+      "SFTP",
+      "HTTPS",
+      "FTPS",
+      "SNMP"
+    ],
+    "correctAnswers": [
+      "HTTPS"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following allows to check digital certificate validity?",
+    "options": [
+      "User Account Control (UAC) applet",
+      "Web browser padlock icon menu",
+      "Storage Spaces Control Panel applet",
+      "Windows Security Account Manager (SAM)"
+    ],
+    "correctAnswers": [
+      "Web browser padlock icon menu"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the solutions listed below allows to check whether a digital certificate has been revoked?",
+    "options": [
+      "OCR",
+      "CRL",
+      "CSR",
+      "OSPF"
+    ],
+    "correctAnswers": [
+      "CRL"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the MS Windows utilities provides access to configuration options of a built-in pop-up blocker?",
+    "options": [
+      "Programs and Features (appwiz.cpl)",
+      "System Configuration (msconfig.exe)",
+      "Internet Properties (inetcpl.cpl)",
+      "Security and Maintenance (wscui.cpl)"
+    ],
+    "correctAnswers": [
+      "Internet Properties (inetcpl.cpl)"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The term \"Web browsing data\" refers to:",
+    "options": [
+      "History of visited pages",
+      "Downloaded files",
+      "Saved passwords",
+      "Cookies",
+      "Web form data",
+      "Cached images and files",
+      "All of the above terms"
+    ],
+    "correctAnswers": [
+      "All of the above terms"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Web caching improves:",
+    "options": [
+      "Privacy",
+      "Data integrity",
+      "Page loading speed",
+      "Web browser security"
+    ],
+    "correctAnswers": [
+      "Page loading speed"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Private-browsing mode (InPrivate browsing in Microsoft Edge / Incognito mode in Google Chrome) is a privacy feature that prevents the web browser from storing data about a browsing session. Private browsing window (which can be launched with the Ctrl + Shift + N key combination) provides protection against website and ISP tracking and clears all the web browsing data associated with the session when the session is closed.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The term \"Browser synchronization\" refers to a cloud service provided by a web browser vendor for sharing browser settings and data across all web browser instances installed on devices that are signed-in to the main account (e.g., Google Account, or Microsoft account).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "The Blue Screen of Death (BSoD) (a.k.a. stop error screen) in MS Windows indicates a fatal error that the system cannot fix on the fly to continue operate safely. BSOD provides technical information that might be of help for advanced users in solving the cause of the stop error. In older versions of Microsoft OSs, information displayed on the screen when Windows encountered this type of error typically included error code, memory address where it occurred, and the name of the driver that caused it. Starting from Windows 8, the error screen contains a stop code accompanied by a URL and QR code pointing to relevant troubleshooting resources on the Internet.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "\"Pinwheel\" is an informal term used for describing stop error in:",
+    "options": [
+      "Android",
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "correctAnswers": [
+      "macOS"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "In Microsoft OSs, Performance tab in Windows Task Manager allows to identify hardware components affecting system performance. In a similar fashion, Task Manager's Processes tab can be used to identify compute-intensive applications and processes that can be the cause of sluggish system performance.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Slow computer performance may be the result of:",
+    "options": [
+      "Outdated system/app/driver software",
+      "Insufficient amount of hardware resources (e.g., RAM)",
+      "Storage drive fragmentation",
+      "Depleted internal storage space",
+      "System overheating",
+      "Malicious software",
+      "All of the above"
+    ],
+    "correctAnswers": [
+      "All of the above"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Slow computer performance may be the result of:",
+    "options": [
+      "Outdated system/app/driver software",
+      "Insufficient amount of hardware resources (e.g., RAM)",
+      "Storage drive fragmentation",
+      "Depleted internal storage space",
+      "System overheating",
+      "Malicious software",
+      "All of the above"
+    ],
+    "correctAnswers": [
+      "All of the above"
+    ],
+    "allowMultiple": false
+  },
+  {
+    "question": "Which of the following could be of help while troubleshooting a system that attempts to boot to incorrect device? (Select 2 answers)",
+    "options": [
+      "Device Manager",
+      "Safe mode troubleshooting",
+      "Troubleshooting applet in Windows Control Panel",
+      "Disconnecting any removable drives",
+      "Updating boot order in BIOS"
+    ],
+    "correctAnswers": [
+      "Disconnecting any removable drives",
+      "Updating boot order in BIOS"
+    ],
+    "allowMultiple": true
+  },
+  {
+    "question": "During system boot, a user receives \"Windows Boot Configuration Data file is missing required information\" error message. Which of the following command-line commands should be used by a technician to troubleshoot this error?",
+    "options": [
+      "bootrec /scanos",
+      "bootrec /rebuildbcd",
+      "bootrec /fixmbr",
+      "bootrec /fixboot"
+    ],
+    "correctAnswers": [
+      "bootrec /rebuildbcd"
+    ],
+    "allowMultiple": false
+  }
+],
+
+//------------------------------------------------------------------------------------------------------------------------------------------
 "My questions":[
   {
     question: "How do you change an application's priority in Windows Task Manager?",
