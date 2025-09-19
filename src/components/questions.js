@@ -1,4 +1,1773 @@
 export const questionCategories = {
+
+    "Comptia A+ module 1": [
+{
+"question": "A technician is replacing a laptop’s storage to improve durability and reduce power draw. Which option best fits this requirement?",
+"options": [
+"7200 RPM HDD on SATA",
+"NVMe SSD using PCIe lanes",
+"External USB 2.0 flash drive",
+"mSATA HDD"
+],
+"correctAnswers": ["NVMe SSD using PCIe lanes"],
+"allowMultiple": false
+},
+{
+"question": "Which M.2 form factors list the width and length correctly? (Select 2 answers)",
+"options": [
+"M.2 2230: 22 mm × 30 mm",
+"M.2 22110: 22 mm × 110 mm",
+"M.2 2260: 26 mm × 60 mm",
+"M.2 2280: 28 mm × 80 mm"
+],
+"correctAnswers": [
+"M.2 2230: 22 mm × 30 mm",
+"M.2 22110: 22 mm × 110 mm"
+],
+"allowMultiple": true
+},
+{
+"question": "A field tech suspects a dislodged Wi-Fi antenna after a drop. Which steps are MOST appropriate during reassembly? (Select 2 answers)",
+"options": [
+"Reroute the antenna along the original path through the bezel/frame",
+"Leave the antenna floating to avoid strain on connectors",
+"Ensure delicate antenna connectors are firmly reattached",
+"Twist the antenna cable to reduce length and improve signal"
+],
+"correctAnswers": [
+"Reroute the antenna along the original path through the bezel/frame",
+"Ensure delicate antenna connectors are firmly reattached"
+],
+"allowMultiple": true
+},
+{
+"question": "A laptop upgrade from 8 GB to 16 GB RAM is planned. Which module and pin count is MOST likely for modern laptops?",
+"options": [
+"SO-DIMM DDR4, 260 pins",
+"UDIMM DDR4, 288 pins",
+"SO-DIMM DDR3, 262 pins",
+"SO-DIMM DDR5, 204 pins"
+],
+"correctAnswers": ["SO-DIMM DDR4, 260 pins"],
+"allowMultiple": false
+},
+{
+"question": "Which connection methods can be used for smartphone tethering/hotspot functionality? (Select 3 answers)",
+"options": [
+"Wi-Fi (802.11x)",
+"USB",
+"Bluetooth",
+"NFC",
+"Lightning"
+],
+"correctAnswers": [
+"Wi-Fi (802.11x)",
+"USB",
+"Bluetooth"
+],
+"allowMultiple": true
+},
+{
+"question": "A user asks why an NVMe SSD is recommended over a SATA SSD for video editing workflows. Which reasons are valid? (Select 2 answers)",
+"options": [
+"NVMe uses PCIe lanes for significantly higher throughput",
+"NVMe drives consume more power, improving stability",
+"SATA is limited to ~6 Gbps theoretical speeds",
+"NVMe requires external USB enclosures to reach peak speed"
+],
+"correctAnswers": [
+"NVMe uses PCIe lanes for significantly higher throughput",
+"SATA is limited to ~6 Gbps theoretical speeds"
+],
+"allowMultiple": true
+},
+{
+"question": "Which statements about batteries in mobile devices are TRUE? (Select 2 answers)",
+"options": [
+"Lithium-ion/Li-Po chemistries are common in phones and tablets",
+"Using vendor-specific chargers is recommended due to proprietary designs",
+"Ni-Cd packs are preferred for modern smartphones due to memory effect handling",
+"Most devices allow tool-less battery replacement by design"
+],
+"correctAnswers": [
+"Lithium-ion/Li-Po chemistries are common in phones and tablets",
+"Using vendor-specific chargers is recommended due to proprietary designs"
+],
+"allowMultiple": true
+},
+{
+"question": "A customer’s iPhone won’t charge; the cable is frayed near the connector. Which interface is MOST likely affected?",
+"options": [
+"Lightning",
+"USB-C (phone side)",
+"miniUSB",
+"microUSB"
+],
+"correctAnswers": ["Lightning"],
+"allowMultiple": false
+},
+{
+"question": "Which wireless technologies are commonly implemented via integrated modules or cards in laptops? (Select 3 answers)",
+"options": [
+"Wi-Fi",
+"Bluetooth",
+"Cellular",
+"FireWire",
+"Zigbee"
+],
+"correctAnswers": [
+"Wi-Fi",
+"Bluetooth",
+"Cellular"
+],
+"allowMultiple": true
+},
+{
+"question": "You’re advising on app packaging formats. Which pairing is correct for the platform?",
+"options": [
+"Android — .apk",
+"iOS/iPadOS — .ipa",
+"Windows desktop — .dmg",
+"macOS — .dmg"
+],
+"correctAnswers": [
+"Android — .apk",
+"iOS/iPadOS — .ipa",
+"macOS — .dmg"
+],
+"allowMultiple": true
+},
+{
+"question": "An older iPad can’t update to the latest iPadOS due to hardware constraints. What BEST describes this?",
+"options": [
+"End-of-Life (EOL) of the OS family",
+"Update limitations on older hardware",
+"Application spoofing",
+"Airplane mode is enabled"
+],
+"correctAnswers": ["Update limitations on older hardware"],
+"allowMultiple": false
+},
+{
+"question": "A phone shows a bulging back cover and won’t sit flat on a desk. What is the BEST action?",
+"options": [
+"Continue using but fully discharge the pack first",
+"Puncture the battery to release pressure",
+"Handle with caution and follow manufacturer replacement guidance",
+"Freeze the device to shrink the battery temporarily"
+],
+"correctAnswers": ["Handle with caution and follow manufacturer replacement guidance"],
+"allowMultiple": false
+},
+{
+"question": "A tablet overheats during gaming and charging. Which mitigations are MOST appropriate? (Select 2 answers)",
+"options": [
+"Close unused background applications",
+"Move device out of direct sunlight",
+"Increase screen brightness to dissipate heat",
+"Disable gyroscope to reduce CPU load"
+],
+"correctAnswers": [
+"Close unused background applications",
+"Move device out of direct sunlight"
+],
+"allowMultiple": true
+},
+{
+"question": "A user reports touch input is consistently offset from where they tap. Which initial steps should you try? (Select 2 answers)",
+"options": [
+"Clean the screen with a lint-free cloth",
+"Reflash the baseband firmware",
+"Use touchscreen recalibration (if available)",
+"Replace the motherboard"
+],
+"correctAnswers": [
+"Clean the screen with a lint-free cloth",
+"Use touchscreen recalibration (if available)"
+],
+"allowMultiple": true
+},
+{
+"question": "A device repeatedly shows intrusive pop-ups and ads, even on the home screen. What is the MOST likely cause?",
+"options": [
+"Adware infection from an unauthorized app source",
+"Insufficient storage for OTA updates",
+"Disabled NFC service",
+"Gyroscope failure"
+],
+"correctAnswers": ["Adware infection from an unauthorized app source"],
+"allowMultiple": false
+},
+{
+"question": "A smartphone cannot access the Internet and the user suspects malware. What is the BEST first action?",
+"options": [
+"Remove suspicious or unauthorized applications",
+"Lower the screen brightness",
+"Enable airplane mode permanently",
+"Reset the router"
+],
+"correctAnswers": ["Remove suspicious or unauthorized applications"],
+"allowMultiple": false
+},
+{
+"question": "Which symptoms can indicate malicious or unauthorized applications on a mobile device? (Select 3 answers)",
+"options": [
+"Unexpectedly high network traffic/data usage",
+"Degraded response time without heavy workloads",
+"Frequent fake security warnings",
+"Improved battery life",
+"Higher maximum Wi-Fi throughput than rated"
+],
+"correctAnswers": [
+"Unexpectedly high network traffic/data usage",
+"Degraded response time without heavy workloads",
+"Frequent fake security warnings"
+],
+"allowMultiple": true
+},
+{
+"question": "On Android, where would you typically enable NFC and configure contactless payments?",
+"options": [
+"Settings > Connections > NFC and contactless payment",
+"Settings > Display > Rotation",
+"Settings > Battery > Optimizations",
+"Settings > Security > VPN"
+],
+"correctAnswers": ["Settings > Connections > NFC and contactless payment"],
+"allowMultiple": false
+},
+{
+"question": "On iOS, a user wants to disable Bluetooth to troubleshoot headphones. Which path is MOST appropriate?",
+"options": [
+"Settings > Bluetooth",
+"Settings > Cellular",
+"Settings > Wi-Fi",
+"Settings > Display & Brightness"
+],
+"correctAnswers": ["Settings > Bluetooth"],
+"allowMultiple": false
+},
+{
+"question": "A user complains an app won’t launch and crashes immediately. Which actions are the BEST first two steps? (Select 2 answers)",
+"options": [
+"Force quit the application",
+"Reinstall the OS",
+"Clear the app cache/data then relaunch",
+"Replace the digitizer"
+],
+"correctAnswers": [
+"Force quit the application",
+"Clear the app cache/data then relaunch"
+],
+"allowMultiple": true
+}],
+//---------------------------------------------------------------------------------------------
+
+
+"Comptia A+ 1101 — Module 2 Networking Mock": [
+{
+"question": "A technician must transfer firmware images to a switch and later verify the upload via command line. Which protocol/port pairing is MOST appropriate for the transfer phase?",
+"options": [
+"FTP on TCP/21 (control) with TCP/20 (data)",
+"HTTP on TCP/80",
+"IMAP on TCP/143",
+"RDP on TCP/3389"
+],
+"correctAnswers": ["FTP on TCP/21 (control) with TCP/20 (data)"],
+"allowMultiple": false
+},
+{
+"question": "Which protocols are typically used for retrieving emails from a mail server to a client? (Select 2 answers)",
+"options": [
+"POP3 (TCP/110)",
+"IMAP (TCP/143)",
+"SMTP (TCP/25)",
+"LDAP (TCP/389)"
+],
+"correctAnswers": ["POP3 (TCP/110)", "IMAP (TCP/143)"],
+"allowMultiple": true
+},
+{
+"question": "A help desk receives reports that short-range contactless payments fail unless the phone is nearly touching the reader. Which technology is MOST likely in use?",
+"options": [
+"Bluetooth operating at 2.4 GHz",
+"NFC operating around 13.56 MHz",
+"RFID UHF around 900 MHz",
+"802.11ac operating at 5 GHz"
+],
+"correctAnswers": ["NFC operating around 13.56 MHz"],
+"allowMultiple": false
+},
+{
+"question": "Which Wi-Fi standards can operate on the 5 GHz band? (Select 3 answers)",
+"options": [
+"802.11a",
+"802.11g",
+"802.11ac",
+"802.11ax"
+],
+"correctAnswers": ["802.11a", "802.11ac", "802.11ax"],
+"allowMultiple": true
+},
+{
+"question": "A small business wants to isolate HR traffic from other departments on the same switch fabric. Which solution fits BEST?",
+"options": [
+"VLANs configured on a managed switch",
+"VPN tunnel to the ISP",
+"PoE+ injectors on HR ports",
+"DHCP reservations for HR devices"
+],
+"correctAnswers": ["VLANs configured on a managed switch"],
+"allowMultiple": false
+},
+{
+"question": "Which DNS record types are correctly matched with their purpose? (Select 3 answers)",
+"options": [
+"A — maps a name to an IPv4 address",
+"AAAA — maps a name to an IPv6 address",
+"CNAME — maps an alias to a canonical host",
+"MX — provides SPF policy for a domain"
+],
+"correctAnswers": ["A — maps a name to an IPv4 address", "AAAA — maps a name to an IPv6 address", "CNAME — maps an alias to a canonical host"],
+"allowMultiple": true
+},
+{
+"question": "A remote user needs an encrypted tunnel from a hotel Wi-Fi to the company network to access internal files. Which technology is MOST appropriate?",
+"options": [
+"VLAN",
+"VPN",
+"Proxy",
+"NAT"
+],
+"correctAnswers": ["VPN"],
+"allowMultiple": false
+},
+{
+"question": "Which port(s) should be allowed through a firewall to support automatic IPv4 addressing from a DHCP server? (Select 2 answers)",
+"options": [
+"UDP/67",
+"UDP/68",
+"TCP/389",
+"TCP/445"
+],
+"correctAnswers": ["UDP/67", "UDP/68"],
+"allowMultiple": true
+},
+{
+"question": "A warehouse adds cameras and access points in hard-to-reach places with no nearby power. Which solution is MOST suitable?",
+"options": [
+"PoE switch conforming to IEEE 802.3af/802.3at",
+"Standalone DSL modem",
+"ONT providing coax power feed",
+"Patch panel with passive splitters"
+],
+"correctAnswers": ["PoE switch conforming to IEEE 802.3af/802.3at"],
+"allowMultiple": false
+},
+{
+"question": "Which statements accurately compare TCP and UDP? (Select 2 answers)",
+"options": [
+"TCP is connection-oriented and supports retransmissions",
+"UDP guarantees in-order, reliable delivery",
+"UDP is connectionless and often used for real-time apps",
+"TCP is generally preferred for broadcast name resolution"
+],
+"correctAnswers": ["TCP is connection-oriented and supports retransmissions", "UDP is connectionless and often used for real-time apps"],
+"allowMultiple": true
+},
+{
+"question": "A technician sees an address of 169.254.23.77/16 on a user’s laptop. What is the MOST likely explanation?",
+"options": [
+"Public IPv4 address leased from the ISP",
+"APIPA assigned due to DHCP failure",
+"Static IPv4 address mis-typed",
+"Loopback interface configuration"
+],
+"correctAnswers": ["APIPA assigned due to DHCP failure"],
+"allowMultiple": false
+},
+{
+"question": "Which pairing of Internet access type to medium/characteristic is MOST accurate?",
+"options": [
+"Cable — DOCSIS over coax, shared neighborhood bandwidth",
+"DSL — fiber to the premises, lowest latency",
+"Satellite — copper twisted pair, shortest wireless hop",
+"Fiber — susceptible to EMI, long copper loops"
+],
+"correctAnswers": ["Cable — DOCSIS over coax, shared neighborhood bandwidth"],
+"allowMultiple": false
+},
+{
+"question": "A new fiber service is installed at home; the provider places a device that converts light to Ethernet for the customer router. What device is this?",
+"options": [
+"Optical Network Terminal (ONT)",
+"Cable modem",
+"DSL splitter",
+"PoE injector"
+],
+"correctAnswers": ["Optical Network Terminal (ONT)"],
+"allowMultiple": false
+},
+{
+"question": "Which services are examples of ‘internet appliances’ rather than general servers? (Select 2 answers)",
+"options": [
+"Unified Threat Management (UTM)",
+"Spam gateway",
+"NTP server",
+"AAA (RADIUS/TACACS+) server"
+],
+"correctAnswers": ["Unified Threat Management (UTM)", "Spam gateway"],
+"allowMultiple": true
+},
+{
+"question": "You are hardening email delivery against spoofing. Which set correctly aligns the goal with the DNS mechanism?",
+"options": [
+"Authorize sending hosts — SPF",
+"Sign headers to prove domain — DKIM",
+"Policy/reporting on failures — DMARC",
+"Map mailbox aliases — CNAME"
+],
+"correctAnswers": ["Authorize sending hosts — SPF", "Sign headers to prove domain — DKIM", "Policy/reporting on failures — DMARC"],
+"allowMultiple": true
+},
+{
+"question": "A branch office requires better range through walls but can tolerate lower throughput. Which band is MOST appropriate for the Wi-Fi deployment?",
+"options": [
+"2.4 GHz",
+"5 GHz",
+"6 GHz",
+"13.56 MHz"
+],
+"correctAnswers": ["2.4 GHz"],
+"allowMultiple": false
+},
+{
+"question": "Which DHCP configuration elements would you use to ensure a specific printer always gets 192.168.1.50 and that the DHCP pool avoids 192.168.1.1–.20? (Select 2 answers)",
+"options": [
+"Reservation for the printer’s MAC",
+"Lease time of 24 hours",
+"Exclusions for .1–.20",
+"Scope set to 192.168.1.1–.254"
+],
+"correctAnswers": ["Reservation for the printer’s MAC", "Exclusions for .1–.20"],
+"allowMultiple": true
+},
+{
+"question": "A user needs graphic desktop access to a Windows workstation from home. Which protocol/port should be opened inbound at the office (assuming security policy allows it)?",
+"options": [
+"RDP on TCP/3389",
+"SSH on TCP/22",
+"Telnet on TCP/23",
+"SMB on TCP/445"
+],
+"correctAnswers": ["RDP on TCP/3389"],
+"allowMultiple": false
+},
+{
+"question": "Which network type descriptions are correctly matched? (Select 3 answers)",
+"options": [
+"PAN — short-range personal devices like phone ↔ watch",
+"MAN — interconnects sites across different countries",
+"SAN — block-level storage network (e.g., Fibre Channel/iSCSI)",
+"WLAN — wireless extension of a LAN using 802.11"
+],
+"correctAnswers": ["PAN — short-range personal devices like phone ↔ watch", "SAN — block-level storage network (e.g., Fibre Channel/iSCSI)", "WLAN — wireless extension of a LAN using 802.11"],
+"allowMultiple": true
+},
+{
+"question": "Which statements about channels and widths are MOST accurate for modern Wi-Fi planning? (Select 2 answers)",
+"options": [
+"2.4 GHz effectively has three non-overlapping 20 MHz channels (1, 6, 11)",
+"5 GHz supports only 20 MHz channels",
+"6 GHz (Wi-Fi 6E) offers many more non-overlapping channels up to 160 MHz widths",
+"Channel regulation is set only by the AP vendor, not regional bodies"
+],
+"correctAnswers": [
+"2.4 GHz effectively has three non-overlapping 20 MHz channels (1, 6, 11)",
+"6 GHz (Wi-Fi 6E) offers many more non-overlapping channels up to 160 MHz widths"
+],
+"allowMultiple": true
+},
+{
+"question": "You’re selecting gear for an office build-out. Match device to its primary role.",
+"options": [
+"Router — forwards frames based on MAC table entries",
+"Managed switch — enables VLANs/QoS/SNMP",
+"Firewall — converts fiber light to Ethernet",
+"Access point — terminates copper pairs for DSL"
+],
+"correctAnswers": ["Managed switch — enables VLANs/QoS/SNMP"],
+"allowMultiple": false
+}
+],
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+"CompTIA A+ 1201 — Module 3 Hardware Mock": [
+{
+"question": "A color-critical photo editor wants accurate color and wide viewing angles. Which panel type BEST fits this use case?",
+"options": [
+"TN",
+"IPS",
+"VA",
+"OLED"
+],
+"correctAnswers": ["IPS"],
+"allowMultiple": false
+},
+{
+"question": "Which statements about OLED and Mini-LED are TRUE? (Select 2 answers)",
+"options": [
+"OLED requires a separate backlight to achieve deep blacks",
+"OLED pixels emit their own light, enabling high contrast",
+"Mini-LED improves HDR via many local dimming zones",
+"Mini-LED panels are the same as plasma displays"
+],
+"correctAnswers": [
+"OLED pixels emit their own light, enabling high contrast",
+"Mini-LED improves HDR via many local dimming zones"
+],
+"allowMultiple": true
+},
+{
+"question": "A user reports an older CCFL-backlit laptop screen is very dim. Which component is MOST likely failing?",
+"options": [
+"Digitizer",
+"Inverter",
+"LED strip",
+"GPU"
+],
+"correctAnswers": ["Inverter"],
+"allowMultiple": false
+},
+{
+"question": "Which display attributes directly influence motion clarity and workspace area? (Select 2 answers)",
+"options": [
+"Refresh rate",
+"Color gamut",
+"Pixel density",
+"Bezel thickness"
+],
+"correctAnswers": [
+"Refresh rate",
+"Pixel density"
+],
+"allowMultiple": true
+},
+{
+"question": "A mobile device repair tech needs to explain capacitive vs. resistive touch. Which descriptions are MOST accurate? (Select 2 answers)",
+"options": [
+"Capacitive relies on electrical properties of the human body",
+"Resistive requires pressure between layers to register input",
+"Capacitive needs a stylus with pressure sensor to work",
+"Resistive cannot register stylus input at all"
+],
+"correctAnswers": [
+"Capacitive relies on electrical properties of the human body",
+"Resistive requires pressure between layers to register input"
+],
+"allowMultiple": true
+},
+{
+"question": "You must connect a 144 Hz gaming monitor at high resolution. Which video interface is MOST appropriate by default?",
+"options": [
+"VGA",
+"DVI-A",
+"DisplayPort",
+"Composite video"
+],
+"correctAnswers": ["DisplayPort"],
+"allowMultiple": false
+},
+{
+"question": "Match each video connector to a correct characteristic. (Select 3 answers)",
+"options": [
+"HDMI — 19 pins and carries audio",
+"DisplayPort — up to 80 Gbps (DP 2.0)",
+"DVI-I — can carry analog or digital",
+"VGA — digital only with 24+1 pins"
+],
+"correctAnswers": [
+"HDMI — 19 pins and carries audio",
+"DisplayPort — up to 80 Gbps (DP 2.0)",
+"DVI-I — can carry analog or digital"
+],
+"allowMultiple": true
+},
+{
+"question": "A laptop with only USB-C needs to drive a conference room projector that accepts HDMI. What’s the BEST approach?",
+"options": [
+"USB-C to HDMI adapter",
+"DisplayPort to VGA passive dongle",
+"Lightning to DVI adapter",
+"RJ-45 to HDMI balun without power"
+],
+"correctAnswers": ["USB-C to HDMI adapter"],
+"allowMultiple": false
+},
+{
+"question": "Which USB facts are correct for the versions listed? (Select 2 answers)",
+"options": [
+"USB 2.0: up to 480 Mbps, 4 pins typical",
+"USB 3.0: up to 10 Gbps, 24 pins on Type-A",
+"USB 3.0: up to 5 Gbps, often 9 pins on Type-A",
+"USB 2.0: up to 12 Mbps only"
+],
+"correctAnswers": [
+"USB 2.0: up to 480 Mbps, 4 pins typical",
+"USB 3.0: up to 5 Gbps, often 9 pins on Type-A"
+],
+"allowMultiple": true
+},
+{
+"question": "A legacy POS printer must be cabled to an older PC. Which connector is MOST likely required?",
+"options": [
+"DB9 serial (RS-232)",
+"RJ-11",
+"USB-C",
+"Lightning"
+],
+"correctAnswers": ["DB9 serial (RS-232)"],
+"allowMultiple": false
+},
+{
+"question": "A new office needs 10 GbE to several desktops at ≤55 m runs with improved crosstalk resistance. Which cable category fits BEST?",
+"options": [
+"Cat5e",
+"Cat6",
+"Cat6a",
+"Cat7 for 40 Gbps"
+],
+"correctAnswers": ["Cat6"],
+"allowMultiple": false
+},
+{
+"question": "Which copper cabling characteristics match the descriptions? (Select 2 answers)",
+"options": [
+"UTP — relies on twists to reduce crosstalk, most common for LANs",
+"STP — adds shielding for high-EMI environments",
+"Plenum-rated — designed for direct burial outdoors",
+"Direct burial — low-smoke jacket for air-handling spaces"
+],
+"correctAnswers": [
+"UTP — relies on twists to reduce crosstalk, most common for LANs",
+"STP — adds shielding for high-EMI environments"
+],
+"allowMultiple": true
+},
+{
+"question": "A university needs to link two buildings 10 km apart with minimal signal loss. Which media is BEST?",
+"options": [
+"Multimode fiber (50/62.5 µm)",
+"Single-mode fiber (≈9 µm core)",
+"RG-59 coax",
+"Cat6a copper"
+],
+"correctAnswers": ["Single-mode fiber (≈9 µm core)"],
+"allowMultiple": false
+},
+{
+"question": "Which connector pairings are correct for the media? (Select 3 answers)",
+"options": [
+"RJ-45 — 8-pin Ethernet",
+"RJ-11 — 4/6-pin telephone/DSL",
+"F-type — screw-on coax",
+"LC/SC — copper twisted pair"
+],
+"correctAnswers": [
+"RJ-45 — 8-pin Ethernet",
+"RJ-11 — 4/6-pin telephone/DSL",
+"F-type — screw-on coax"
+],
+"allowMultiple": true
+},
+{
+"question": "A workstation upgrade requires the FASTEST client-side storage interface available on the motherboard. Which should you choose?",
+"options": [
+"SATA III SSD (6 Gbps)",
+"M.2 NVMe on PCIe 4.0",
+"External eSATA SSD",
+"USB 3.0 flash drive"
+],
+"correctAnswers": ["M.2 NVMe on PCIe 4.0"],
+"allowMultiple": false
+},
+{
+"question": "Which storage interface or form-factor details are accurate? (Select 3 answers)",
+"options": [
+"SATA III tops out at 6 Gbps",
+"NVMe uses PCIe lanes to reach multi-GB/s",
+"mSATA is an older mini form factor versus M.2",
+"SAS is consumer-only and limited to 1.5 Gbps"
+],
+"correctAnswers": [
+"SATA III tops out at 6 Gbps",
+"NVMe uses PCIe lanes to reach multi-GB/s",
+"mSATA is an older mini form factor versus M.2"
+],
+"allowMultiple": true
+},
+{
+"question": "A NAS needs redundancy and usable capacity; it must survive a single disk failure. Which RAID level is MOST appropriate?",
+"options": [
+"RAID 0",
+"RAID 1",
+"RAID 5",
+"RAID 6"
+],
+"correctAnswers": ["RAID 5"],
+"allowMultiple": false
+},
+{
+"question": "Which RAID descriptions are correct? (Select 2 answers)",
+"options": [
+"RAID 0 — striping, no fault tolerance",
+"RAID 6 — dual parity, survives two disk failures",
+"RAID 1 — striping with parity",
+"RAID 10 — parity across mirrored pairs only"
+],
+"correctAnswers": [
+"RAID 0 — striping, no fault tolerance",
+"RAID 6 — dual parity, survives two disk failures"
+],
+"allowMultiple": true
+},
+{
+"question": "You’re selecting a motherboard with the MOST expansion and DIMM slots for a high-end workstation. Which form factor is MOST suitable?",
+"options": [
+"Mini-ITX",
+"microATX",
+"ATX",
+"Pico-ITX"
+],
+"correctAnswers": ["ATX"],
+"allowMultiple": false
+},
+{
+"question": "Which motherboard connector facts are accurate? (Select 3 answers)",
+"options": [
+"24-pin ATX powers the motherboard",
+"CPU EPS 4/8-pin provides dedicated CPU power",
+"PCIe x16 on Gen 4 offers ~32 GB/s in each direction",
+"eSATA is an internal storage header for M.2 drives"
+],
+"correctAnswers": [
+"24-pin ATX powers the motherboard",
+"CPU EPS 4/8-pin provides dedicated CPU power",
+"PCIe x16 on Gen 4 offers ~32 GB/s in each direction"
+],
+"allowMultiple": true
+},
+{
+"question": "A security-conscious firm wants to block booting untrusted OS loaders and also use full-disk encryption on laptops. Which UEFI features satisfy these aims? (Select 2 answers)",
+"options": [
+"Secure Boot",
+"TPM 2.0",
+"USB boot enabled",
+"Legacy BIOS mode"
+],
+"correctAnswers": [
+"Secure Boot",
+"TPM 2.0"
+],
+"allowMultiple": true
+},
+{
+"question": "A system won’t power on after a new build. What connection should be verified FIRST on the motherboard?",
+"options": [
+"6/8-pin PCIe GPU power",
+"24-pin ATX motherboard power",
+"Front-panel audio header",
+"SATA data cable"
+],
+"correctAnswers": ["24-pin ATX motherboard power"],
+"allowMultiple": false
+}
+],
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+"CompTIA A+ 1202 — Module 4 Operating Systems Mock": [
+{
+"question": "A design studio needs an OS with strong third-party software support, BitLocker, and domain join. Which edition fits BEST?",
+"options": [
+"Windows 11 Home",
+"Windows 11 Pro",
+"Windows 10 Home",
+"Chrome OS"
+],
+"correctAnswers": ["Windows 11 Pro"],
+"allowMultiple": false
+},
+{
+"question": "Which file systems natively emphasize large-scale integrity and resilience on their primary platforms? (Select 2 answers)",
+"options": [
+"ReFS on Windows Server",
+"FAT32 on Windows",
+"XFS on Linux",
+"HFS+ on modern macOS"
+],
+"correctAnswers": ["ReFS on Windows Server", "XFS on Linux"],
+"allowMultiple": true
+},
+{
+"question": "A school wants low-maintenance laptops tightly integrated with Google Workspace and mostly web apps. Which OS should they deploy?",
+"options": [
+"Linux with KDE",
+"Chrome OS",
+"Windows 10 Enterprise LTSC",
+"macOS Ventura"
+],
+"correctAnswers": ["Chrome OS"],
+"allowMultiple": false
+},
+{
+"question": "A company must image 150 identical laptops with a standard build and apps, with minimal hands-on time during deployment. Which TWO methods align best? (Select 2 answers)",
+"options": [
+"Image deployment (WDS/MDT)",
+"Zero-touch with Intune/Autopilot/SCCM",
+"Individual clean installs from DVD",
+"Manual in-place upgrades per device"
+],
+"correctAnswers": ["Image deployment (WDS/MDT)", "Zero-touch with Intune/Autopilot/SCCM"],
+"allowMultiple": true
+},
+{
+"question": "Which Windows edition pair BOTH support hosting Remote Desktop sessions and Group Policy?",
+"options": [
+"Windows 11 Home and Windows 10 Pro",
+"Windows 10 Pro and Windows 10 Enterprise",
+"Windows 11 Home and Windows 11 Pro",
+"Windows 10 Home and Windows 11 Home"
+],
+"correctAnswers": ["Windows 10 Pro and Windows 10 Enterprise"],
+"allowMultiple": false
+},
+{
+"question": "You need cross-platform removable storage that handles 20 GB video files and works on Windows and macOS without extra drivers. Which file system is BEST?",
+"options": [
+"NTFS",
+"exFAT",
+"APFS",
+"FAT32"
+],
+"correctAnswers": ["exFAT"],
+"allowMultiple": false
+},
+{
+"question": "Before upgrading Windows 10 laptops to Windows 11 Enterprise in-place, the IT team should verify which requirements? (Select 2 answers)",
+"options": [
+"TPM 2.0 and UEFI Secure Boot enabled",
+"A 32-bit CPU for compatibility mode",
+"Enterprise licensing eligibility",
+"BIOS firmware only (no UEFI)"
+],
+"correctAnswers": ["TPM 2.0 and UEFI Secure Boot enabled", "Enterprise licensing eligibility"],
+"allowMultiple": true
+},
+{
+"question": "Which boot methods are MOST appropriate for large-scale, no-media deployments and remote installs? (Select 2 answers)",
+"options": [
+"PXE network boot",
+"USB flash drive boot",
+"Internet-based installation",
+"Internal recovery partition"
+],
+"correctAnswers": ["PXE network boot", "Internet-based installation"],
+"allowMultiple": true
+},
+{
+"question": "A legacy POS terminal needs Windows 7 on a 500 GB BIOS system. Which partition scheme and boot mode are compatible?",
+"options": [
+"GPT with UEFI",
+"MBR with BIOS",
+"GPT with BIOS",
+"MBR with UEFI Secure Boot"
+],
+"correctAnswers": ["MBR with BIOS"],
+"allowMultiple": false
+},
+{
+"question": "You’re planning a dual-boot Windows 11 / Ubuntu developer laptop. Which items are MOST relevant to a successful multiboot? (Select 2 answers)",
+"options": [
+"Separate partitions for each OS",
+"Disabling all UEFI boot managers",
+"GRUB or Windows Boot Manager configuration",
+"Formatting the whole disk as ReFS"
+],
+"correctAnswers": ["Separate partitions for each OS", "GRUB or Windows Boot Manager configuration"],
+"allowMultiple": true
+},
+{
+"question": "A user on Windows reports extremely slow logins; you suspect too many auto-launched apps. Which Task Manager tab should you use FIRST to remediate?",
+"options": [
+"Users",
+"Services",
+"Performance",
+"Startup"
+],
+"correctAnswers": ["Startup"],
+"allowMultiple": false
+},
+{
+"question": "Which statements about Windows ‘N’ editions are accurate? (Select 2 answers)",
+"options": [
+"They exclude preinstalled media technologies (e.g., Windows Media Player).",
+"They require LTSC licensing to enable video playback.",
+"Media features can be added via Media Feature Pack.",
+"They are U.S.-only variants to enable BitLocker by default."
+],
+"correctAnswers": [
+"They exclude preinstalled media technologies (e.g., Windows Media Player).",
+"Media features can be added via Media Feature Pack."
+],
+"allowMultiple": true
+},
+{
+"question": "Which scenario BEST calls for a repair installation instead of a clean install?",
+"options": [
+"The system has malware and should be wiped completely.",
+"Critical system files are corrupted but user apps/data must remain.",
+"You’re moving from 32-bit Windows 10 to 64-bit Windows 11.",
+"You’re deploying a standardized image to 100 devices."
+],
+"correctAnswers": ["Critical system files are corrupted but user apps/data must remain."],
+"allowMultiple": false
+},
+{
+"question": "Which features or characteristics are MOST associated with GPT compared to MBR? (Select 3 answers)",
+"options": [
+"Supports >2 TB disks",
+"Required for UEFI/Secure Boot on modern Windows",
+"Maximum of four primary partitions",
+"CRC32 integrity and redundant partition tables"
+],
+"correctAnswers": [
+"Supports >2 TB disks",
+"Required for UEFI/Secure Boot on modern Windows",
+"CRC32 integrity and redundant partition tables"
+],
+"allowMultiple": true
+},
+{
+"question": "A European organization installs Windows 11 Pro N and later wants native video playback. What should they add?",
+"options": [
+"Windows Feature Pack for Hyper-V",
+"Media Feature Pack",
+"Windows Subsystem for Linux",
+"ReFS feature enablement"
+],
+"correctAnswers": ["Media Feature Pack"],
+"allowMultiple": false
+},
+{
+"question": "Which Windows migration methods correctly match their description? (Select 2 answers)",
+"options": [
+"Side-by-side — move user data/settings to a new PC",
+"Wipe-and-load — retain apps and settings automatically",
+"In-place upgrade — preserves user files/apps on the same device",
+"Clean install — reinstalls OS while keeping apps"
+],
+"correctAnswers": [
+"Side-by-side — move user data/settings to a new PC",
+"In-place upgrade — preserves user files/apps on the same device"
+],
+"allowMultiple": true
+},
+{
+"question": "A desktop shows 100% CPU for long periods and frequent lag. Which Task Manager tabs provide the MOST immediate insight and control? (Select 2 answers)",
+"options": [
+"Performance (to view CPU graphs/uptime)",
+"Processes (to identify/end high-load apps)",
+"Services (to manage network profiles)",
+"Users (to toggle BitLocker)"
+],
+"correctAnswers": ["Performance (to view CPU graphs/uptime)", "Processes (to identify/end high-load apps)"],
+"allowMultiple": true
+},
+{
+"question": "Which Windows 10/11 edition pairings and features are correctly matched? (Select 2 answers)",
+"options": [
+"Windows 10 Enterprise — LTSC option available",
+"Windows 11 Home — hosts RDP sessions for others",
+"Windows 10 Pro for Workstations — ReFS support and high RAM ceilings",
+"Windows 11 Pro — no Group Policy support"
+],
+"correctAnswers": [
+"Windows 10 Enterprise — LTSC option available",
+"Windows 10 Pro for Workstations — ReFS support and high RAM ceilings"
+],
+"allowMultiple": true
+},
+{
+"question": "A fleet upgrade from Windows 10 Pro to Windows 11 Pro should avoid data loss and keep apps. What method is MOST suitable?",
+"options": [
+"In-place upgrade",
+"Clean install",
+"PXE network wipe",
+"Wipe-and-load migration"
+],
+"correctAnswers": ["In-place upgrade"],
+"allowMultiple": false
+},
+{
+"question": "Which are MINIMUM Windows 11 requirements relevant to security and platform? (Select 2 answers)",
+"options": [
+"TPM 2.0",
+"UEFI with Secure Boot",
+"TPM 1.2",
+"BIOS-only firmware allowed"
+],
+"correctAnswers": ["TPM 2.0", "UEFI with Secure Boot"],
+"allowMultiple": true
+},
+{
+"question": "A user says printing stopped after a reboot. In Task Manager, which action is MOST likely to restore service quickly?",
+"options": [
+"Disable high-impact startup apps",
+"End all background processes",
+"Restart the Print Spooler from the Services tab",
+"Increase CPU priority for the printer driver"
+],
+"correctAnswers": ["Restart the Print Spooler from the Services tab"],
+"allowMultiple": false
+}
+],
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+"CompTIA A+ 1201 — Module 5 Virtualization & Cloud Mock": [
+{
+"question": "A lab needs an isolated environment to open suspicious attachments without risking the host OS. Which option fits BEST?",
+"options": [
+"Virtual Desktop Infrastructure (VDI) pool",
+"Sandbox VM",
+"Container with shared kernel",
+"Dual-boot with a second OS"
+],
+"correctAnswers": ["Sandbox VM"],
+"allowMultiple": false
+},
+{
+"question": "Which are valid reasons an organization might deploy virtual machines? (Select 3 answers)",
+"options": [
+"Running legacy software that won’t install on modern OSes",
+"Cross-platform testing of the same app on multiple OS versions",
+"Improving single-thread CPU performance beyond the host’s capability",
+"Creating a safe environment for malware analysis"
+],
+"correctAnswers": [
+"Running legacy software that won’t install on modern OSes",
+"Cross-platform testing of the same app on multiple OS versions",
+"Creating a safe environment for malware analysis"
+],
+"allowMultiple": true
+},
+{
+"question": "A datacenter wants the hypervisor to run directly on hardware for better performance and isolation. Which type should they choose?",
+"options": [
+"Type 1 (bare-metal) hypervisor",
+"Type 2 (hosted) hypervisor",
+"Containers managed by Kubernetes",
+"Application virtualization"
+],
+"correctAnswers": ["Type 1 (bare-metal) hypervisor"],
+"allowMultiple": false
+},
+{
+"question": "Which examples correctly map to hypervisor types? (Select 2 answers)",
+"options": [
+"VMware ESXi — Type 1",
+"Oracle VirtualBox — Type 1",
+"Microsoft Hyper-V (Server role) — Type 1",
+"Parallels Desktop — Type 1"
+],
+"correctAnswers": [
+"VMware ESXi — Type 1",
+"Microsoft Hyper-V (Server role) — Type 1"
+],
+"allowMultiple": true
+},
+{
+"question": "You’re planning a VM host. Which requirement groupings are MOST relevant? (Select 2 answers)",
+"options": [
+"Security: patching/isolation; Network: vSwitch/VLANs; Storage: capacity/snapshots",
+"Security: disable encryption; Network: APIPA only; Storage: FAT32 only",
+"Security: least privilege; Network: virtual NICs; Storage: SAN/NAS options",
+"Security: shared admin account; Network: ad-hoc Wi-Fi; Storage: optical media"
+],
+"correctAnswers": [
+"Security: patching/isolation; Network: vSwitch/VLANs; Storage: capacity/snapshots",
+"Security: least privilege; Network: virtual NICs; Storage: SAN/NAS options"
+],
+"allowMultiple": true
+},
+{
+"question": "A company wants centrally hosted desktops users can access from various devices, with simplified updates. What solution is BEST?",
+"options": [
+"VDI",
+"Type 2 hypervisor on each laptop",
+"Local dual-boot images",
+"Containers on user endpoints"
+],
+"correctAnswers": ["VDI"],
+"allowMultiple": false
+},
+{
+"question": "Which statements about containers are TRUE? (Select 2 answers)",
+"options": [
+"They isolate apps while sharing the host OS kernel",
+"They emulate full hardware stacks per instance",
+"They typically start faster and use fewer resources than full VMs",
+"They require a Type 1 hypervisor to run"
+],
+"correctAnswers": [
+"They isolate apps while sharing the host OS kernel",
+"They typically start faster and use fewer resources than full VMs"
+],
+"allowMultiple": true
+},
+{
+"question": "In Hyper-V, when would you select Generation 2 for a new VM?",
+"options": [
+"When the guest OS requires UEFI/Secure Boot support",
+"When installing a 16-bit OS that needs legacy BIOS",
+"When you must avoid virtual NICs",
+"When you need IDE-only virtual disks"
+],
+"correctAnswers": ["When the guest OS requires UEFI/Secure Boot support"],
+"allowMultiple": false
+},
+{
+"question": "Which Hyper-V configuration steps are appropriate when creating a new VM? (Select 3 answers)",
+"options": [
+"Assign startup RAM and optionally enable Dynamic Memory",
+"Attach or create a VHD/VHDX disk",
+"Select a virtual switch for network connectivity",
+"Disable all virtual NICs to reduce attack surface by default"
+],
+"correctAnswers": [
+"Assign startup RAM and optionally enable Dynamic Memory",
+"Attach or create a VHD/VHDX disk",
+"Select a virtual switch for network connectivity"
+],
+"allowMultiple": true
+},
+{
+"question": "An admin wants to deploy a small dev VM in Azure with public access via RDP/SSH. Which steps align with a basic build? (Select 2 answers)",
+"options": [
+"Create/select a resource group and region, then choose an image/size",
+"Disable all inbound rules, including RDP/SSH, for initial access",
+"Select a VNet/subnet and enable a public IP as needed",
+"Skip authentication configuration until after deployment"
+],
+"correctAnswers": [
+"Create/select a resource group and region, then choose an image/size",
+"Select a VNet/subnet and enable a public IP as needed"
+],
+"allowMultiple": true
+},
+{
+"question": "Which cloud deployment model pairs are correctly described? (Select 2 answers)",
+"options": [
+"Private cloud — dedicated to one organization for more control",
+"Public cloud — dedicated hardware for a single tenant only",
+"Hybrid cloud — combines private and public resources",
+"Community cloud — public advertising platform for consumers"
+],
+"correctAnswers": [
+"Private cloud — dedicated to one organization for more control",
+"Hybrid cloud — combines private and public resources"
+],
+"allowMultiple": true
+},
+{
+"question": "Match the cloud service model to the use case. (Select 3 answers)",
+"options": [
+"IaaS — rent virtual servers/storage/network to host an app stack",
+"PaaS — deploy code without managing the underlying OS",
+"SaaS — consume a ready-to-use app over the Internet",
+"IaaS — subscribe to a word processor with real-time collaboration"
+],
+"correctAnswers": [
+"IaaS — rent virtual servers/storage/network to host an app stack",
+"PaaS — deploy code without managing the underlying OS",
+"SaaS — consume a ready-to-use app over the Internet"
+],
+"allowMultiple": true
+},
+{
+"question": "A team wants cloud resources that automatically scale up during traffic spikes and down afterward. Which characteristic is MOST relevant?",
+"options": [
+"Elasticity",
+"Multitenancy",
+"Ingress/Egress",
+"Dedicated resources"
+],
+"correctAnswers": ["Elasticity"],
+"allowMultiple": false
+},
+{
+"question": "Which statements about common cloud characteristics are accurate? (Select 2 answers)",
+"options": [
+"Metered utilization ties consumption to billing/chargeback",
+"Multitenancy means each tenant manages the provider’s hypervisors",
+"High availability relies on redundancy and failover",
+"Ingress/egress controls user roles and permissions"
+],
+"correctAnswers": [
+"Metered utilization ties consumption to billing/chargeback",
+"High availability relies on redundancy and failover"
+],
+"allowMultiple": true
+},
+{
+"question": "A healthcare consortium wants a shared cloud for organizations with similar regulatory needs. Which deployment model fits BEST?",
+"options": [
+"Community cloud",
+"Public cloud",
+"Private cloud",
+"Consumer cloud"
+],
+"correctAnswers": ["Community cloud"],
+"allowMultiple": false
+},
+{
+"question": "Your company wants spreadsheets that multiple users can edit simultaneously from different locations. Which tool type is MOST appropriate?",
+"options": [
+"Cloud-based spreadsheets",
+"Local desktop spreadsheet with SMB share",
+"Email attachments for versioning",
+"Standalone presentation software"
+],
+"correctAnswers": ["Cloud-based spreadsheets"],
+"allowMultiple": false
+},
+{
+"question": "Which cloud productivity configurations are correctly matched? (Select 3 answers)",
+"options": [
+"Selective sync — choose which folders replicate to a device",
+"Identity synchronization — align user accounts across tools like Teams/AD",
+"Licensing assignment — grant features based on roles/subscriptions",
+"Videoconferencing — requires on-prem PBX and no Internet access"
+],
+"correctAnswers": [
+"Selective sync — choose which folders replicate to a device",
+"Identity synchronization — align user accounts across tools like Teams/AD",
+"Licensing assignment — grant features based on roles/subscriptions"
+],
+"allowMultiple": true
+},
+{
+"question": "A small business needs email, calendar, and contacts synced across laptops and phones without running its own mail server. Which option is MOST suitable?",
+"options": [
+"Cloud-based email (e.g., Microsoft 365)",
+"Self-hosted POP3 on a desktop",
+"FTP site with .pst uploads",
+"Local IM client only"
+],
+"correctAnswers": ["Cloud-based email (e.g., Microsoft 365)"],
+"allowMultiple": false
+},
+{
+"question": "Which choices are most appropriate when setting up cloud file storage for laptops with limited disk space? (Select 2 answers)",
+"options": [
+"Enable selective/folder sync for critical work directories",
+"Disable syncing and rely on email attachments",
+"Use online-only placeholders for large archives",
+"Force full sync of all historical data to each device"
+],
+"correctAnswers": [
+"Enable selective/folder sync for critical work directories",
+"Use online-only placeholders for large archives"
+],
+"allowMultiple": true
+},
+{
+"question": "An admin is standardizing collaboration. Which mapping is MOST accurate?",
+"options": [
+"Videoconferencing — screen sharing, whiteboards, breakout rooms",
+"Word processing — hypervisor management and VM snapshots",
+"Instant messaging — device driver deployment",
+"Presentation tools — identity synchronization"
+],
+"correctAnswers": ["Videoconferencing — screen sharing, whiteboards, breakout rooms"],
+"allowMultiple": false
+}
+],
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
+"CompTIA A+ 1202 — Module 6 Security Mock": [
+{
+"question": "A data center wants to prevent vehicle ramming while keeping pedestrian access. Which control fits BEST at the perimeter?",
+"options": [
+"Bollards",
+"Access control vestibule",
+"Badge reader",
+"Motion sensors"
+],
+"correctAnswers": ["Bollards"],
+"allowMultiple": false
+},
+{
+"question": "Which measures primarily verify identity at an entry point rather than just observe or deter? (Select 2 answers)",
+"options": [
+"Badge reader",
+"Video surveillance",
+"Access control vestibule (mantrap)",
+"Perimeter lighting"
+],
+"correctAnswers": ["Badge reader", "Access control vestibule (mantrap)"],
+"allowMultiple": true
+},
+{
+"question": "A school wants to keep classroom laptops available but physically secured to desks. Which is MOST appropriate?",
+"options": [
+"Equipment locks",
+"Alarm systems",
+"Fences",
+"Magnetometers"
+],
+"correctAnswers": ["Equipment locks"],
+"allowMultiple": false
+},
+{
+"question": "Match the physical access method to its typical mechanism. (Select 2 answers)",
+"options": [
+"Key fob — RFID/NFC proximity",
+"Smart card — embedded chip read by a card reader",
+"Mobile digital key — metal-cut profile in a cylinder",
+"Keys — Bluetooth LE handshake"
+],
+"correctAnswers": ["Key fob — RFID/NFC proximity", "Smart card — embedded chip read by a card reader"],
+"allowMultiple": true
+},
+{
+"question": "A facility needs hand-based vein or palm pattern matching for vault access. Which option aligns BEST?",
+"options": [
+"Retina scanner",
+"Palm print scanner",
+"Facial recognition",
+"Voice recognition"
+],
+"correctAnswers": ["Palm print scanner"],
+"allowMultiple": false
+},
+{
+"question": "Where would magnetometers be MOST useful in an enterprise setting?",
+"options": [
+"Detecting metallic weapons at entry checkpoints",
+"Blocking brute-force login attempts",
+"Filtering spam email",
+"Encrypting wireless traffic with AES"
+],
+"correctAnswers": ["Detecting metallic weapons at entry checkpoints"],
+"allowMultiple": false
+},
+{
+"question": "A company mandates continuous verification of users and devices, even after initial login. Which approach BEST describes this?",
+"options": [
+"Principle of least privilege",
+"Zero Trust model",
+"Single sign-on",
+"Directory services"
+],
+"correctAnswers": ["Zero Trust model"],
+"allowMultiple": false
+},
+{
+"question": "Which controls specifically address privileged operations and temporary elevation? (Select 2 answers)",
+"options": [
+"Just-in-time (JIT) access",
+"Privileged access management (PAM)",
+"Single sign-on (SSO)",
+"Email-based OTP"
+],
+"correctAnswers": ["Just-in-time (JIT) access", "Privileged access management (PAM)"],
+"allowMultiple": true
+},
+{
+"question": "Which are valid second factors for MFA in common enterprise setups? (Select 3 answers)",
+"options": [
+"Authenticator application (TOTP)",
+"Hardware token",
+"SMS/voice code",
+"Username",
+"Password hint"
+],
+"correctAnswers": ["Authenticator application (TOTP)", "Hardware token", "SMS/voice code"],
+"allowMultiple": true
+},
+{
+"question": "Your web app uses corporate credentials to access a third-party HR portal without a separate login. Which standards/features enable this? (Select 2 answers)",
+"options": [
+"SAML",
+"SSO",
+"PAM",
+"JIT access"
+],
+"correctAnswers": ["SAML", "SSO"],
+"allowMultiple": true
+},
+{
+"question": "You must allow Microsoft Teams to function through Windows Defender Firewall on a laptop with strict policies. What is the MOST direct approach?",
+"options": [
+"Allow the app through the firewall",
+"Create a Connection Security Rule",
+"Disable the Public profile",
+"Enable Implicit Deny"
+],
+"correctAnswers": ["Allow the app through the firewall"],
+"allowMultiple": false
+},
+{
+"question": "Which statements about Windows Defender Firewall rules are TRUE? (Select 2 answers)",
+"options": [
+"Inbound rules control traffic to the device; outbound rules control traffic leaving the device",
+"Explicit deny rules block traffic even if an allow rule exists",
+"Outbound rules are not supported on Windows clients",
+"Profiles (Domain/Private/Public) cannot be applied simultaneously"
+],
+"correctAnswers": [
+"Inbound rules control traffic to the device; outbound rules control traffic leaving the device",
+"Explicit deny rules block traffic even if an allow rule exists"
+],
+"allowMultiple": true
+},
+{
+"question": "A company mandates encryption and authentication for traffic between two sites. Which Windows feature/policy pairing should be configured?",
+"options": [
+"Connection Security Rules using IPsec",
+"Allow app through firewall",
+"Outbound rule: Any, Any, Allow",
+"NTFS folder encryption"
+],
+"correctAnswers": ["Connection Security Rules using IPsec"],
+"allowMultiple": false
+},
+{
+"question": "Which Windows account/role setup BEST limits risk while allowing day-to-day work?",
+"options": [
+"Users operate as Standard users; elevate via Run as administrator as needed",
+"All users are local Administrators to avoid UAC prompts",
+"Disable UAC for power users only",
+"Guest user for all employees to prevent data retention"
+],
+"correctAnswers": ["Users operate as Standard users; elevate via Run as administrator as needed"],
+"allowMultiple": false
+},
+{
+"question": "A help desk analyst must verify what a specific user can actually do on a shared folder across the network, considering all permissions. Which tool/feature is MOST appropriate?",
+"options": [
+"Effective Access (Advanced Security Settings)",
+"Local Security Policy (Account Policies)",
+"Sharing Wizard (Simple Sharing)",
+"Event Viewer (System log)"
+],
+"correctAnswers": ["Effective Access (Advanced Security Settings)"],
+"allowMultiple": false
+},
+{
+"question": "A user has NTFS Modify on a file but Share Read on the same network share. What is the user’s effective access over the network?",
+"options": [
+"Full control",
+"Modify",
+"Read-only",
+"Write without delete"
+],
+"correctAnswers": ["Read-only"],
+"allowMultiple": false
+},
+{
+"question": "Which Windows folder permission concepts are correctly matched? (Select 2 answers)",
+"options": [
+"NTFS ‘Read & Execute’ — run apps but cannot modify",
+"NTFS ‘Full control’ — can change permissions and take ownership",
+"Share ‘Change’ — view only",
+"NTFS ‘Write’ — delete subfolders regardless of other settings"
+],
+"correctAnswers": [
+"NTFS ‘Read & Execute’ — run apps but cannot modify",
+"NTFS ‘Full control’ — can change permissions and take ownership"
+],
+"allowMultiple": true
+},
+{
+"question": "An admin needs user Documents/Desktop to roam and be backed up centrally while users can log into any domain PC and see the same files. Which features address this? (Select 2 answers)",
+"options": [
+"Folder Redirection",
+"Home folders",
+"Login script to disable USB",
+"Security group mail-enabled"
+],
+"correctAnswers": ["Folder Redirection", "Home folders"],
+"allowMultiple": true
+},
+{
+"question": "A company encrypts all laptops’ internal drives and wants keys stored in hardware. For removable USB drives, users must set passwords before copying data. Which pairing is CORRECT? (Select 2 answers)",
+"options": [
+"BitLocker with TPM for system drives",
+"BitLocker-To-Go for removable storage",
+"EFS for full-disk encryption of USBs",
+"WEP for file encryption at rest"
+],
+"correctAnswers": ["BitLocker with TPM for system drives", "BitLocker-To-Go for removable storage"],
+"allowMultiple": true
+},
+{
+"question": "Which combinations improve Wi-Fi security and authentication in an enterprise? (Select 3 answers)",
+"options": [
+"WPA3 with AES",
+"Disable WPS",
+"WEP with shared key",
+"RADIUS (802.1X) for unique user credentials"
+],
+"correctAnswers": ["WPA3 with AES", "Disable WPS", "RADIUS (802.1X) for unique user credentials"],
+"allowMultiple": true
+},
+{
+"question": "A user’s PC is unusably slow; CPU is pegged by an unauthorized mining process. Separately, another site reports files encrypted with a payment demand. Which malware types match these scenarios? (Select 2 answers)",
+"options": [
+"Cryptominer",
+"Ransomware",
+"Rootkit",
+"Adware/PUP"
+],
+"correctAnswers": ["Cryptominer", "Ransomware"],
+"allowMultiple": true
+}
+],
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+"CompTIA A+ 1202 — Module 7 Operational Procedures Mock": [
+{
+"question": "A help desk wants to reduce duplicate troubleshooting across shifts. Which entries are MOST important to keep updated inside each ticket? (Select 2 answers)",
+"options": [
+"Progress notes of the steps taken",
+"The technician’s lunch break times",
+"Issue resolution details once fixed",
+"Printer inventory for the entire building"
+],
+"correctAnswers": ["Progress notes of the steps taken", "Issue resolution details once fixed"],
+"allowMultiple": true
+},
+{
+"question": "A Tier 1 agent exhausts the knowledge base and standard scripts but the issue persists on multiple users’ PCs. What is the BEST next action?",
+"options": [
+"Delete the ticket and open a fresh one to reset the SLA clock",
+"Escalate to Tier 2 per the escalation policy",
+"Close the ticket to avoid breaching the SLA",
+"Advise the user to contact their ISP"
+],
+"correctAnswers": ["Escalate to Tier 2 per the escalation policy"],
+"allowMultiple": false
+},
+{
+"question": "Which ticket fields most directly influence who works the issue and how quickly it is handled? (Select 2 answers)",
+"options": [
+"Category",
+"Severity/Priority",
+"User’s favorite OS theme",
+"Device wallpaper"
+],
+"correctAnswers": ["Category", "Severity/Priority"],
+"allowMultiple": true
+},
+{
+"question": "An audit asks you to show which user is responsible for a laptop and when it was purchased and retired. Which TWO records are MOST relevant? (Select 2 answers)",
+"options": [
+"Assigned users",
+"Procurement life cycle",
+"Browser history",
+"DNS cache"
+],
+"correctAnswers": ["Assigned users", "Procurement life cycle"],
+"allowMultiple": true
+},
+{
+"question": "Which pairing correctly matches an asset tool with its purpose?",
+"options": [
+"CMDB — tracks configurations and their relationships",
+"Asset tag — provides network time synchronization",
+"Inventory list — provides bit-by-bit forensic imaging",
+"Warranty record — maps VLANs to switch ports"
+],
+"correctAnswers": ["CMDB — tracks configurations and their relationships"],
+"allowMultiple": false
+},
+{
+"question": "You must document a ransomware event including affected hosts, timeline, and actions taken. Which document is MOST appropriate?",
+"options": [
+"Incident report",
+"New user onboarding checklist",
+"Software package custom install procedure",
+"External SLA"
+],
+"correctAnswers": ["Incident report"],
+"allowMultiple": false
+},
+{
+"question": "For consistent password resets that meet policy, the help desk should follow which document type?",
+"options": [
+"Standard operating procedure (SOP)",
+"Incident report",
+"Marketing brief",
+"Mutual NDA"
+],
+"correctAnswers": ["Standard operating procedure (SOP)"],
+"allowMultiple": false
+},
+{
+"question": "Which are typical elements on a new-user onboarding checklist? (Select 3 answers)",
+"options": [
+"Account creation and permissions",
+"VPN access and required apps",
+"Disable all access on day one",
+"Hardware assignment (e.g., laptop/phone)"
+],
+"correctAnswers": ["Account creation and permissions", "VPN access and required apps", "Hardware assignment (e.g., laptop/phone)"],
+"allowMultiple": true
+},
+{
+"question": "A planned email migration requires formal review and scheduling during a maintenance window. Which change type BEST fits?",
+"options": [
+"Standard change",
+"Normal change",
+"Emergency change",
+"Change freeze"
+],
+"correctAnswers": ["Normal change"],
+"allowMultiple": false
+},
+{
+"question": "Before deploying a risky firewall change, the team prepares backups and a way to revert quickly if needed. Which TWO items are MOST relevant? (Select 2 answers)",
+"options": [
+"Backup plan",
+"Rollback plan",
+"Change freeze",
+"Holiday calendar"
+],
+"correctAnswers": ["Backup plan", "Rollback plan"],
+"allowMultiple": true
+},
+{
+"question": "Which phases help reduce disruptions when implementing changes? (Select 3 answers)",
+"options": [
+"Sandbox testing",
+"Peer review",
+"End-user acceptance/verification",
+"Skipping risk analysis to save time"
+],
+"correctAnswers": ["Sandbox testing", "Peer review", "End-user acceptance/verification"],
+"allowMultiple": true
+},
+{
+"question": "A business runs a full backup each Sunday. Which method minimizes daily backup time Monday–Saturday while requiring the most items to restore?",
+"options": [
+"Incremental backups each weekday",
+"Differential backups each weekday",
+"Synthetic full every weekday",
+"Full backups every day"
+],
+"correctAnswers": ["Incremental backups each weekday"],
+"allowMultiple": false
+},
+{
+"question": "You need fast restores with only two backup sets involved: last Sunday’s full plus the most recent weekday’s backup. Which strategy is this?",
+"options": [
+"Incremental",
+"Differential",
+"Synthetic full",
+"Full-only"
+],
+"correctAnswers": ["Differential"],
+"allowMultiple": false
+},
+{
+"question": "Which combination best implements the 3-2-1 backup rule? (Select 2 answers)",
+"options": [
+"Three copies total including production data",
+"Two different media types",
+"One admin password for all backups",
+"One copy kept offsite"
+],
+"correctAnswers": ["Three copies total including production data", "Two different media types"],
+"allowMultiple": true
+},
+{
+"question": "A technician is replacing RAM in a desktop. Which TWO safety practices are MOST appropriate?",
+"options": [
+"Wear an ESD wrist strap clipped to unpainted chassis metal",
+"Disconnect power and discharge residual energy before opening",
+"Place the motherboard directly on a metal table",
+"Use a Class A water extinguisher nearby for electrical fires"
+],
+"correctAnswers": ["Wear an ESD wrist strap clipped to unpainted chassis metal", "Disconnect power and discharge residual energy before opening"],
+"allowMultiple": true
+},
+{
+"question": "A site experiences frequent brownouts. Which device BEST mitigates unexpected shutdowns?",
+"options": [
+"Surge protector",
+"UPS with AVR",
+"ESD wrist strap",
+"Cable raceway"
+],
+"correctAnswers": ["UPS with AVR"],
+"allowMultiple": false
+},
+{
+"question": "Which environmental controls or practices reduce hardware failures? (Select 3 answers)",
+"options": [
+"Maintain 40–60% relative humidity to limit ESD/condensation",
+"Ensure proper ventilation and unobstructed airflow",
+"Regular dust cleanup using compressed air or ESD-safe vacuums",
+"Store lithium-ion batteries in regular trash to avoid clutter"
+],
+"correctAnswers": ["Maintain 40–60% relative humidity to limit ESD/condensation", "Ensure proper ventilation and unobstructed airflow", "Regular dust cleanup using compressed air or ESD-safe vacuums"],
+"allowMultiple": true
+},
+{
+"question": "A forensic investigation is initiated after a breach. Which steps are MOST aligned with preserving evidence? (Select 2 answers)",
+"options": [
+"Create a bit-by-bit forensic image of the drive",
+"Maintain a documented chain of custody",
+"Reset the OS to factory defaults to remove malware",
+"Edit system logs to simplify the timeline"
+],
+"correctAnswers": ["Create a bit-by-bit forensic image of the drive", "Maintain a documented chain of custody"],
+"allowMultiple": true
+},
+{
+"question": "During a software audit, several employees are using personal licenses of an office suite on company laptops. What is the PRIMARY concern?",
+"options": [
+"Acceptable use violation only",
+"Improper licensing/compliance risk",
+"Excess humidity",
+"Change freeze violation"
+],
+"correctAnswers": ["Improper licensing/compliance risk"],
+"allowMultiple": false
+},
+{
+"question": "A field tech is onsite with a frustrated user. Which communication behaviors are BEST? (Select 3 answers)",
+"options": [
+"Actively listen and avoid interrupting",
+"Use clear non-jargon explanations",
+"Be on time or inform if delayed",
+"Argue to prove the user is wrong"
+],
+"correctAnswers": ["Actively listen and avoid interrupting", "Use clear non-jargon explanations", "Be on time or inform if delayed"],
+"allowMultiple": true
+}
+],
+
+
+
     "Comptia A+ 1102 test 1": [
         {
           question: "Which Microsoft Windows 10 edition(s) provide(s) the option to join a domain?",
@@ -1793,7 +3562,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which of the answers listed below refer to the characteristics of iPadOS? (Select 2 answers)",
+    "question": "Which of the answers listed below refer to the characteristics of iPadOS?",
     "options": [
       "Developed by Apple",
       "Designed for workstations",
@@ -1824,7 +3593,7 @@ export const questionCategories = {
     "allowMultiple": true
   },
   {
-    "question": "Which of the answers listed below refer to OSs used in smartphones and tablets? (Select 3 answers)",
+    "question": "Which of the answers listed below refer to OSs used in smartphones and tablets?",
     "options": ["macOS", "Chrome OS", "iOS", "Android", "iPadOS"],
     "correctAnswers": ["iOS", "Android", "iPadOS"],
     "allowMultiple": true
@@ -1944,7 +3713,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Windows repair installation: (Select 3 answers)",
+    "question": "Windows repair installation:",
     "options": [
       "Modifies application configuration settings",
       "Does not affect user applications",
@@ -1961,7 +3730,7 @@ export const questionCategories = {
     "allowMultiple": true
   },
   {
-    "question": "Which of the following enable installation of an OS via network interface? (Select 2 answers)",
+    "question": "Which of the following enable installation of an OS via network interface?",
     "options": [
       "GPT",
       "diskpart",
@@ -1985,7 +3754,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which of the sources listed below allow for obtaining, installing, and updating device drivers used by Microsoft Windows OSs? (Select 3 answers)",
+    "question": "Which of the sources listed below allow for obtaining, installing, and updating device drivers used by Microsoft Windows OSs?",
     "options": [
       "Windows Update",
       "Computer Management utility",
@@ -2001,7 +3770,7 @@ export const questionCategories = {
     "allowMultiple": true
   },
   {
-    "question": "What are the advantages of organizing storage drive space into multiple partitions? (Select 3 answers)",
+    "question": "What are the advantages of organizing storage drive space into multiple partitions? ",
     "options": [
       "Multiboot environment",
       "Separated disk space used for virtual memory",
@@ -2028,7 +3797,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which of the answers listed below describe the characteristics of the MBR partition style? (Select 3 answers)",
+    "question": "Which of the answers listed below describe the characteristics of the MBR partition style?",
     "options": [
       "Legacy BIOS",
       "Up 128 primary partitions",
@@ -2045,7 +3814,7 @@ export const questionCategories = {
     "allowMultiple": true
   },
   {
-    "question": "Which of the following answers refer to GPT? (Select 3 answers)",
+    "question": "Which of the following answers refer to GPT?",
     "options": [
       "Support for disks larger than 2 TB",
       "Overall number of partitions limited to 4",
@@ -2071,7 +3840,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Quick format: (Select 3 answers)",
+    "question": "Quick format:",
     "options": [
       "Does not erase data",
       "Requires more time than full format",
@@ -2088,7 +3857,7 @@ export const questionCategories = {
     "allowMultiple": true
   },
   {
-    "question": "Full format: (Select 3 answers)",
+    "question": "Full format:",
     "options": [
       "Does not check the drive for bad sectors",
       "Requires less time than quick format",
@@ -2247,7 +4016,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which of the following locations in macOS provide access to multi-touch interface settings (a.k.a. Gestures)? (Select 2 answers)",
+    "question": "Which of the following locations in macOS provide access to multi-touch interface settings (a.k.a. Gestures)?",
     "options": [
       "Apple menu > System Preferences... > Mouse",
       "Apple menu > App Store... > Categories > Devices > Trackpad",
@@ -2927,7 +4696,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "For the purpose of encryption, WiFi Protected Access 3 (WPA3) takes advantage of: (Select 2 answers)",
+    "question": "For the purpose of encryption, WiFi Protected Access 3 (WPA3) takes advantage of:",
     "options": [
       "AES-GCMP",
       "PSK",
@@ -2975,7 +4744,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "What are the characteristic features of WPA2/WPA3 Enterprise mode? (Select 3 answers)",
+    "question": "What are the characteristic features of WPA2/WPA3 Enterprise mode?",
     "options": [
       "Suitable for large corporate networks",
       "IEEE 802.1D",
@@ -3039,7 +4808,7 @@ export const questionCategories = {
     "allowMultiple": true
   },
   {
-    "question": "What are the characteristics of TACACS+? (Select 3 answers)",
+    "question": "What are the characteristics of TACACS+?",
     "options": [
       "Encrypts only the password in the access-request packet",
       "Combines authentication and authorization",
@@ -3056,7 +4825,7 @@ export const questionCategories = {
     "allowMultiple": true
   },
   {
-    "question": "What are the characteristic features of RADIUS? (Select 3 answers)",
+    "question": "What are the characteristic features of RADIUS?",
     "options": [
       "Primarily used for network access",
       "Encrypts the entire payload of the access-request packet",
@@ -3117,7 +4886,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which of the statements listed below apply to the definition of a computer virus? (Select 3 answers)",
+    "question": "Which of the statements listed below apply to the definition of a computer virus?",
     "options": [
       "A self-replicating computer program containing malicious segment",
       "Malware that requires its host application to be run to make the virus active",
@@ -3176,13 +4945,13 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which of the answers listed below refers to a common firewall type used for protecting a single computer? (Select 2 answers)",
+    "question": "Which of the answers listed below refers to a common firewall type used for protecting a single computer?",
     "options": ["Host-based firewall", "Software firewall", "Network-based firewall", "Hardware firewall"],
     "correctAnswers": ["Host-based firewall", "Software firewall"],
     "allowMultiple": true
   },
   {
-    "question": "Which firewall would provide the best protection for an ingress/egress point of a corporate network? (Select 2 answers)",
+    "question": "Which firewall would provide the best protection for an ingress/egress point of a corporate network?",
     "options": ["Hardware firewall", "Network-based firewall", "Software firewall", "Host-based firewall"],
     "correctAnswers": ["Hardware firewall", "Network-based firewall"],
     "allowMultiple": true
@@ -3274,13 +5043,13 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "An email sent from unknown source disguised as a trusted source known to the message receiver is an example of: (Select 2 answers)",
+    "question": "An email sent from unknown source disguised as a trusted source known to the message receiver is an example of:",
     "options": ["Spoofing", "Malware", "Trojan horse", "Social engineering", "On-path attack"],
     "correctAnswers": ["Spoofing", "Social engineering"],
     "allowMultiple": true
   },
   {
-    "question": "Which of the following statements can be used to describe the characteristics of an on-path attack? (Select 3 answers)",
+    "question": "Which of the following statements can be used to describe the characteristics of an on-path attack?",
     "options": [
       "An on-path attack is also known as MitM attack",
       "Attackers place themselves on the communication route between two devices",
@@ -3327,7 +5096,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which of the following answers can be used to describe characteristics of an XSS attack? (Select 3 answers)",
+    "question": "Which of the following answers can be used to describe characteristics of an XSS attack?",
     "options": [
       "Exploits the trust a user's web browser has in a website",
       "A malicious script is injected into a trusted website",
@@ -3441,13 +5210,13 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which sign-in options in Windows 10 rely on knowledge-based authentication factors? (Select 3 answers)",
+    "question": "Which sign-in options in Windows 10 rely on knowledge-based authentication factors?",
     "options": ["Username", "Security Key", "PIN", "Facial recognition", "Password", "Fingerprint"],
     "correctAnswers": ["Username", "PIN", "Password"],
     "allowMultiple": true
   },
   {
-    "question": "Which of the following answers refer to Windows 10 sign-in options that rely on inherence-based authentication factors? (Select 2 answers)",
+    "question": "Which of the following answers refer to Windows 10 sign-in options that rely on inherence-based authentication factors?",
     "options": ["Fingerprint", "Facial recognition", "Password", "PIN", "Security Key", "Username"],
     "correctAnswers": ["Fingerprint", "Facial recognition"],
     "allowMultiple": true
@@ -3457,7 +5226,7 @@ export const questionCategories = {
 //------------------------------------------------------------------------------------------------------------------------------------
 "Comptia A+ 1102 test 15":[
   {
-    "question": "Which of the statements listed below are true? (Select 2 answers)\nNTFS permissions apply only to local users\nNTFS permissions can be applied only on a folder level\nNTFS permissions apply to both network and local users\nNTFS permissions can be applied to a folder or individual file",
+    "question": "Which of the statements listed below are true?",
     "options": [
       "NTFS permissions apply only to local users",
       "NTFS permissions can be applied only on a folder level",
@@ -3471,7 +5240,7 @@ export const questionCategories = {
     "allowMultiple": true
   },
   {
-    "question": "Which of the following statements describing share permissions in MS Windows are true? (Select 2 answers)\nApply only to network users\nCan be set on a file level\nApply to both network and local users\nCan be set on a folder level",
+    "question": "Which of the following statements describing share permissions in MS Windows are true?",
     "options": [
       "Apply only to network users",
       "Can be set on a file level",
@@ -3498,7 +5267,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "The share permissions on a shared Windows folder grant the user Read access and the local NTFS permissions grant the user Modify access. Which of the following are the effective user permission levels? (Select 2 answers)",
+    "question": "The share permissions on a shared Windows folder grant the user Read access and the local NTFS permissions grant the user Modify access. Which of the following are the effective user permission levels?",
     "options": [
       "Read when accessing the share remotely",
       "Modify when accessing the folder locally",
@@ -3512,7 +5281,7 @@ export const questionCategories = {
     "allowMultiple": true
   },
   {
-    "question": "The share permissions on a shared Windows folder grant the user Full Control access and the local NTFS permissions grant the user Read access. Which of the following are the effective user permission levels? (Select 2 answers)",
+    "question": "The share permissions on a shared Windows folder grant the user Full Control access and the local NTFS permissions grant the user Read access. Which of the following are the effective user permission levels?",
     "options": [
       "Read when accessing the share remotely",
       "Full control when accessing the folder locally",
@@ -3642,7 +5411,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which of the following actions in Windows allow to invoke the user access control prompt and run an application with administrator account permissions? (Select 3 answers)",
+    "question": "Which of the following actions in Windows allow to invoke the user access control prompt and run an application with administrator account permissions?",
     "options": [
       "Right-click on an application icon > select Run as administrator from the pop-up menu",
       "Launch Windows Run dialog box (Windows logo key + R) > type in the application's name > press Enter",
@@ -3708,7 +5477,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "The two factors that are considered important for creating strong passwords are: (Select 2 answers)",
+    "question": "The two factors that are considered important for creating strong passwords are:",
     "options": [
       "Password length",
       "Minimum password age",
@@ -3934,7 +5703,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which account management security solutions provide countermeasures against brute-force attacks? (Select 2 answers)",
+    "question": "Which account management security solutions provide countermeasures against brute-force attacks?",
     "options": [
       "Login time restrictions",
       "Timeout period between login attempts",
@@ -3971,7 +5740,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which sequence of steps in Windows 10 provides access to the AutoPlay settings menu? (Select 3 answers)",
+    "question": "Which sequence of steps in Windows 10 provides access to the AutoPlay settings menu?",
     "options": [
       "Windows Control Panel (icon view) > AutoPlay",
       "Settings > Devices > AutoPlay",
@@ -4343,7 +6112,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Examples of technologies that should not be used due to their known vulnerabilities or other security risks include: (Select 2 answers)",
+    "question": "Examples of technologies that should not be used due to their known vulnerabilities or other security risks include:",
     "options": [
       "RDP",
       "UPnP",
@@ -4698,7 +6467,7 @@ export const questionCategories = {
     "allowMultiple": false
   },
   {
-    "question": "Which of the following could be of help while troubleshooting a system that attempts to boot to incorrect device? (Select 2 answers)",
+    "question": "Which of the following could be of help while troubleshooting a system that attempts to boot to incorrect device?",
     "options": [
       "Device Manager",
       "Safe mode troubleshooting",
@@ -4729,6 +6498,191 @@ export const questionCategories = {
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 "My questions":[
+    {
+      "question": "What is the primary purpose of Windows Resource Protection?",
+      "options": [
+        "To prevent essential system files, folders, and registry keys from being replaced",
+        "To automatically update all system drivers",
+        "To monitor network bandwidth usage",
+        "To defragment the hard drive"
+      ],
+      "correctAnswers": [
+        "To prevent essential system files, folders, and registry keys from being replaced"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Which command is used with the System File Checker to immediately scan and repair system files?",
+      "options": [
+        "sfc /scanonce",
+        "sfc /scannow",
+        "sfc /scanboot",
+        "sfc /verify"
+      ],
+      "correctAnswers": [
+        "sfc /scannow"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Which System File Checker command schedules a scan to be run once at the next reboot?",
+      "options": [
+        "sfc /scannow",
+        "sfc /scanonce",
+        "sfc /scanboot",
+        "sfc /check"
+      ],
+      "correctAnswers": [
+        "sfc /scanonce"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Which System File Checker command instructs the tool to scan system files during the boot process?",
+      "options": [
+        "sfc /scannow",
+        "sfc /scanonce",
+        "sfc /scanboot",
+        "sfc /reboot"
+      ],
+      "correctAnswers": [
+        "sfc /scanboot"
+      ],
+      "allowMultiple": false
+    },
+  
+    {
+      "question": "For the CompTIA A+ 1102 exam, how do you change an application's priority using Windows Task Manager?",
+      "options": [
+        "Go to the Details tab, right-click the process, and select 'Set Priority'",
+        "Double-click the process in the Processes tab",
+        "Right-click the process in the Performance tab",
+        "Modify the process priority from Device Manager"
+      ],
+      "correctAnswers": [
+        "Go to the Details tab, right-click the process, and select 'Set Priority'"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "On the CompTIA A+ 1102 exam, what does the 'tasklist /sv' command display?",
+      "options": [
+        "A list of running tasks with their CPU usage",
+        "A list of services running within each process",
+        "Termination status of background services",
+        "System version information for each process"
+      ],
+      "correctAnswers": [
+        "A list of services running within each process"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Which of the following taskkill command options are valid on Windows? (Select all that apply)",
+      "options": [
+        "/pid",
+        "/im",
+        "/t",
+        "/£"
+      ],
+      "correctAnswers": [
+        "/pid",
+        "/im",
+        "/t"
+      ],
+      "allowMultiple": true
+    },
+    {
+      "question": "For the A+ 1102 exam, how do you adjust the virtual memory settings in Windows?",
+      "options": [
+        "Via Task Manager under the Performance tab",
+        "Through System > Advanced System Settings > Advanced > Performance (Settings) > Advanced > Change",
+        "By accessing msconfig and editing boot options",
+        "Using Device Manager to modify memory allocation"
+      ],
+      "correctAnswers": [
+        "Through System > Advanced System Settings > Advanced > Performance (Settings) > Advanced > Change"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Which Windows tool provides an enhanced view of system resource usage beyond what Task Manager offers?",
+      "options": [
+        "Performance Monitor",
+        "Resource Monitor",
+        "Reliability Monitor",
+        "Event Viewer"
+      ],
+      "correctAnswers": [
+        "Resource Monitor"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Which taskkill option allows you to forcefully terminate a process without any warning?",
+      "options": [
+        "/pid",
+        "/im",
+        "/f",
+        "/t"
+      ],
+      "correctAnswers": [
+        "/f"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Which command option for taskkill is used when you need to specify a process by its image name?",
+      "options": [
+        "/pid",
+        "/im",
+        "/t",
+        "/f"
+      ],
+      "correctAnswers": [
+        "/im"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Which Windows tool, important for the A+ 1102 exam, logs system stability events and displays a history of application reliability?",
+      "options": [
+        "Performance Monitor",
+        "Resource Monitor",
+        "Reliability Monitor",
+        "Event Viewer"
+      ],
+      "correctAnswers": [
+        "Reliability Monitor"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Which Windows utility used in the CompTIA A+ 1102 exam can be used to modify the boot process and system startup configurations?",
+      "options": [
+        "Task Scheduler",
+        "System Configuration Utility (msconfig)",
+        "Device Manager",
+        "Event Viewer"
+      ],
+      "correctAnswers": [
+        "System Configuration Utility (msconfig)"
+      ],
+      "allowMultiple": false
+    },
+    {
+      "question": "Within Windows Performance Management Tools, what is the purpose of Data Collector Sets?",
+      "options": [
+        "To provide a real-time view of CPU and memory usage",
+        "To log Windows performance data for analysis and baseline creation",
+        "To display detailed application error reports",
+        "To configure task scheduling for system maintenance"
+      ],
+      "correctAnswers": [
+        "To log Windows performance data for analysis and baseline creation"
+      ],
+      "allowMultiple": false
+    },
   {
     question: "How do you change an application's priority in Windows Task Manager?",
     options: [

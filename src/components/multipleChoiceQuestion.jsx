@@ -11,7 +11,10 @@ const MultipleChoiceQuestion = () => {
   // State for retest and typing round modes
   const [isRetest, setIsRetest] = useState(false);
   const [isTypingRound, setIsTypingRound] = useState(false);
-  
+
+  // Mute state for reward sound
+  const [isMuted, setIsMuted] = useState(false);
+
   // State for current round’s questions, responses, and index
   const [questionOrder, setQuestionOrder] = useState([]);
   const [responses, setResponses] = useState([]);
@@ -19,6 +22,13 @@ const MultipleChoiceQuestion = () => {
 
   // Reward sound ref
   const rewardSoundRef = useRef(new Audio(rewardSoundFile));
+
+  // Update the audio muted property whenever isMuted changes.
+  useEffect(() => {
+    if (rewardSoundRef.current) {
+      rewardSoundRef.current.muted = isMuted;
+    }
+  }, [isMuted]);
 
   // ---------------------------
   // Loader Functions
@@ -351,7 +361,7 @@ const MultipleChoiceQuestion = () => {
         }
       `}</style>
 
-      {/* Category Selector */}
+      {/* Category Selector and Mute Toggle */}
       <div className="category-container" style={{ maxWidth: '600px', margin: '20px auto', textAlign: 'center' }}>
         <label htmlFor="category-select" style={{ marginRight: '10px' }}>
           Select Test:
@@ -375,6 +385,22 @@ const MultipleChoiceQuestion = () => {
             </option>
           ))}
         </select>
+        {/* Mute Toggle Button */}
+        <button
+          onClick={() => setIsMuted(!isMuted)}
+          style={{
+            marginLeft: '15px',
+            padding: '8px 12px',
+            fontSize: '1.25rem',
+            borderRadius: '8px',
+            border: 'none',
+            backgroundColor: '#3282B8',
+            color: '#fff',
+            cursor: 'pointer'
+          }}
+        >
+          {isMuted ? "Unmute Sound" : "Mute Sound"}
+        </button>
       </div>
 
       <div
@@ -401,94 +427,93 @@ const MultipleChoiceQuestion = () => {
 
         {/* Typing round or multiple-choice options */}
         {isTypingRound ? (
-  <div style={{ marginBottom: '30px' }}>
-    <input
-      type="text"
-      value={currentResponse.typedAnswer}
-      onChange={(e) =>
-        updateResponse(currentIndex, {
-          typedAnswer: e.target.value,
-          feedback: ''
-        })
-      }
-      style={{
-        width: '100%',
-        padding: '15px',
-        fontSize: '1.25rem',
-        borderRadius: '8px',
-        boxSizing: 'border-box'
-      }}
-      placeholder="Type your answer here"
-      disabled={currentResponse.submitted}
-    />
-    {currentResponse.feedback && (
-      <p
-        style={{
-          textAlign: 'center',
-          marginTop: '10px',
-          color: currentResponse.submitted ? '#388e3c' : '#d32f2f'
-        }}
-      >
-        {currentResponse.feedback}
-      </p>
-    )}
-    {/* Once submitted, show the answer */}
-    {currentResponse.submitted && (
-      isCurrentResponseCorrect() ? (
-        // If correct, display the answer immediately.
-        <p style={{ textAlign: 'center', marginTop: '10px', color: '#E0E1DD' }}>
-          Answer: {currentQuestion.correctAnswers.join(', ')}
-        </p>
-      ) : (
-        // If incorrect, allow the user to click a button to reveal the answer.
-        <>
-          {!currentResponse.showAnswer ? (
-            <button
-              onClick={handleShowAnswer}
+          <div style={{ marginBottom: '30px' }}>
+            <input
+              type="text"
+              value={currentResponse.typedAnswer}
+              onChange={(e) =>
+                updateResponse(currentIndex, {
+                  typedAnswer: e.target.value,
+                  feedback: ''
+                })
+              }
               style={{
-                marginTop: '10px',
-                padding: '8px 12px',
-                fontSize: '1rem',
+                width: '100%',
+                padding: '15px',
+                fontSize: '1.25rem',
                 borderRadius: '8px',
-                backgroundColor: '#388e3c',
-                color: '#fff',
-                border: 'none',
-                cursor: 'pointer'
+                boxSizing: 'border-box'
               }}
-            >
-              Show Answer
-            </button>
-          ) : (
-            <p style={{ textAlign: 'center', marginTop: '10px', color: '#E0E1DD' }}>
-              Answer: {currentQuestion.correctAnswers.join(', ')}
-            </p>
-          )}
-        </>
-      )
-    )}
-  </div>
-) : (
-  <div
-    className="option-grid"
-    style={{
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
-      gap: '16px',
-      marginBottom: '30px'
-    }}
-  >
-    {currentQuestion.options.map((option) => (
-      <button
-        key={option}
-        onClick={() => handleOptionClick(option)}
-        style={getButtonStyle(option)}
-      >
-        {getOptionContent(option)}
-      </button>
-    ))}
-  </div>
-)}
-
+              placeholder="Type your answer here"
+              disabled={currentResponse.submitted}
+            />
+            {currentResponse.feedback && (
+              <p
+                style={{
+                  textAlign: 'center',
+                  marginTop: '10px',
+                  color: currentResponse.submitted ? '#388e3c' : '#d32f2f'
+                }}
+              >
+                {currentResponse.feedback}
+              </p>
+            )}
+            {/* Once submitted, show the answer */}
+            {currentResponse.submitted && (
+              isCurrentResponseCorrect() ? (
+                // If correct, display the answer immediately.
+                <p style={{ textAlign: 'center', marginTop: '10px', color: '#E0E1DD' }}>
+                  Answer: {currentQuestion.correctAnswers.join(', ')}
+                </p>
+              ) : (
+                // If incorrect, allow the user to click a button to reveal the answer.
+                <>
+                  {!currentResponse.showAnswer ? (
+                    <button
+                      onClick={handleShowAnswer}
+                      style={{
+                        marginTop: '10px',
+                        padding: '8px 12px',
+                        fontSize: '1rem',
+                        borderRadius: '8px',
+                        backgroundColor: '#388e3c',
+                        color: '#fff',
+                        border: 'none',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      Show Answer
+                    </button>
+                  ) : (
+                    <p style={{ textAlign: 'center', marginTop: '10px', color: '#E0E1DD' }}>
+                      Answer: {currentQuestion.correctAnswers.join(', ')}
+                    </p>
+                  )}
+                </>
+              )
+            )}
+          </div>
+        ) : (
+          <div
+            className="option-grid"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: '16px',
+              marginBottom: '30px'
+            }}
+          >
+            {currentQuestion.options.map((option) => (
+              <button
+                key={option}
+                onClick={() => handleOptionClick(option)}
+                style={getButtonStyle(option)}
+              >
+                {getOptionContent(option)}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Navigation Buttons */}
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
