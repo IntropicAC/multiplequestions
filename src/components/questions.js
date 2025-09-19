@@ -1695,7 +1695,7 @@ export const questionCategories = {
 "One admin password for all backups",
 "One copy kept offsite"
 ],
-"correctAnswers": ["Three copies total including production data", "Two different media types"],
+"correctAnswers": ["Three copies total including production data", "Two different media types, One copy kept offsite"],
 "allowMultiple": true
 },
 {
